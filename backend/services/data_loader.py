@@ -1,20 +1,34 @@
 """
 data_loader.py
 Single source of truth for data access.
-Locally: reads from CSV files in backend/data/
-AWS:     swap get_store() to query Athena via awswrangler — routers unchanged.
+
+Local dev:   reads CSV files from backend/data/
+AWS (prod):  reads from S3 using awswrangler
+
+Switch via environment variables:
+  USE_S3=true
+  S3_BUCKET=mappro-mediguard
+  S3_PREFIX=mediguard/data/
 """
 
 import os
 import numpy as np
 import pandas as pd
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+# ── Environment config ─────────────────────────────────────────────────────
+USE_S3     = os.getenv("USE_S3", "false").lower() == "true"
+S3_BUCKET  = os.getenv("S3_BUCKET", "mediguard_mappro_demo")
+S3_PREFIX  = os.getenv("S3_PREFIX", "mediguard/data/")
+DATA_DIR   = os.path.join(os.path.dirname(__file__), "..", "data")
+
+if USE_S3:
+    import awswrangler as wr
 
 
 class DataStore:
     def __init__(self):
-        print("\nLoading DataStore...")
+        src = f"s3://{S3_BUCKET}/{S3_PREFIX}" if USE_S3 else DATA_DIR
+        print(f"\nLoading DataStore from {'S3' if USE_S3 else 'local'}: {src}")
         self.medicines          = self._load("medicines.csv")
         self.suppliers          = self._load("suppliers.csv")
         self.facilities         = self._load("facilities.csv")
@@ -29,21 +43,18 @@ class DataStore:
     # ── Private ────────────────────────────────────────────────────────────
 
     def _load(self, filename: str) -> pd.DataFrame:
-        path = os.path.join(DATA_DIR, filename)
-        df   = pd.read_csv(path)
-        # Replace NaN → None so FastAPI serialises to JSON null, not float('nan')
+        if USE_S3:
+            df = wr.s3.read_csv(f"s3://{S3_BUCKET}/{S3_PREFIX}{filename}")
+        else:
+            df = pd.read_csv(os.path.join(DATA_DIR, filename))
         return df.where(pd.notnull(df), None)
 
     def _enrich(self):
-        """Pre-join medicine + facility metadata onto complaints once at startup."""
-
-        # Medicine metadata
         med_meta = self.medicines[[
             "medicine_id", "name", "generic_name", "category", "pres_restrictions"
         ]].rename(columns={"name": "medicine_name"})
         self.complaints = self.complaints.merge(med_meta, on="medicine_id", how="left")
 
-        # Facility name + type (where medicine was purchased)
         fac_meta = self.facilities[["facility_id", "name", "type"]].rename(
             columns={"name": "facility_name", "type": "facility_type"}
         )
@@ -54,9 +65,6 @@ class DataStore:
             how="left",
         )
         self.complaints.drop(columns=["facility_id"], errors="ignore", inplace=True)
-
-        # Left-joins introduce new NaN rows — clean them so every downstream
-        # .to_dict("records") call is JSON-safe without extra work in the routers.
         self.complaints = self.complaints.replace([np.nan, np.inf, -np.inf], None)
 
     # ── Facilities ─────────────────────────────────────────────────────────
@@ -75,18 +83,15 @@ class DataStore:
 
     # ── Complaints ─────────────────────────────────────────────────────────
 
-    def get_complaints(
-        self,
-        state=None, district=None,
-        date_from=None, date_to=None,
-        medicine_id=None, verified=None,
-    ):
+    def get_complaints(self, state=None, district=None,
+                       date_from=None, date_to=None,
+                       medicine_id=None, verified=None):
         df = self.complaints
-        if state:        df = df[df["state"]       == state]
-        if district:     df = df[df["district"]    == district]
-        if date_from:    df = df[df["date"]        >= date_from]
-        if date_to:      df = df[df["date"]        <= date_to]
-        if medicine_id:  df = df[df["medicine_id"] == medicine_id]
+        if state:       df = df[df["state"]       == state]
+        if district:    df = df[df["district"]    == district]
+        if date_from:   df = df[df["date"]        >= date_from]
+        if date_to:     df = df[df["date"]        <= date_to]
+        if medicine_id: df = df[df["medicine_id"] == medicine_id]
         if verified is not None:
             df = df[df["verified"] == verified]
         return df
