@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediGuard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Leaflet -->
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
+  <!-- Leaflet MarkerCluster -->
+  <link href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" rel="stylesheet" />
+  <link href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#020912;--bg2:#040e1c;--surface:rgba(255,255,255,0.03);
+      --border:rgba(255,255,255,0.10);--border-h:rgba(255,255,255,0.28);
+      --text:#e8f0f8;--muted:#7eaac6;--dim:#3a5c75;
+      --hf:'Raleway',sans-serif;--bf:'DM Sans',sans-serif;
+      --col-hospital:#22c55e;--col-clinic:#3b82f6;--col-pharmacy:#a855f7;
+      --col-supplier:#ec4899;--col-cmp-out:#f97316;--col-cluster:#fbbf24;
+      --nav-h:64px;--sidebar-w:272px;
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%;overflow:hidden}
+    body{background:var(--bg);color:var(--text);font-family:var(--bf)}
+    ::-webkit-scrollbar{width:3px}
+    ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:2px}
+
+    /* Globe */
+    #globe-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity .6s}
+    #globe-canvas.visible{opacity:1}
+
+    /* Nav */
+    nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(2,9,18,.96);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:var(--hf);font-size:17px;font-weight:800;letter-spacing:3px;color:var(--text);text-decoration:none;line-height:1}
+    .nav-logo em{font-style:normal;opacity:.4}
+    .nav-logo small{display:block;font-family:var(--bf);font-size:10px;font-weight:400;letter-spacing:2.5px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+    .nav-tabs{display:flex;gap:2px;list-style:none;background:var(--surface);border:1px solid var(--border);padding:4px}
+    .nav-tabs a{display:flex;align-items:center;gap:7px;padding:7px 20px;font-family:var(--bf);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:all .2s}
+    .nav-tabs a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+    .nav-tabs a.active{color:#fff;background:rgba(255,255,255,.08)}
+    .nav-right{display:flex;align-items:center;gap:16px}
+    .nav-live{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+    .live-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+    .nav-badge{font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);padding:5px 12px;white-space:nowrap}
+
+    /* Pages */
+    .page{position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;display:none;z-index:1}
+    .page.active{display:flex}
+
+    /* ═══ MAP PAGE ═══ */
+    #page-map{flex-direction:row}
+    .map-sidebar{width:var(--sidebar-w);flex-shrink:0;background:var(--bg);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto;z-index:10}
+    .sb-head{padding:18px 18px 14px;border-bottom:1px solid var(--border);flex-shrink:0}
+    .sb-head h2{font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28)}
+    .sb-sec{padding:16px 18px;border-bottom:1px solid var(--border)}
+    .sb-sec:last-child{border-bottom:none;flex:1}
+    .sb-label{font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+    .sb-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+    .ctrl-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .ctrl-key{font-size:13px;color:var(--muted)}
+    .ctrl-val{font-family:var(--hf);font-size:12px;font-weight:700;color:var(--text)}
+    .layer-left{display:flex;align-items:center;gap:9px}
+    .layer-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+    input[type=range]{-webkit-appearance:none;width:100%;height:2px;background:var(--border);border-radius:1px;outline:none;cursor:pointer}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#fff;cursor:pointer;box-shadow:0 0 8px rgba(255,255,255,.25)}
+    .mt10{margin-top:10px}
+    .ctrl-sel{width:100%;padding:8px 10px;margin-bottom:8px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--bf);font-size:13px;appearance:none;cursor:pointer;outline:none;transition:border-color .2s}
+    .ctrl-sel:focus{border-color:var(--border-h)}
+    .ctrl-sel option{background:var(--bg2)}
+    .btn-run{width:100%;padding:11px;margin-top:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text);font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;transition:all .2s;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%)}
+    .btn-run:hover{background:rgba(255,255,255,.10);border-color:var(--border-h)}
+    .btn-run.busy{opacity:.5;pointer-events:none}
+
+    /* Map container */
+    .map-wrap{flex:1;position:relative;overflow:hidden}
+    #map{position:absolute;inset:0}
+    /* Leaflet override — dark container bg */
+    .leaflet-container{background:#020912 !important}
+
+    /* Stats bar — 5 stats */
+    .map-stats{position:absolute;top:14px;right:14px;z-index:5;display:flex;gap:6px}
+    .map-stat{background:rgba(4,14,28,.90);border:1px solid var(--border);backdrop-filter:blur(12px);padding:8px 12px;display:flex;flex-direction:column;align-items:center}
+    .map-stat-n{font-family:var(--hf);font-size:18px;font-weight:900;color:#fff;line-height:1}
+    .map-stat-l{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:nowrap}
+
+    /* Floating Layers button + panel */
+    .map-layers-btn{position:absolute;bottom:20px;left:14px;z-index:10;display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+    .map-layers-btn:hover{border-color:var(--border-h);color:var(--text)}
+    .map-layers-btn.active{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06)}
+    .map-layers-panel{position:absolute;bottom:62px;left:14px;z-index:15;width:230px;background:rgba(4,14,28,.97);border:1px solid var(--border);backdrop-filter:blur(20px);display:none}
+    .map-layers-panel.open{display:block}
+    .lp-head{padding:11px 16px;border-bottom:1px solid var(--border);font-family:var(--hf);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28)}
+    .lp-sec{padding:12px 16px;border-bottom:1px solid var(--border)}
+    .lp-sec:last-child{border-bottom:none}
+    .lp-sec-ttl{font-family:var(--hf);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.22);margin-bottom:10px}
+    .style-btns{display:flex;gap:5px}
+    .style-btn{flex:1;padding:7px 4px;text-align:center;background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+    .style-btn:hover{border-color:var(--border-h);color:var(--text)}
+    .style-btn.active{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.35);color:#fff}
+    .lp-layer-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0}
+    .toggle{position:relative;width:32px;height:17px;flex-shrink:0}
+    .toggle input{opacity:0;width:0;height:0}
+    .toggle-track{position:absolute;inset:0;cursor:pointer;border-radius:17px;background:rgba(255,255,255,.08);border:1px solid var(--border);transition:all .2s}
+    .toggle-track::after{content:'';position:absolute;top:2px;left:2px;width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.35);transition:all .2s}
+    .toggle input:checked+.toggle-track{border-color:rgba(255,255,255,.3)}
+    .toggle input:checked+.toggle-track::after{transform:translateX(15px);background:#fff}
+
+    /* Legend collapsible */
+    .map-legend-wrap{position:absolute;bottom:156px;right:14px;z-index:10}
+    .legend-toggle-btn{width:34px;height:34px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+    .legend-toggle-btn:hover{border-color:var(--border-h);color:var(--text)}
+    .legend-toggle-btn.active{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.06)}
+    .legend-panel{position:absolute;right:42px;bottom:0;width:185px;background:rgba(4,14,28,.97);border:1px solid var(--border);backdrop-filter:blur(20px);padding:14px 16px;transform-origin:right center;transform:scaleX(0);opacity:0;transition:transform .2s ease,opacity .2s ease;pointer-events:none}
+    .legend-panel.open{transform:scaleX(1);opacity:1;pointer-events:all}
+    .legend-title{font-family:var(--hf);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:12px}
+    .leg-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);padding:3px 0}
+    .leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+    .leg-ring{width:11px;height:11px;border-radius:50%;border:1.5px solid currentColor;flex-shrink:0}
+
+    /* Zoom controls */
+    .map-controls{position:absolute;bottom:20px;right:14px;z-index:5;display:flex;flex-direction:column;gap:6px}
+    .map-ctrl-btn{width:34px;height:34px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+    .map-ctrl-btn:hover{border-color:var(--border-h);color:var(--text)}
+
+    /* ── Custom Leaflet marker icons ── */
+    .centroid-dot {
+      background: #fbbf24;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      font-family:var(--hf);font-size:12px;font-weight:800;color:#1a0f00;
+      border:2px solid rgba(30,15,0,.5);
+      box-shadow:0 0 14px rgba(251,191,36,.5);cursor:pointer;
+    }
+    .centroid-agg {
+      background:rgba(251,191,36,.85);border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      font-family:var(--hf);font-size:13px;font-weight:900;color:#1a0f00;
+      border:2.5px solid #fbbf24;
+      box-shadow:0 0 22px rgba(251,191,36,.6),0 0 6px rgba(251,191,36,.3);
+      cursor:pointer;
+    }
+    /* Override Leaflet default cluster styles */
+    .marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{display:none}
+    /* Leaflet tooltip override */
+    .lf-tip{background:rgba(4,14,28,.95);border:1px solid var(--border);color:var(--text);font-family:var(--bf);font-size:12px;padding:6px 10px;border-radius:0;box-shadow:none}
+    .lf-tip::before{display:none}
+
+    /* Cluster panel */
+    .cluster-panel{position:absolute;left:0;right:0;bottom:0;z-index:50;height:360px;background:rgba(4,14,28,.97);border-top:1px solid var(--border);backdrop-filter:blur(24px);transform:translateY(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+    .cluster-panel.open{transform:translateY(0)}
+    .cp-header{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--border);flex-shrink:0}
+    .cp-title{font-family:var(--hf);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text);display:flex;align-items:center;gap:10px}
+    .cp-badge{font-size:10px;padding:3px 9px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);color:#fbbf24;letter-spacing:1px}
+    .cp-stats{display:flex;gap:20px;margin-left:8px}
+    .cp-stat{font-size:12px;color:var(--muted)}
+    .cp-stat strong{color:var(--text);font-weight:600}
+    .cp-close{background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;transition:color .2s}
+    .cp-close:hover{color:var(--text)}
+    .cp-body{display:grid;grid-template-columns:1fr 1fr;flex:1;overflow:hidden}
+    .cp-col{padding:14px 22px;overflow-y:auto}
+    .cp-col+.cp-col{border-left:1px solid var(--border)}
+    .cp-col-lbl{font-family:var(--hf);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.22);margin-bottom:12px}
+    .cmp-item{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer}
+    .cmp-item:last-child{border-bottom:none}
+    .cmp-top{display:flex;justify-content:space-between;margin-bottom:3px}
+    .cmp-id{font-family:var(--hf);font-size:10px;color:var(--dim);letter-spacing:1px}
+    .cmp-date{font-size:11px;color:var(--dim)}
+    .cmp-med{font-size:13px;color:var(--text);margin-bottom:2px}
+    .cmp-loss{font-size:11px;color:var(--col-cmp-out);font-family:var(--hf)}
+    .tag{display:inline-flex;align-items:center;font-size:10px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+    .tag-verified{background:rgba(34,197,94,.08);color:#22c55e;border:1px solid rgba(34,197,94,.18)}
+    .tag-unverified{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--border)}
+    .sup-item{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+    .sup-item:last-child{border-bottom:none}
+    .sup-name{font-size:13px;color:var(--text);margin-bottom:3px}
+    .sup-meta{font-size:11px;color:var(--dim)}
+    .sup-flag{display:inline-flex;align-items:center;font-size:10px;padding:2px 7px;margin-top:4px}
+    .sup-flag.bad{background:rgba(239,68,68,.08);color:#ef4444;border:1px solid rgba(239,68,68,.2)}
+    .sup-flag.ok{background:rgba(34,197,94,.06);color:#22c55e;border:1px solid rgba(34,197,94,.18)}
+    .empty-hint{display:flex;align-items:center;justify-content:center;flex:1;font-family:var(--hf);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);padding:20px 0}
+
+    /* ═══ ANALYTICS PAGE ═══ */
+    #page-analytics{flex-direction:column;overflow-y:auto;overflow-x:hidden}
+    .an-filters{flex-shrink:0;padding:14px 24px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .fl-label{font-family:var(--hf);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.22);white-space:nowrap}
+    .fl-sel,.fl-inp{padding:7px 10px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--bf);font-size:12px;appearance:none;cursor:pointer;outline:none;transition:border-color .2s}
+    .fl-sel:focus,.fl-inp:focus{border-color:var(--border-h)}
+    .fl-sel option{background:var(--bg2)}
+    .fl-sep{width:1px;height:18px;background:var(--border);flex-shrink:0}
+    .fl-arrow{font-size:11px;color:var(--dim)}
+    .btn-fl{padding:7px 18px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text);font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;clip-path:polygon(5px 0%,100% 0%,calc(100% - 5px) 100%,0% 100%)}
+    .btn-fl:hover{background:rgba(255,255,255,.10);border-color:var(--border-h)}
+    .an-content{padding:22px 24px}
+    .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+    .kpi-card{background:var(--surface);border:1px solid var(--border);padding:20px;position:relative;overflow:hidden;transition:border-color .3s}
+    .kpi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transform:scaleX(0);transition:transform .35s}
+    .kpi-card:hover{border-color:var(--border-h)}
+    .kpi-card:hover::before{transform:scaleX(1)}
+    .kpi-icon{margin-bottom:12px}
+    .kpi-n{font-family:var(--hf);font-size:clamp(22px,3vw,34px);font-weight:900;color:#fff;line-height:1;margin-bottom:5px}
+    .kpi-l{font-family:var(--hf);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+    .chart-card{background:var(--surface);border:1px solid var(--border);padding:20px}
+    .chart-ttl{font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:3px}
+    .chart-sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+    .chart-wrap{position:relative;height:210px}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+    .row3{display:grid;grid-template-columns:3fr 2fr;gap:12px;margin-bottom:12px}
+    .cr-list{display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto}
+    .cr-row{display:flex;align-items:center;gap:10px;padding:9px 12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);cursor:pointer;transition:border-color .2s}
+    .cr-row:hover{border-color:var(--border-h)}
+    .cr-rank{font-family:var(--hf);font-size:18px;font-weight:900;color:rgba(255,255,255,.1);width:28px;flex-shrink:0}
+    .cr-info{flex:1;min-width:0}
+    .cr-cid{font-family:var(--hf);font-size:11px;color:var(--col-cluster);letter-spacing:1px}
+    .cr-meta{font-size:11px;color:var(--muted);margin-top:1px}
+    .cr-right{text-align:right}
+    .cr-sev{font-family:var(--hf);font-size:14px;font-weight:800;color:#fff}
+    .cr-sevl{font-size:9px;color:var(--dim);letter-spacing:1px}
+    .sup-tbl{width:100%;border-collapse:collapse}
+    .sup-tbl th{font-family:var(--hf);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.22);padding:0 10px 10px 0;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+    .sup-tbl td{font-size:12px;color:var(--muted);padding:8px 10px 8px 0;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}
+    .sup-tbl td:first-child{color:var(--text);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .s-badge{font-size:10px;padding:2px 7px;font-family:var(--hf);letter-spacing:1px}
+    .s-badge.s{background:rgba(239,68,68,.08);color:#ef4444;border:1px solid rgba(239,68,68,.18)}
+    .s-badge.l{background:rgba(34,197,94,.06);color:#22c55e;border:1px solid rgba(34,197,94,.18)}
+    .placeholder{display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--hf);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim)}
+    /* Lift all map UI overlays above Leaflet's internal panes (max z ~700) */
+    .map-stats        { z-index: 1000 !important; }
+    .map-layers-btn   { z-index: 1010 !important; }
+    .map-layers-panel { z-index: 1015 !important; }
+    .map-legend-wrap  { z-index: 1010 !important; }
+    .map-controls     { z-index: 1005 !important; }
+    .cluster-panel    { z-index: 1050 !important; }
+    /* Tabular lining numerals — consistent digit size and baseline everywhere */
+    * { font-variant-numeric: tabular-nums lining-nums; }
+  </style>
+</head>
+<body>
+
+<canvas id="globe-canvas"></canvas>
+
+<!-- Nav -->
+<nav>
+  <a href="#" class="nav-logo">MEDI<em>GUARD</em></a>
+  <ul class="nav-tabs">
+    <li><a href="#" class="active" data-page="map" id="tab-map"><i data-feather="map" width="13" height="13"></i> Map</a></li>
+    <li><a href="#" data-page="analytics" id="tab-analytics"><i data-feather="bar-chart-2" width="13" height="13"></i> Analytics</a></li>
+  </ul>
+  <div class="nav-right"></div>
+</nav>
+
+<!-- ════════ MAP PAGE ════════ -->
+<div id="page-map" class="page active">
+  <aside class="map-sidebar">
+    <div class="sb-head"><h2>Map Controls</h2></div>
+
+    <div class="sb-sec">
+      <div class="sb-label">Buffer Radii</div>
+      <div class="ctrl-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-hospital);box-shadow:0 0 5px var(--col-hospital)"></span><span class="ctrl-key">Hospital</span></div><span class="ctrl-val" id="buf-hosp-val">800 m</span></div>
+      <input type="range" id="buf-hosp" min="100" max="5000" step="50" value="800" />
+      <div class="ctrl-row mt10"><div class="layer-left"><span class="layer-dot" style="background:var(--col-clinic);box-shadow:0 0 5px var(--col-clinic)"></span><span class="ctrl-key">Clinic</span></div><span class="ctrl-val" id="buf-clin-val">500 m</span></div>
+      <input type="range" id="buf-clin" min="100" max="5000" step="50" value="500" />
+      <div class="ctrl-row mt10"><div class="layer-left"><span class="layer-dot" style="background:var(--col-pharmacy);box-shadow:0 0 5px var(--col-pharmacy)"></span><span class="ctrl-key">Pharmacy</span></div><span class="ctrl-val" id="buf-phar-val">400 m</span></div>
+      <input type="range" id="buf-phar" min="100" max="5000" step="50" value="400" />
+    </div>
+
+    <div class="sb-sec">
+      <div class="sb-label">Cluster Settings</div>
+      <div style="background:rgba(255,255,255,.02);border:1px solid var(--border);padding:12px 14px;margin-bottom:12px;">
+        <div style="font-family:var(--hf);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:10px;">Auto KNN · Parameters computed from data</div>
+        <div class="ctrl-row" style="margin-bottom:5px;"><span class="ctrl-key">ε radius</span><span class="ctrl-val" id="auto-eps">— run first</span></div>
+        <div class="ctrl-row" style="margin-bottom:5px;"><span class="ctrl-key">Min. pts</span><span class="ctrl-val" id="auto-mpts">—</span></div>
+        <div class="ctrl-row" style="margin-bottom:5px;"><span class="ctrl-key">k used</span><span class="ctrl-val" id="auto-k">—</span></div>
+        <div class="ctrl-row"><span class="ctrl-key">Points clustered</span><span class="ctrl-val" id="auto-n">—</span></div>
+      </div>
+      <button class="btn-run" id="run-btn">Run Clustering</button>
+    </div>
+
+    <div class="sb-sec">
+      <div class="sb-label">Navigate</div>
+
+      <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">State</div>
+      <select class="ctrl-sel" id="nav-state">
+        <option value="">All Malaysia</option>
+        <option value="state:Kuala Lumpur">Kuala Lumpur</option>
+        <option value="state:Selangor">Selangor</option>
+        <option value="state:Johor">Johor</option>
+        <option value="state:Penang">Penang</option>
+        <option value="state:Perak">Perak</option>
+        <option value="state:Kedah">Kedah</option>
+        <option value="state:Negeri Sembilan">Negeri Sembilan</option>
+        <option value="state:Melaka">Melaka</option>
+      </select>
+
+      <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">District</div>
+      <select class="ctrl-sel" id="nav-district">
+        <option value="">Loading…</option>
+      </select>
+
+      <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">Cluster</div>
+      <select class="ctrl-sel" id="nav-cluster">
+        <option value="">Run clustering first</option>
+      </select>
+    </div>
+  </aside>
+
+  <div class="map-wrap">
+    <div id="map"></div>
+
+    <!-- Stats bar: 5 stats -->
+    <div class="map-stats">
+      <div class="map-stat"><span class="map-stat-n" id="stat-total-cmp">—</span><span class="map-stat-l">Total Compl.</span></div>
+      <div class="map-stat"><span class="map-stat-n" id="stat-vis-cmp">—</span><span class="map-stat-l">Visible</span></div>
+      <div class="map-stat"><span class="map-stat-n" id="stat-total-cls">—</span><span class="map-stat-l">Clusters</span></div>
+      <div class="map-stat"><span class="map-stat-n" id="stat-vis-cls">—</span><span class="map-stat-l">Visible Cls.</span></div>
+      <div class="map-stat"><span class="map-stat-n" id="stat-loss">—</span><span class="map-stat-l">Est. Loss</span></div>
+    </div>
+
+    <!-- Floating Layers button -->
+    <button class="map-layers-btn" id="layers-btn"><i data-feather="layers" width="12" height="12"></i> Layers</button>
+    <div class="map-layers-panel" id="layers-panel">
+      <div class="lp-head">Map Layers</div>
+      <div class="lp-sec">
+        <div class="lp-sec-ttl">Base Map</div>
+        <div class="style-btns">
+          <button class="style-btn active" data-style="dark">Dark</button>
+          <button class="style-btn" data-style="light">Light</button>
+          <button class="style-btn" data-style="satellite">Satellite</button>
+        </div>
+      </div>
+      <div class="lp-sec">
+        <div class="lp-sec-ttl">Overlay Layers</div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-hospital);box-shadow:0 0 5px var(--col-hospital)"></span><span style="font-size:13px;color:var(--muted)">Hospitals</span></div><label class="toggle"><input type="checkbox" id="lyr-hospital" checked><span class="toggle-track"></span></label></div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-clinic);box-shadow:0 0 5px var(--col-clinic)"></span><span style="font-size:13px;color:var(--muted)">Clinics</span></div><label class="toggle"><input type="checkbox" id="lyr-clinic" checked><span class="toggle-track"></span></label></div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-pharmacy);box-shadow:0 0 5px var(--col-pharmacy)"></span><span style="font-size:13px;color:var(--muted)">Pharmacies</span></div><label class="toggle"><input type="checkbox" id="lyr-pharmacy" checked><span class="toggle-track"></span></label></div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-supplier);box-shadow:0 0 5px var(--col-supplier)"></span><span style="font-size:13px;color:var(--muted)">Suppliers</span></div><label class="toggle"><input type="checkbox" id="lyr-supplier" checked><span class="toggle-track"></span></label></div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-cmp-out);box-shadow:0 0 5px var(--col-cmp-out)"></span><span style="font-size:13px;color:var(--muted)">Complaints</span></div><label class="toggle"><input type="checkbox" id="lyr-complaints" checked><span class="toggle-track"></span></label></div>
+        <div class="lp-layer-row"><div class="layer-left"><span class="layer-dot" style="background:var(--col-cluster);box-shadow:0 0 5px var(--col-cluster)"></span><span style="font-size:13px;color:var(--muted)">Heatmap</span></div><label class="toggle"><input type="checkbox" id="lyr-heatmap" checked><span class="toggle-track"></span></label></div>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="map-legend-wrap">
+      <div class="legend-panel" id="legend-panel">
+        <div class="legend-title">Legend</div>
+        <div class="leg-row"><span class="leg-dot" style="background:rgba(255,255,255,.3)"></span>Complaint — inside buffer</div>
+        <div class="leg-row"><span class="leg-dot" style="background:var(--col-cmp-out)"></span>Complaint — outside buffer</div>
+        <div class="leg-row"><span class="leg-dot" style="background:var(--col-cluster);width:11px;height:11px;"></span>DBSCAN cluster centroid</div>
+        <div style="margin-top:8px;">
+          <div class="leg-row"><span class="leg-ring" style="color:var(--col-hospital)"></span>Hospital buffer</div>
+          <div class="leg-row"><span class="leg-ring" style="color:var(--col-clinic)"></span>Clinic buffer</div>
+          <div class="leg-row"><span class="leg-ring" style="color:var(--col-pharmacy)"></span>Pharmacy buffer</div>
+          <div class="leg-row"><span class="leg-dot" style="background:var(--col-supplier)"></span>Licensed supplier</div>
+          <div class="leg-row"><span class="leg-dot" style="background:#ef4444"></span>Suspicious supplier</div>
+        </div>
+      </div>
+      <button class="legend-toggle-btn" id="legend-btn" title="Toggle legend"><i data-feather="info" width="14" height="14"></i></button>
+    </div>
+
+    <!-- Zoom controls -->
+    <div class="map-controls">
+      <button class="map-ctrl-btn" id="btn-zi"><i data-feather="plus" width="13" height="13"></i></button>
+      <button class="map-ctrl-btn" id="btn-zo"><i data-feather="minus" width="13" height="13"></i></button>
+      <button class="map-ctrl-btn" id="btn-rst"><i data-feather="crosshair" width="13" height="13"></i></button>
+    </div>
+
+    <!-- Cluster detail panel -->
+    <div class="cluster-panel" id="cluster-panel">
+      <div class="cp-header">
+        <div class="cp-title">
+          <i data-feather="alert-circle" width="13" height="13"></i> Cluster Detail
+          <span class="cp-badge" id="cp-id">—</span>
+          <div class="cp-stats">
+            <span class="cp-stat"><strong id="cp-count">—</strong> complaints</span>
+            <span class="cp-stat">MYR <strong id="cp-loss">—</strong> loss</span>
+            <span class="cp-stat">Severity <strong id="cp-sev">—</strong></span>
+          </div>
+        </div>
+        <button class="cp-close" id="cp-close"><i data-feather="x" width="15" height="15"></i></button>
+      </div>
+      <div class="cp-body">
+        <div class="cp-col"><div class="cp-col-lbl">Complaints in Cluster</div><div id="cp-cmp-list"><div class="empty-hint">Select a cluster centroid</div></div></div>
+        <div class="cp-col"><div class="cp-col-lbl">Linked Suppliers</div><div id="cp-sup-list"><div class="empty-hint">Select a cluster centroid</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ ANALYTICS PAGE ════════ -->
+<div id="page-analytics" class="page">
+  <div class="an-filters">
+    <span class="fl-label">Filter</span>
+    <select class="fl-sel" id="an-state"><option value="">All States</option></select>
+    <select class="fl-sel" id="an-district"><option value="">All Districts</option></select>
+    <div class="fl-sep"></div>
+    <input type="date" class="fl-inp" id="an-from" />
+    <span class="fl-arrow">→</span>
+    <input type="date" class="fl-inp" id="an-to" />
+    <div class="fl-sep"></div>
+    <select class="fl-sel" id="an-med"><option value="">All Medicines</option></select>
+    <button class="btn-fl" id="an-apply">Apply</button>
+  </div>
+  <div class="an-content">
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-icon"><i data-feather="alert-triangle" width="17" height="17" style="stroke:var(--col-cmp-out)"></i></div><div class="kpi-n" id="kpi-total">—</div><div class="kpi-l">Total Complaints</div></div>
+      <div class="kpi-card"><div class="kpi-icon"><i data-feather="trending-down" width="17" height="17" style="stroke:var(--col-cluster)"></i></div><div class="kpi-n" id="kpi-loss">—</div><div class="kpi-l">Est. Loss (MYR)</div></div>
+      <div class="kpi-card"><div class="kpi-icon"><i data-feather="layers" width="17" height="17" style="stroke:var(--col-pharmacy)"></i></div><div class="kpi-n" id="kpi-clusters">—</div><div class="kpi-l">Active Clusters</div></div>
+      <div class="kpi-card"><div class="kpi-icon"><i data-feather="shield" width="17" height="17" style="stroke:var(--col-clinic)"></i></div><div class="kpi-n" id="kpi-verified">—</div><div class="kpi-l">Verification Rate</div></div>
+    </div>
+    <div class="row2">
+      <div class="chart-card"><div class="chart-ttl">Most Faked</div><div class="chart-sub">Top medicines by complaint count</div><div class="chart-wrap"><canvas id="chart-meds"></canvas></div></div>
+      <div class="chart-card"><div class="chart-ttl">Cluster Ranking</div><div class="chart-sub">Worst clusters by severity score</div><div class="cr-list" id="cr-list"><div class="placeholder">Loading clusters…</div></div></div>
+    </div>
+    <div class="chart-card" style="margin-bottom:12px;"><div class="chart-ttl">Trend</div><div class="chart-sub">Complaints and estimated losses over time</div><div class="chart-wrap" style="height:175px;"><canvas id="chart-ts"></canvas></div></div>
+    <div class="row3">
+      <div class="chart-card"><div class="chart-ttl">Loss Breakdown</div><div class="chart-sub">Estimated loss by medicine category</div><div class="chart-wrap"><canvas id="chart-loss"></canvas></div></div>
+      <div class="chart-card"><div class="chart-ttl">Supplier Risk</div><div class="chart-sub">Suppliers linked to most complaints</div><div style="overflow:auto;max-height:220px;"><table class="sup-tbl"><thead><tr><th>Supplier</th><th>State</th><th>Fac.</th><th>Cmp.</th><th>Flag</th></tr></thead><tbody id="sup-tbody"><tr><td colspan="5" class="placeholder" style="height:60px;">Loading…</td></tr></tbody></table></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => feather.replace({ 'stroke-width': 1.5 }));
+</script>
+
+<!-- Page switching -->
+<script>
+  const PAGES = ['map','analytics'];
+  function switchPage(id) {
+    PAGES.forEach(p => {
+      document.getElementById(`page-${p}`).classList.toggle('active', p === id);
+      document.getElementById(`tab-${p}`).classList.toggle('active', p === id);
+    });
+    document.getElementById('globe-canvas').classList.toggle('visible', id === 'analytics');
+    if (id === 'analytics' && typeof window.loadAnalytics === 'function') window.loadAnalytics();
+  }
+  document.querySelectorAll('[data-page]').forEach(el =>
+    el.addEventListener('click', e => { e.preventDefault(); switchPage(el.dataset.page); })
+  );
+</script>
+
+<!-- Sidebar sliders -->
+<script>
+  [['buf-hosp','buf-hosp-val',' m'],['buf-clin','buf-clin-val',' m'],['buf-phar','buf-phar-val',' m']].forEach(([sid,did,sfx]) => {
+    const s = document.getElementById(sid), d = document.getElementById(did);
+    const upd = () => d.textContent = s.value + sfx;
+    s.addEventListener('input', upd); upd();
+  });
+  window.getBufferParams = () => ({
+    hospital_buffer_m: +document.getElementById('buf-hosp').value,
+    clinic_buffer_m:   +document.getElementById('buf-clin').value,
+    pharmacy_buffer_m: +document.getElementById('buf-phar').value,
+  });
+  window.updateAutoParams = p => {
+    if (!p?.auto) return;
+    document.getElementById('auto-eps') .textContent = p.eps_m + ' m';
+    document.getElementById('auto-mpts').textContent = p.min_pts;
+    document.getElementById('auto-k')  .textContent = p.k_used;
+    document.getElementById('auto-n')  .textContent = p.N_points;
+  };
+</script>
+
+<!-- Layers panel -->
+<script>
+  const layersBtn   = document.getElementById('layers-btn');
+  const layersPanel = document.getElementById('layers-panel');
+  layersBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    layersBtn.classList.toggle('active');
+    layersPanel.classList.toggle('open');
+  });
+  document.addEventListener('click', e => {
+    if (!layersPanel.contains(e.target) && e.target !== layersBtn) {
+      layersPanel.classList.remove('open'); layersBtn.classList.remove('active');
+    }
+  });
+  document.querySelectorAll('.style-btn').forEach(btn =>
+    btn.addEventListener('click', () => {
+      if (typeof window.setMapStyle === 'function') window.setMapStyle(btn.dataset.style);
+    })
+  );
+</script>
+
+<!-- Legend -->
+<script>
+  const legendBtn   = document.getElementById('legend-btn');
+  const legendPanel = document.getElementById('legend-panel');
+  legendBtn.addEventListener('click', () => {
+    const open = legendPanel.classList.toggle('open');
+    legendBtn.classList.toggle('active', open);
+  });
+</script>
+
+<!-- Three.js Globe -->
+<script>
+try {
+  const canvas=document.getElementById('globe-canvas'),renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(48,innerWidth/innerHeight,.1,500);
+  camera.position.z=5;
+  const sv=new Float32Array(6000*3);for(let i=0;i<sv.length;i++)sv[i]=(Math.random()-.5)*300;
+  const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sv,3));
+  scene.add(new THREE.Points(sg,new THREE.PointsMaterial({color:0xffffff,size:.06,transparent:true,opacity:.45})));
+  const G=new THREE.Group();G.position.x=2.3;scene.add(G);const R=1.9;
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(R,64,64),new THREE.MeshPhongMaterial({color:0x020912,emissive:0x05101e,specular:0x334455,shininess:10})));
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(R+.007,32,32),new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,transparent:true,opacity:.04})));
+  [[0,.22],[30,.10],[-30,.10],[60,.05],[-60,.05]].forEach(([lat,op])=>{const phi=(90-lat)*Math.PI/180,ry=(R+.012)*Math.cos(phi),rr=(R+.012)*Math.sin(phi);const pts=Array.from({length:161},(_,i)=>{const t=(i/160)*Math.PI*2;return new THREE.Vector3(Math.cos(t)*rr,ry,Math.sin(t)*rr)});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:op})));});
+  for(let l=0;l<360;l+=30){const pts=Array.from({length:81},(_,i)=>{const lat=(i/80*180)-90,phi=(90-lat)*Math.PI/180,th=(l+180)*Math.PI/180;return new THREE.Vector3(-(R+.012)*Math.sin(phi)*Math.cos(th),(R+.012)*Math.cos(phi),(R+.012)*Math.sin(phi)*Math.sin(th))});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.04})));}
+  [[3.14,101.68],[1.35,103.82],[13.75,100.52],[51.51,-.12],[40.71,-74.0],[35.68,139.69]].forEach(([la,lo])=>{const phi=(90-la)*Math.PI/180,th=(lo+180)*Math.PI/180;const pos=new THREE.Vector3(-(R+.04)*Math.sin(phi)*Math.cos(th),(R+.04)*Math.cos(phi),(R+.04)*Math.sin(phi)*Math.sin(th));const d=new THREE.Mesh(new THREE.SphereGeometry(.015,8,8),new THREE.MeshBasicMaterial({color:0xffffff}));d.position.copy(pos);G.add(d);});
+  const ap=new THREE.Vector3(2.3,0,0);[[R+.15,.02,0xffffff],[R+.30,.01,0x88aacc]].forEach(([r,op,col])=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,64,64),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:op,side:THREE.BackSide}));m.position.copy(ap);scene.add(m);});
+  scene.add(new THREE.AmbientLight(0x1a2233,2.5));const dl=new THREE.DirectionalLight(0xffffff,.55);dl.position.set(5,3,4);scene.add(dl);
+  (function tick(){requestAnimationFrame(tick);G.rotation.y+=.0016;renderer.render(scene,camera)})();
+  window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+}catch(e){console.warn('Globe:',e)}
+</script>
+
+<script src="js/map.js"></script>
+<script src="js/analytics.js"></script>
+</body>
+</html>

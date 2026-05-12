@@ -1,0 +1,81 @@
+facility_id,name,type,lat,lng,address,city,state,postcode,district,license_no,active
+FAC-EF8B79A0,Hospital Kuala Lumpur,hospital,1.488968,103.756237,"No.96, Jalan Baru 20",Johor Bahru,Johor,80000,Johor Bahru,MOH-171262,True
+FAC-FFDD0B04,Hospital Sultanah Aminah,hospital,5.448987,100.366004,"No.127, Jalan Indah 20",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-141672,True
+FAC-2D52E3F2,Hospital Pulau Pinang,hospital,3.039852,101.495961,"No.162, Jalan Sejahtera 7",Puchong,Selangor,47100,Puchong,MOH-802258,True
+FAC-E691F464,Hospital Raja Permaisuri Bainun,hospital,6.137861,100.366585,"No.154, Jalan Jaya 11",Sungai Petani,Kedah,08000,Sungai Petani,MOH-888387,True
+FAC-F9EE4390,Hospital Sultanah Bahiyah,hospital,3.087795,101.466132,"No.52, Jalan Baru 18",Petaling Jaya,Selangor,47800,Petaling Jaya,MOH-323508,True
+FAC-317EFB40,Hospital Tuanku Ja'afar,hospital,4.576844,101.136436,"No.126, Jalan Damai 10",Taiping,Perak,34000,Taiping,MOH-265409,True
+FAC-952F7C35,Hospital Melaka,hospital,2.149113,102.237934,"No.271, Jalan Utama 18",Jasin,Melaka,77000,Jasin,MOH-413921,True
+FAC-DCD759AF,Hospital Sultanah Fatimah,hospital,3.124576,101.513672,"No.284, Jalan Lama 9",Subang Jaya,Selangor,47500,Subang Jaya,MOH-395442,True
+FAC-D6FFABFD,Pantai Hospital,hospital,5.455331,100.341174,"No.136, Jalan Murni 16",Butterworth,Penang,12000,Butterworth,MOH-363319,True
+FAC-67D3DAD5,Gleneagles Hospital,hospital,3.102222,101.65418,"No.23, Jalan Utama 11",Kuala Lumpur,Kuala Lumpur,50470,Brickfields,MOH-908577,True
+FAC-3BA9B7FF,Prince Court Medical Centre,hospital,1.489949,103.762953,"No.227, Jalan Murni 14",Kulai,Johor,81000,Kulai,MOH-688153,True
+FAC-8CEDD07B,Sunway Medical Centre,hospital,3.162131,101.732125,"No.77, Jalan Murni 2",Kuala Lumpur,Kuala Lumpur,50470,Brickfields,MOH-975136,True
+FAC-7B30A6D5,Columbia Asia Hospital,hospital,6.12312,100.358503,"No.187, Jalan Utama 12",Sungai Petani,Kedah,08000,Sungai Petani,MOH-320281,True
+FAC-AD254158,KPJ Damansara Specialist,hospital,5.446263,100.304276,"No.209, Jalan Indah 5",Georgetown,Penang,10000,Georgetown,MOH-348237,True
+FAC-4692ED35,Subang Jaya Medical Centre,hospital,1.48693,103.747655,"No.171, Jalan Setia 8",Johor Bahru,Johor,81300,Skudai,MOH-379766,True
+FAC-EE00B3AC,Tropicana Medical Centre,hospital,1.52441,103.780679,"No.241, Jalan Maju 7",Kulai,Johor,81000,Kulai,MOH-956253,True
+FAC-7051E6D0,Island Hospital Penang,hospital,2.234937,102.233716,"No.117, Jalan Maju 1",Alor Gajah,Melaka,78000,Alor Gajah,MOH-792094,True
+FAC-E4D0C2D8,Lam Wah Ee Hospital,hospital,5.4584,100.305072,"No.143, Jalan Damai 17",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-519093,True
+FAC-2DDA60B4,Normah Medical Specialist,hospital,6.153699,100.408366,"No.92, Jalan Indah 9",Alor Setar,Kedah,05000,Alor Setar,MOH-140115,True
+FAC-5197A2F9,Fatimah Hospital Ipoh,hospital,3.11333,101.491185,"No.224, Jalan Indah 17",Puchong,Selangor,47100,Puchong,MOH-221263,True
+FAC-4F8C7168,Regency Specialist Hospital,hospital,2.775188,101.93675,"No.1, Jalan Murni 18",Port Dickson,Negeri Sembilan,71000,Port Dickson,MOH-820221,True
+FAC-79C88D3E,Hospital Ampang,hospital,5.43613,100.280976,"No.170, Jalan Indah 11",Butterworth,Penang,12000,Butterworth,MOH-795612,True
+FAC-57DBA9FA,Hospital Serdang,hospital,3.071825,101.474202,"No.168, Jalan Setia 10",Ampang,Selangor,68000,Ampang,MOH-681343,True
+FAC-2E61DAC0,Selayang Hospital,hospital,1.517823,103.695396,"No.90, Jalan Indah 19",Johor Bahru,Johor,81300,Skudai,MOH-415568,True
+FAC-8F026DD1,Hospital Tengku Ampuan Rahimah,hospital,2.753075,101.929871,"No.297, Jalan Indah 11",Seremban,Negeri Sembilan,70000,Seremban,MOH-587575,True
+FAC-45780B86,Klinik Kesihatan Chow Kit,clinic,2.155097,102.232691,"No.87, Jalan Wawasan 3",Alor Gajah,Melaka,78000,Alor Gajah,MOH-397571,True
+FAC-91C5DCFE,Klinik Kesihatan Bangsar,clinic,6.075815,100.388026,"No.159, Jalan Maju 7",Alor Setar,Kedah,05000,Alor Setar,MOH-254511,True
+FAC-1B707C9A,Klinik Kesihatan Kepong,clinic,3.17624,101.688107,"No.38, Jalan Jaya 14",Kuala Lumpur,Kuala Lumpur,50350,Chow Kit,MOH-760356,True
+FAC-76177C6E,Klinik Kesihatan Sungai Buloh,clinic,5.415043,100.302117,"No.3, Jalan Baru 14",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-329471,True
+FAC-C84DEF5D,Klinik Kesihatan Brickfields,clinic,1.491336,103.729364,"No.128, Jalan Baru 15",Kulai,Johor,81000,Kulai,MOH-239816,True
+FAC-DAE4A3CD,Klinik Famili Dr. Ahmad,clinic,2.181746,102.210459,"No.163, Jalan Jaya 20",Jasin,Melaka,77000,Jasin,MOH-954596,True
+FAC-E55C428E,Klinik Dr. Lim & Partners,clinic,2.701644,101.975325,"No.244, Jalan Jaya 9",Rembau,Negeri Sembilan,71300,Rembau,MOH-888295,True
+FAC-2986FE1E,Klinik Mediviron Subang,clinic,5.375265,100.332671,"No.123, Jalan Sejahtera 15",Butterworth,Penang,12000,Butterworth,MOH-181247,True
+FAC-4B3A4B1B,Klinik Primecare Shah Alam,clinic,4.62778,101.085943,"No.277, Jalan Baru 5",Taiping,Perak,34000,Taiping,MOH-258157,True
+FAC-81AA4E4E,Klinik Seri Kembangan,clinic,5.371457,100.313129,"No.33, Jalan Setia 14",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-446954,True
+FAC-0ECCF63E,Klinik 1Malaysia Klang,clinic,2.208411,102.295704,"No.200, Jalan Indah 1",Alor Gajah,Melaka,78000,Alor Gajah,MOH-998348,True
+FAC-4C4DEC32,Klinik Komuniti Johor Bahru,clinic,2.730887,101.970137,"No.200, Jalan Setia 18",Rembau,Negeri Sembilan,71300,Rembau,MOH-883826,True
+FAC-455C9E10,Klinik Dr. Rajan Ipoh,clinic,5.449129,100.335614,"No.15, Jalan Setia 11",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-801364,True
+FAC-A3606986,Klinik Nur Kasih Alor Setar,clinic,2.686024,101.966013,"No.274, Jalan Utama 13",Port Dickson,Negeri Sembilan,71000,Port Dickson,MOH-720644,True
+FAC-0169AE10,Klinik Ikhlas Georgetown,clinic,3.12344,101.674474,"No.237, Jalan Lama 2",Kuala Lumpur,Kuala Lumpur,50470,Brickfields,MOH-372793,True
+FAC-02D9B8A9,Klinik Sri Petaling,clinic,2.759711,101.945473,"No.195, Jalan Sejahtera 14",Nilai,Negeri Sembilan,71800,Nilai,MOH-364525,True
+FAC-F6B0E7E0,Klinik Desa Puchong,clinic,3.078623,101.557706,"No.180, Jalan Maju 3",Sepang,Selangor,43900,Sepang,MOH-919182,True
+FAC-9781E0DC,Klinik Sejahtera Seremban,clinic,3.131486,101.709836,"No.11, Jalan Indah 5",Kuala Lumpur,Kuala Lumpur,50350,Chow Kit,MOH-350132,True
+FAC-241EC4E4,Klinik Rawatan Am Kajang,clinic,1.457194,103.721723,"No.112, Jalan Jaya 9",Batu Pahat,Johor,83000,Batu Pahat,MOH-904150,True
+FAC-F1874C81,Klinik Medikal Melaka,clinic,6.085642,100.326754,"No.59, Jalan Lama 10",Sungai Petani,Kedah,08000,Sungai Petani,MOH-213349,True
+FAC-ADA334AB,Klinik Dr. Husna & Rakan,clinic,3.115386,101.641123,"No.193, Jalan Setia 7",Kuala Lumpur,Kuala Lumpur,53300,Wangsa Maju,MOH-179688,True
+FAC-C9E509FD,Klinik Pergigian Sentul,clinic,5.386034,100.31913,"No.62, Jalan Indah 2",Georgetown,Penang,10000,Georgetown,MOH-464069,True
+FAC-0CCF18D7,Klinik Wanita Ampang,clinic,2.747962,101.977578,"No.7, Jalan Setia 16",Nilai,Negeri Sembilan,71800,Nilai,MOH-210665,True
+FAC-3CDFE1CB,Klinik Pakar Titiwangsa,clinic,2.69267,101.905695,"No.79, Jalan Setia 6",Nilai,Negeri Sembilan,71800,Nilai,MOH-869440,True
+FAC-E0554B3F,Klinik Pratama Wangsa Maju,clinic,4.560468,101.10428,"No.248, Jalan Jaya 14",Kampar,Perak,31400,Kampar,MOH-965845,True
+FAC-D932D6B4,Guardian Pharmacy KLCC,pharmacy,4.557956,101.119486,"No.45, Jalan Sejahtera 15",Teluk Intan,Perak,36000,Teluk Intan,MOH-355709,True
+FAC-2C0C96B7,Watson's Pharmacy Pavilion,pharmacy,2.168335,102.224504,"No.15, Jalan Jaya 11",Jasin,Melaka,77000,Jasin,MOH-290672,True
+FAC-7CD58BBC,Caring Pharmacy Midvalley,pharmacy,2.211328,102.233284,"No.144, Jalan Indah 9",Melaka,Melaka,75000,Melaka Tengah,MOH-682789,True
+FAC-B81A57FB,Alpro Pharmacy Subang,pharmacy,3.162501,101.726291,"No.251, Jalan Murni 8",Kuala Lumpur,Kuala Lumpur,52100,Kepong,MOH-824156,True
+FAC-61A87A39,Big Pharmacy Shah Alam,pharmacy,2.154448,102.241507,"No.9, Jalan Baru 10",Jasin,Melaka,77000,Jasin,MOH-332360,True
+FAC-B2831513,Farmasi Rakyat Johor Bahru,pharmacy,2.768378,101.923843,"No.243, Jalan Murni 17",Port Dickson,Negeri Sembilan,71000,Port Dickson,MOH-460455,True
+FAC-177487A7,Farmasi Generik Butterworth,pharmacy,2.758912,101.916364,"No.157, Jalan Sejahtera 8",Nilai,Negeri Sembilan,71800,Nilai,MOH-226516,True
+FAC-DB6FBCD8,Farmasi Suria Ipoh,pharmacy,5.441106,100.35772,"No.95, Jalan Maju 7",Butterworth,Penang,12000,Butterworth,MOH-874483,True
+FAC-5FB1305A,Big Pharmacy Seremban,pharmacy,2.136862,102.241606,"No.269, Jalan Indah 10",Alor Gajah,Melaka,78000,Alor Gajah,MOH-205409,True
+FAC-0BE5BE94,Guardian Penang Gurney,pharmacy,5.436769,100.332029,"No.8, Jalan Harmoni 18",Butterworth,Penang,12000,Butterworth,MOH-232731,True
+FAC-3ECA68E5,Watson's Melaka Dataran,pharmacy,4.591034,101.129786,"No.65, Jalan Wawasan 16",Ipoh,Perak,30000,Ipoh,MOH-207570,True
+FAC-8B877AB2,Farmasi Medikal Wangsa Maju,pharmacy,3.145856,101.651687,"No.95, Jalan Utama 9",Kuala Lumpur,Kuala Lumpur,53300,Wangsa Maju,MOH-600935,True
+FAC-5E4DE973,Caring Pharmacy Ampang,pharmacy,3.082395,101.506359,"No.28, Jalan Lama 5",Shah Alam,Selangor,40000,Shah Alam,MOH-950544,True
+FAC-817F72F8,Alpro Kepong,pharmacy,4.596789,101.10869,"No.214, Jalan Indah 20",Ipoh,Perak,30000,Ipoh,MOH-929151,True
+FAC-0A5D8A94,Farmasi Sentosa Kajang,pharmacy,5.44928,100.291158,"No.153, Jalan Indah 14",Perai,Penang,13600,Seberang Perai,MOH-420214,True
+FAC-1C4821A3,Farmasi Daya Puchong,pharmacy,3.131032,101.710216,"No.109, Jalan Sejahtera 3",Kuala Lumpur,Kuala Lumpur,50470,Brickfields,MOH-264686,True
+FAC-78EEB50C,Big Pharmacy Alor Setar,pharmacy,5.407237,100.308545,"No.210, Jalan Jaya 20",Bayan Lepas,Penang,11900,Bayan Lepas,MOH-592738,True
+FAC-28F771B5,Guardian Pharmacy Sungai Petani,pharmacy,4.642642,101.095378,"No.233, Jalan Baru 8",Ipoh,Perak,30000,Ipoh,MOH-377405,True
+FAC-70B7C22D,Farmasi Amanah Sepang,pharmacy,5.431022,100.348049,"No.77, Jalan Sejahtera 5",Bukit Mertajam,Penang,14000,Bukit Mertajam,MOH-174878,True
+FAC-44382B09,Farmasi Prima Brickfields,pharmacy,3.09879,101.697935,"No.292, Jalan Sejahtera 15",Kuala Lumpur,Kuala Lumpur,59000,Bangsar,MOH-230394,True
+FAC-6B4B764D,Farmasi Sihat Bangsar,pharmacy,2.221932,102.238668,"No.140, Jalan Murni 18",Jasin,Melaka,77000,Jasin,MOH-617781,True
+FAC-19FADAF6,Watson's Pharmacy Bukit Mertajam,pharmacy,2.160147,102.208491,"No.166, Jalan Indah 9",Melaka,Melaka,75000,Melaka Tengah,MOH-127121,True
+FAC-17D3633A,Guardian Pharmacy Teluk Intan,pharmacy,3.062085,101.566313,"No.295, Jalan Indah 1",Klang,Selangor,41000,Klang,MOH-901909,True
+FAC-50DE1298,Farmasi Jaya Taiping,pharmacy,4.609257,101.135614,"No.241, Jalan Murni 15",Kampar,Perak,31400,Kampar,MOH-391668,True
+FAC-CB38177C,Farmasi Mulia Muar,pharmacy,1.511822,103.696529,"No.47, Jalan Jaya 12",Muar,Johor,84000,Muar,MOH-528184,True
+FAC-AFA22CA1,Farmasi Cahaya Kulai,pharmacy,6.074511,100.344419,"No.169, Jalan Setia 16",Kulim,Kedah,09000,Kulim,MOH-402218,True
+FAC-8AE744B9,Farmasi Bestari Langkawi,pharmacy,2.738189,101.908998,"No.166, Jalan Baru 13",Seremban,Negeri Sembilan,70000,Seremban,MOH-639593,True
+FAC-A3307975,Farmasi Aman Nilai,pharmacy,3.151138,101.666881,"No.186, Jalan Indah 16",Kuala Lumpur,Kuala Lumpur,58000,Seputeh,MOH-755788,True
+FAC-0218137B,Farmasi Harapan Port Dickson,pharmacy,2.227966,102.261624,"No.148, Jalan Jaya 16",Melaka,Melaka,75000,Melaka Tengah,MOH-227324,True
+FAC-86A02109,Klinik Farmasi Komuniti Klang,pharmacy,3.109825,101.679367,"No.8, Jalan Murni 14",Kuala Lumpur,Kuala Lumpur,52100,Kepong,MOH-197736,True

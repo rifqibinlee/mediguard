@@ -1,0 +1,701 @@
+complaint_id,date,lat,lng,medicine_id,purchased_from_facility_id,description,reported_price,standard_price,estimated_loss,verified,district,city,state,postcode
+CMP-DE5E3747,2024-05-07,3.079684,101.532773,MED-B85A6ED2,,Blister pack labelling inconsistent with MOH-registered product.,3.76,5.5,7.24,True,Kulim,Kulim,Kedah,09000
+CMP-DF07088A,2023-01-08,3.041216,101.443432,MED-C029044A,,Expiry date appears tampered — original date scratched off.,3.5,9.0,14.5,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-BD3EB468,2024-05-26,2.727081,101.945222,MED-28EB3902,,Online purchase via Telegram; seller account now deleted.,16.76,55.0,93.24,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-A6814F5C,2023-04-19,3.080159,101.526872,MED-C029044A,,Multiple neighbours bought same batch; all reported ineffectiveness.,2.74,9.0,15.26,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-2BCAD6E1,2023-12-10,4.588639,101.130982,MED-94DCD221,FAC-3ECA68E5,Medicine purchased from street vendor near the market.,3.55,6.0,2.45,True,Ipoh,Ipoh,Perak,30000
+CMP-B1FD4A61,2024-03-31,2.735613,101.909542,MED-B036DD9C,FAC-8AE744B9,Multiple neighbours bought same batch; all reported ineffectiveness.,63.8,95.0,31.2,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-28C2CA79,2022-09-04,1.456602,103.760651,MED-B85A6ED2,,Price was 60% below standard — suspect adulterated product.,2.51,5.5,8.49,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-429A2CB9,2023-11-13,3.041393,101.444292,MED-94DCD221,,Price was 60% below standard — suspect adulterated product.,3.6,6.0,8.4,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-DEE89398,2023-05-17,3.160942,101.694136,MED-0A195B42,,Packaging seal already broken upon purchase.,5.09,14.0,22.91,True,Kampar,Kampar,Perak,31400
+CMP-275289ED,2023-09-10,2.724944,101.944344,MED-94DCD221,,Outer box appeared genuine but inner foil pack had no hologram.,4.25,6.0,7.75,True,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-FB2410F5,2024-07-13,3.15868,101.697693,MED-B85A6ED2,,Medicine purchased from street vendor near the market.,2.63,5.5,8.37,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-4379186B,2022-08-21,4.588057,101.079434,MED-FB58034C,,Outer box appeared genuine but inner foil pack had no hologram.,7.97,22.0,36.03,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-68D9148F,2024-05-27,4.590493,101.132039,MED-FB58034C,FAC-3ECA68E5,Unusual smell and texture; patient developed a rash after use.,17.64,22.0,4.36,False,Ipoh,Ipoh,Perak,30000
+CMP-194ADA10,2022-05-12,3.165628,101.700619,MED-C029044A,,Outer box appeared genuine but inner foil pack had no hologram.,6.12,9.0,11.88,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-0295A5E8,2023-04-01,3.086842,101.466468,MED-D0A5410E,FAC-F9EE4390,Packaging seal already broken upon purchase.,2.2,4.0,1.8,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-3B67A419,2022-02-10,2.212138,102.235855,MED-48A0F963,FAC-7CD58BBC,Tablet colour differs from usual; patient experienced no relief.,7.04,12.0,4.96,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-77A6FAB5,2022-03-17,5.645805,100.486483,MED-94DCD221,,No improvement after full course; lab test confirmed inactive ingredient.,3.59,6.0,8.41,True,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-62493BBD,2024-08-20,3.041343,101.447437,MED-80150E17,,Packaging seal already broken upon purchase.,7.56,18.0,28.44,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-7119682E,2024-04-29,3.117138,101.642276,MED-94DCD221,FAC-ADA334AB,Multiple neighbours bought same batch; all reported ineffectiveness.,6.17,6.0,0.17,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-5F6F19C1,2024-02-21,2.728729,101.970791,MED-87F56986,FAC-4C4DEC32,Expiry date appears tampered — original date scratched off.,8.25,8.0,0.25,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-E883AC61,2023-10-09,2.195475,102.246024,MED-80150E17,,Barcode does not scan; product unverifiable in MOH system.,12.16,18.0,23.84,False,Kampar,Kampar,Perak,31400
+CMP-F6EAD819,2024-05-15,3.162265,101.694627,MED-D0A5410E,,Outer box appeared genuine but inner foil pack had no hologram.,2.98,4.0,5.02,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-059AF486,2022-06-29,3.163675,101.696799,MED-80150E17,,Tablet colour differs from usual; patient experienced no relief.,10.8,18.0,25.2,True,Teluk Intan,Teluk Intan,Perak,36000
+CMP-B41C8961,2022-01-16,2.750873,101.928787,MED-C029044A,FAC-8F026DD1,Barcode does not scan; product unverifiable in MOH system.,8.71,9.0,0.29,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-41175B2F,2023-12-01,2.193865,102.248923,MED-FB58034C,,No improvement after full course; lab test confirmed inactive ingredient.,16.27,22.0,27.73,False,Georgetown,Georgetown,Penang,10000
+CMP-FCAAD80F,2023-07-31,3.100273,101.699819,MED-87F56986,FAC-44382B09,Multiple neighbours bought same batch; all reported ineffectiveness.,7.88,8.0,0.12,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-0F9F67C0,2024-08-28,2.196563,102.246406,MED-D0A5410E,,Packaging seal already broken upon purchase.,2.87,4.0,5.13,False,Kajang,Kajang,Selangor,43000
+CMP-841B2735,2022-02-01,5.422443,100.340369,MED-0A195B42,,Patient hospitalised after consumption; batch number not in national registry.,5.14,14.0,22.86,False,Ipoh,Ipoh,Perak,30000
+CMP-04D8B543,2022-11-01,3.04526,101.446167,MED-0A195B42,,Outer box appeared genuine but inner foil pack had no hologram.,9.1,14.0,18.9,False,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-3C2A0E65,2023-01-02,4.588769,101.081573,MED-87F56986,,Medicine purchased from street vendor near the market.,3.89,8.0,12.11,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-9183327F,2022-07-19,2.72623,101.947286,MED-A601320E,,Medicine purchased from street vendor near the market.,10.28,18.5,26.72,True,Sepang,Sepang,Selangor,43900
+CMP-2D974C40,2023-09-08,5.426759,100.338477,MED-B71DF9FF,,Tablet colour differs from usual; patient experienced no relief.,4.81,6.5,8.19,False,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-7C3B7E33,2022-12-30,4.593206,101.130545,MED-B71DF9FF,FAC-3ECA68E5,Outer box appeared genuine but inner foil pack had no hologram.,4.78,6.5,1.72,True,Ipoh,Ipoh,Perak,30000
+CMP-30FFC9A6,2022-04-28,2.7262,101.945902,MED-B85A6ED2,,No improvement after full course; lab test confirmed inactive ingredient.,2.37,5.5,8.63,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-BDC0C3AE,2024-09-06,2.194631,102.248196,MED-B85A6ED2,,Outer box appeared genuine but inner foil pack had no hologram.,2.41,5.5,8.59,False,Ampang,Ampang,Selangor,68000
+CMP-BE9BDB0E,2024-05-20,5.64554,100.489722,MED-87F56986,,Seller refused to provide receipt; medicine stored without refrigeration.,2.45,8.0,13.55,False,Georgetown,Georgetown,Penang,10000
+CMP-E361F4FC,2024-08-19,3.048304,101.4443,MED-48A0F963,,No improvement after full course; lab test confirmed inactive ingredient.,3.99,12.0,20.01,True,Kulai,Kulai,Johor,81000
+CMP-C7C97446,2024-12-07,2.724134,101.946659,MED-C029044A,,Multiple neighbours bought same batch; all reported ineffectiveness.,5.5,9.0,12.5,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-6A5E8C80,2022-12-29,3.078109,101.528995,MED-87F56986,,Price was 60% below standard — suspect adulterated product.,5.38,8.0,10.62,False,Langkawi,Kuah,Kedah,07000
+CMP-E2A1A98F,2022-11-12,3.046717,101.449084,MED-87F56986,,Patient hospitalised after consumption; batch number not in national registry.,3.08,8.0,12.92,True,Jasin,Jasin,Melaka,77000
+CMP-85C51B5E,2023-05-30,2.728714,101.970668,MED-28EB3902,FAC-4C4DEC32,No improvement after full course; lab test confirmed inactive ingredient.,29.87,55.0,25.13,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-6972BEC8,2024-06-21,2.726047,101.943845,MED-80150E17,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,7.49,18.0,28.51,False,Taiping,Taiping,Perak,34000
+CMP-7F7C4DB7,2023-07-15,5.448446,100.290385,MED-28EB3902,FAC-0A5D8A94,No improvement after full course; lab test confirmed inactive ingredient.,27.71,55.0,27.29,False,Seberang Perai,Perai,Penang,13600
+CMP-8E8EF873,2023-07-04,3.06113,101.565735,MED-C029044A,FAC-17D3633A,Online purchase via Telegram; seller account now deleted.,10.94,9.0,1.94,False,Klang,Klang,Selangor,41000
+CMP-49CF2C6B,2024-12-23,5.426931,100.339036,MED-28EB3902,,Packaging seal already broken upon purchase.,39.13,55.0,70.87,False,Johor Bahru,Johor Bahru,Johor,80000
+CMP-64376E4C,2023-10-07,4.588292,101.08112,MED-87F56986,,Seller refused to provide receipt; medicine stored without refrigeration.,3.07,8.0,12.93,True,Ampang,Ampang,Selangor,68000
+CMP-811331D9,2022-04-16,5.646122,100.485988,MED-1711A01F,,Expiry date appears tampered — original date scratched off.,0.93,2.5,4.07,True,Skudai,Johor Bahru,Johor,81300
+CMP-A99DB685,2023-10-07,5.645899,100.486397,MED-C029044A,,Tablet colour differs from usual; patient experienced no relief.,2.73,9.0,15.27,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-48DCA3BA,2022-10-21,3.077998,101.528933,MED-9EB4B8D6,,Expiry date appears tampered — original date scratched off.,4.17,7.0,9.83,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-D1A13B96,2022-03-25,5.647827,100.486582,MED-80150E17,,Seller refused to provide receipt; medicine stored without refrigeration.,12.07,18.0,23.93,True,Kampar,Kampar,Perak,31400
+CMP-065C34EE,2024-09-01,2.727024,101.944215,MED-A2FD86E4,,Barcode does not scan; product unverifiable in MOH system.,7.44,22.0,36.56,False,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-DFD21CDB,2024-10-08,2.22809,102.261555,MED-B85A6ED2,FAC-0218137B,Packaging seal already broken upon purchase.,6.74,5.5,1.24,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-26C38F68,2023-05-19,4.589597,101.081471,MED-B85A6ED2,,Outer box appeared genuine but inner foil pack had no hologram.,3.22,5.5,7.78,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-FD966067,2023-03-28,1.461421,103.757706,MED-87F56986,,Unusual smell and texture; patient developed a rash after use.,3.3,8.0,12.7,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-3DDA5271,2023-10-14,4.590103,101.077658,MED-87F56986,,Medicine purchased from street vendor near the market.,5.82,8.0,10.18,False,Ipoh,Ipoh,Perak,30000
+CMP-CDDD82DD,2024-01-23,1.459354,103.758168,MED-B71DF9FF,,Packaging seal already broken upon purchase.,2.5,6.5,10.5,True,Sepang,Sepang,Selangor,43900
+CMP-310F7FC2,2024-09-15,3.059437,101.565918,MED-87F56986,FAC-17D3633A,Multiple neighbours bought same batch; all reported ineffectiveness.,4.66,8.0,3.34,False,Klang,Klang,Selangor,41000
+CMP-E3E0EA0E,2024-08-23,5.425176,100.341273,MED-1711A01F,,Tablet colour differs from usual; patient experienced no relief.,1.58,2.5,3.42,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-D2375C05,2023-09-23,3.043052,101.445716,MED-FB58034C,,Unusual smell and texture; patient developed a rash after use.,13.43,22.0,30.57,False,Ipoh,Ipoh,Perak,30000
+CMP-FBD0054F,2023-04-22,1.461055,103.756816,MED-B85A6ED2,,Online purchase via Telegram; seller account now deleted.,1.87,5.5,9.13,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-5F71EEAF,2022-10-15,3.159001,101.693958,MED-B71DF9FF,,No improvement after full course; lab test confirmed inactive ingredient.,4.57,6.5,8.43,True,Puchong,Puchong,Selangor,47100
+CMP-FC3C775A,2023-09-30,5.458856,100.304622,MED-0A195B42,FAC-E4D0C2D8,Seller refused to provide receipt; medicine stored without refrigeration.,8.78,14.0,5.22,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-61EF7D5D,2023-01-30,3.143935,101.65206,MED-59EB08A3,FAC-8B877AB2,Online purchase via Telegram; seller account now deleted.,6.28,12.0,5.72,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-5BD15395,2022-04-19,3.0774,101.528543,MED-A2FD86E4,,Online purchase via Telegram; seller account now deleted.,14.5,22.0,29.5,True,Kampar,Kampar,Perak,31400
+CMP-FA63F974,2024-08-05,1.4575,103.761266,MED-B036DD9C,,Patient hospitalised after consumption; batch number not in national registry.,50.98,95.0,139.02,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-DFA9C50D,2022-10-30,2.726571,101.945514,MED-59EB08A3,,Price was 60% below standard — suspect adulterated product.,4.21,12.0,19.79,False,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-C1299A9E,2023-10-09,5.645586,100.490083,MED-B036DD9C,,Barcode does not scan; product unverifiable in MOH system.,59.04,95.0,130.96,True,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-D518DD7A,2024-11-11,3.048714,101.444979,MED-99B74A7E,,Unusual smell and texture; patient developed a rash after use.,16.98,25.0,33.02,True,Seberang Perai,Perai,Penang,13600
+CMP-FA054882,2024-02-07,3.165525,101.698302,MED-B036DD9C,,Medicine purchased from street vendor near the market.,55.0,95.0,135.0,True,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-1EEFCF74,2024-06-26,2.193131,102.248841,MED-94DCD221,,No improvement after full course; lab test confirmed inactive ingredient.,4.43,6.0,7.57,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-4F361DDD,2024-02-28,3.159775,101.697325,MED-99B74A7E,,Online purchase via Telegram; seller account now deleted.,14.55,25.0,35.45,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-C45F0DB2,2022-12-15,2.195545,102.249685,MED-28EB3902,,Patient hospitalised after consumption; batch number not in national registry.,22.94,55.0,87.06,True,Kajang,Kajang,Selangor,43000
+CMP-76FB1EA2,2023-03-20,1.461475,103.762782,MED-0A195B42,,Seller refused to provide receipt; medicine stored without refrigeration.,5.17,14.0,22.83,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-400C6DB9,2023-03-18,5.645715,100.488541,MED-48A0F963,,Price was 60% below standard — suspect adulterated product.,5.66,12.0,18.34,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-8C81C966,2023-09-09,4.591681,101.132309,MED-94DCD221,FAC-3ECA68E5,Medicine purchased from street vendor near the market.,6.71,6.0,0.71,False,Ipoh,Ipoh,Perak,30000
+CMP-389881E4,2023-10-09,1.45894,103.761515,MED-0A195B42,,Seller refused to provide receipt; medicine stored without refrigeration.,7.46,14.0,20.54,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-F99ECCA9,2022-02-13,5.64761,100.486167,MED-B036DD9C,,Patient hospitalised after consumption; batch number not in national registry.,50.02,95.0,139.98,False,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-B50F5312,2023-06-28,3.041657,101.442069,MED-59EB08A3,,Tablet colour differs from usual; patient experienced no relief.,8.14,12.0,15.86,True,Butterworth,Butterworth,Penang,12000
+CMP-001AC6B3,2023-05-28,2.752284,101.93216,MED-87F56986,FAC-8F026DD1,Seller refused to provide receipt; medicine stored without refrigeration.,9.61,8.0,1.61,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-8CBFF65C,2024-10-12,5.426509,100.3377,MED-B85A6ED2,,Multiple neighbours bought same batch; all reported ineffectiveness.,1.96,5.5,9.04,True,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-6B7B4BBA,2024-08-28,3.04816,101.447689,MED-A601320E,,Blister pack labelling inconsistent with MOH-registered product.,13.62,18.5,23.38,True,Kepong,Kuala Lumpur,Kuala Lumpur,52100
+CMP-FE148636,2023-08-11,3.045932,101.443486,MED-F1BD0EC9,,Medicine purchased from street vendor near the market.,2.55,8.5,14.45,False,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-C2789C84,2024-08-29,3.147352,101.650238,MED-FB58034C,FAC-8B877AB2,Patient hospitalised after consumption; batch number not in national registry.,27.91,22.0,5.91,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-2F736758,2024-04-27,1.489128,103.729395,MED-28EB3902,FAC-C84DEF5D,Multiple neighbours bought same batch; all reported ineffectiveness.,56.9,55.0,1.9,False,Kulai,Kulai,Johor,81000
+CMP-1F3EA741,2024-09-19,5.459549,100.305544,MED-0A195B42,FAC-E4D0C2D8,Multiple neighbours bought same batch; all reported ineffectiveness.,11.56,14.0,2.44,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-E5355563,2022-04-05,3.165664,101.69946,MED-99B74A7E,,Multiple neighbours bought same batch; all reported ineffectiveness.,11.08,25.0,38.92,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-9C801EBA,2022-10-14,2.751175,101.93139,MED-C029044A,FAC-8F026DD1,Seller refused to provide receipt; medicine stored without refrigeration.,9.26,9.0,0.26,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-148AABA6,2022-05-12,2.738747,101.909864,MED-B85A6ED2,FAC-8AE744B9,Unusual smell and texture; patient developed a rash after use.,4.67,5.5,0.83,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-9A9CB89D,2022-09-27,5.645388,100.490054,MED-0A195B42,,Packaging seal already broken upon purchase.,5.16,14.0,22.84,True,Georgetown,Georgetown,Penang,10000
+CMP-84C2D81D,2024-03-07,3.163156,101.693397,MED-9EB4B8D6,,Outer box appeared genuine but inner foil pack had no hologram.,4.2,7.0,9.8,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-F049630C,2022-09-17,3.161706,101.702853,MED-28EB3902,,Barcode does not scan; product unverifiable in MOH system.,17.18,55.0,92.82,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-4DB4DBCC,2022-06-14,2.195406,102.246695,MED-59EB08A3,,Expiry date appears tampered — original date scratched off.,4.62,12.0,19.38,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-CDBAE7B2,2022-03-17,3.159118,101.698877,MED-48A0F963,,No improvement after full course; lab test confirmed inactive ingredient.,6.62,12.0,17.38,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-9CBE7CC6,2022-08-30,2.229217,102.259388,MED-9EB4B8D6,FAC-0218137B,Unusual smell and texture; patient developed a rash after use.,7.53,7.0,0.53,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-528C9740,2024-01-05,2.770107,101.925381,MED-48A0F963,FAC-B2831513,Multiple neighbours bought same batch; all reported ineffectiveness.,10.44,12.0,1.56,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-7A7CF0DF,2023-06-04,3.146334,101.650945,MED-A2FD86E4,FAC-8B877AB2,Unusual smell and texture; patient developed a rash after use.,22.47,22.0,0.47,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-27373A4F,2023-01-13,3.159974,101.695377,MED-BFB0E7CA,,Unusual smell and texture; patient developed a rash after use.,19.84,30.0,40.16,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-33F67EA2,2022-06-29,5.646095,100.490473,MED-B036DD9C,,Seller refused to provide receipt; medicine stored without refrigeration.,34.99,95.0,155.01,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-1C018DDB,2023-12-31,2.22322,102.238543,MED-B71DF9FF,FAC-6B4B764D,Packaging seal already broken upon purchase.,4.55,6.5,1.95,False,Jasin,Jasin,Melaka,77000
+CMP-DC551392,2024-07-12,3.081131,101.527993,MED-1711A01F,,Online purchase via Telegram; seller account now deleted.,0.78,2.5,4.22,True,Taiping,Taiping,Perak,34000
+CMP-AA13F1A4,2024-08-14,1.459079,103.76081,MED-C029044A,,Online purchase via Telegram; seller account now deleted.,6.48,9.0,11.52,True,Kajang,Kajang,Selangor,43000
+CMP-3BE26D11,2022-04-09,6.086208,100.328001,MED-F1BD0EC9,FAC-F1874C81,Expiry date appears tampered — original date scratched off.,9.15,8.5,0.65,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-9BFBC3AF,2024-12-23,3.161866,101.699073,MED-48A0F963,,Expiry date appears tampered — original date scratched off.,7.56,12.0,16.44,False,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-BD4A99E1,2022-11-23,2.692956,101.904105,MED-B71DF9FF,FAC-3CDFE1CB,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,8.45,6.5,1.95,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-7157E085,2022-02-24,4.590638,101.080566,MED-80150E17,,Packaging seal already broken upon purchase.,12.13,18.0,23.87,True,Jasin,Jasin,Melaka,77000
+CMP-34CF0DD8,2022-07-17,2.137935,102.242256,MED-0A195B42,FAC-5FB1305A,Medicine purchased from street vendor near the market.,12.34,14.0,1.66,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-E0B4AFE5,2023-04-23,3.080928,101.528626,MED-9EB4B8D6,,Online purchase via Telegram; seller account now deleted.,3.54,7.0,10.46,True,Kulai,Kulai,Johor,81000
+CMP-EB9FDCE7,2024-05-17,1.457903,103.76145,MED-1711A01F,,Online purchase via Telegram; seller account now deleted.,1.17,2.5,3.83,False,Skudai,Johor Bahru,Johor,81300
+CMP-4678459B,2024-06-12,2.195771,102.246656,MED-48A0F963,,Tablet colour differs from usual; patient experienced no relief.,6.96,12.0,17.04,True,Langkawi,Kuah,Kedah,07000
+CMP-205CD94C,2023-09-09,2.196755,102.24846,MED-B036DD9C,,Multiple neighbours bought same batch; all reported ineffectiveness.,47.13,95.0,142.87,False,Georgetown,Georgetown,Penang,10000
+CMP-8263CEB9,2023-06-06,3.164205,101.700748,MED-94DCD221,,Patient hospitalised after consumption; batch number not in national registry.,3.05,6.0,8.95,True,Teluk Intan,Teluk Intan,Perak,36000
+CMP-9624836F,2024-10-17,2.693285,101.903355,MED-BFB0E7CA,FAC-3CDFE1CB,Medicine purchased from street vendor near the market.,17.11,30.0,12.89,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-9D6D758B,2024-06-03,3.046203,101.44866,MED-87F56986,,Unusual smell and texture; patient developed a rash after use.,5.9,8.0,10.1,False,Klang,Klang,Selangor,41000
+CMP-8B2DAB82,2023-02-03,2.746423,101.976211,MED-B036DD9C,FAC-0CCF18D7,Barcode does not scan; product unverifiable in MOH system.,83.39,95.0,11.61,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-E001BDF3,2024-01-08,2.194829,102.246178,MED-F1BD0EC9,,Price was 60% below standard — suspect adulterated product.,6.32,8.5,10.68,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-F32D0E41,2022-03-13,3.163756,101.697219,MED-0A195B42,,Outer box appeared genuine but inner foil pack had no hologram.,6.53,14.0,21.47,True,Seberang Perai,Perai,Penang,13600
+CMP-5063FED0,2022-07-19,3.076798,101.529219,MED-94DCD221,,Price was 60% below standard — suspect adulterated product.,3.4,6.0,8.6,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-2CC24D5F,2024-04-21,3.114235,101.639668,MED-B85A6ED2,FAC-ADA334AB,Patient hospitalised after consumption; batch number not in national registry.,3.5,5.5,2.0,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-17F3E321,2022-08-20,3.076715,101.530817,MED-A601320E,,Blister pack labelling inconsistent with MOH-registered product.,9.61,18.5,27.39,False,Sepang,Sepang,Selangor,43900
+CMP-5B31AD20,2023-11-26,2.723502,101.943814,MED-A601320E,,Tablet colour differs from usual; patient experienced no relief.,13.6,18.5,23.4,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-A264D5C5,2023-10-29,3.113775,101.491427,MED-B71DF9FF,FAC-5197A2F9,Price was 60% below standard — suspect adulterated product.,7.72,6.5,1.22,True,Puchong,Puchong,Selangor,47100
+CMP-2E7191CE,2022-10-22,5.457587,100.3034,MED-94DCD221,FAC-E4D0C2D8,Patient hospitalised after consumption; batch number not in national registry.,4.32,6.0,1.68,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-4551F025,2023-01-19,3.043417,101.442406,MED-A601320E,,No improvement after full course; lab test confirmed inactive ingredient.,10.74,18.5,26.26,True,Teluk Intan,Teluk Intan,Perak,36000
+CMP-21EE9CDC,2023-07-31,5.445396,100.301825,MED-B036DD9C,FAC-AD254158,Unusual smell and texture; patient developed a rash after use.,67.66,95.0,27.34,True,Georgetown,Georgetown,Penang,10000
+CMP-6044E2CE,2022-08-02,3.159721,101.696229,MED-B71DF9FF,,Seller refused to provide receipt; medicine stored without refrigeration.,2.69,6.5,10.31,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-EA2D01E4,2024-08-13,4.59254,101.131199,MED-28EB3902,FAC-3ECA68E5,Seller refused to provide receipt; medicine stored without refrigeration.,27.75,55.0,27.25,False,Ipoh,Ipoh,Perak,30000
+CMP-3080BC39,2022-07-24,1.45747,103.759112,MED-A601320E,,Multiple neighbours bought same batch; all reported ineffectiveness.,7.58,18.5,29.42,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-4604F850,2022-06-23,1.462357,103.758259,MED-B036DD9C,,Online purchase via Telegram; seller account now deleted.,38.53,95.0,151.47,False,Kampar,Kampar,Perak,31400
+CMP-AFF8AB0C,2022-07-28,3.046661,101.446291,MED-FB58034C,,Outer box appeared genuine but inner foil pack had no hologram.,13.88,22.0,30.12,False,Titiwangsa,Kuala Lumpur,Kuala Lumpur,53200
+CMP-25C95B38,2022-02-23,3.114808,101.493343,MED-99B74A7E,FAC-5197A2F9,Multiple neighbours bought same batch; all reported ineffectiveness.,23.47,25.0,1.53,True,Puchong,Puchong,Selangor,47100
+CMP-5B73B8D3,2022-12-18,1.460326,103.757959,MED-A601320E,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,10.87,18.5,26.13,False,Ipoh,Ipoh,Perak,30000
+CMP-864E2552,2022-03-11,3.161695,101.69487,MED-B71DF9FF,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,4.79,6.5,8.21,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-0719BACA,2022-11-30,3.040909,101.443258,MED-94DCD221,,Patient hospitalised after consumption; batch number not in national registry.,2.81,6.0,9.19,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-831FFE8A,2024-03-19,4.587873,101.078844,MED-80150E17,,Outer box appeared genuine but inner foil pack had no hologram.,5.44,18.0,30.56,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-A2B3E8F7,2023-09-28,3.159164,101.698532,MED-1711A01F,,Online purchase via Telegram; seller account now deleted.,0.89,2.5,4.11,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-E675A007,2023-05-08,2.752429,101.931955,MED-59EB08A3,FAC-8F026DD1,Online purchase via Telegram; seller account now deleted.,7.44,12.0,4.56,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-CE931B81,2022-12-26,1.461714,103.762972,MED-C029044A,,Unusual smell and texture; patient developed a rash after use.,5.11,9.0,12.89,True,Muar,Muar,Johor,84000
+CMP-C845AB99,2024-08-30,1.490517,103.727025,MED-80150E17,FAC-C84DEF5D,Patient hospitalised after consumption; batch number not in national registry.,15.03,18.0,2.97,False,Kulai,Kulai,Johor,81000
+CMP-C0AD880D,2023-07-30,2.69301,101.907756,MED-B036DD9C,FAC-3CDFE1CB,Tablet colour differs from usual; patient experienced no relief.,115.58,95.0,20.58,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-92898148,2022-11-03,3.077184,101.532032,MED-87F56986,,Blister pack labelling inconsistent with MOH-registered product.,2.59,8.0,13.41,False,Titiwangsa,Kuala Lumpur,Kuala Lumpur,53200
+CMP-21BFFAD5,2022-08-06,5.646271,100.487122,MED-48A0F963,,Online purchase via Telegram; seller account now deleted.,4.19,12.0,19.81,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-A8D69940,2022-02-20,3.130917,101.711416,MED-BFB0E7CA,FAC-9781E0DC,Online purchase via Telegram; seller account now deleted.,32.38,30.0,2.38,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-67F5BBB8,2022-07-02,3.161006,101.701187,MED-87F56986,,Tablet colour differs from usual; patient experienced no relief.,3.32,8.0,12.68,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-EEE42961,2023-02-12,5.422098,100.339249,MED-48A0F963,,Barcode does not scan; product unverifiable in MOH system.,8.28,12.0,15.72,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-306DF8B6,2022-06-07,2.194118,102.246523,MED-F1BD0EC9,,No improvement after full course; lab test confirmed inactive ingredient.,4.56,8.5,12.44,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-E6176612,2022-09-01,2.737074,101.906897,MED-59EB08A3,FAC-8AE744B9,Seller refused to provide receipt; medicine stored without refrigeration.,13.06,12.0,1.06,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-D556169E,2022-09-20,3.08234,101.530607,MED-A2FD86E4,,Unusual smell and texture; patient developed a rash after use.,6.9,22.0,37.1,False,Muar,Muar,Johor,84000
+CMP-F7EBFD68,2023-12-25,2.22077,102.238094,MED-59EB08A3,FAC-6B4B764D,Barcode does not scan; product unverifiable in MOH system.,9.96,12.0,2.04,True,Jasin,Jasin,Melaka,77000
+CMP-7C39D5A8,2024-02-20,2.158475,102.207615,MED-94DCD221,FAC-19FADAF6,Patient hospitalised after consumption; batch number not in national registry.,7.27,6.0,1.27,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-299C080D,2023-03-23,2.723361,101.945787,MED-B036DD9C,,Packaging seal already broken upon purchase.,32.05,95.0,157.95,True,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-31D1E546,2023-01-03,3.043878,101.448958,MED-48A0F963,,Medicine purchased from street vendor near the market.,4.27,12.0,19.73,False,Manjung,Seri Manjung,Perak,32000
+CMP-046B8733,2023-01-06,2.749112,101.976645,MED-0A195B42,FAC-0CCF18D7,Unusual smell and texture; patient developed a rash after use.,16.42,14.0,2.42,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-2252B8AD,2022-06-03,1.489006,103.74903,MED-B036DD9C,FAC-4692ED35,Multiple neighbours bought same batch; all reported ineffectiveness.,113.58,95.0,18.58,True,Skudai,Johor Bahru,Johor,81300
+CMP-1A771F5D,2022-02-20,5.424225,100.342872,MED-0A195B42,,Patient hospitalised after consumption; batch number not in national registry.,8.27,14.0,19.73,False,Kulai,Kulai,Johor,81000
+CMP-EA51CC0E,2023-06-08,1.461931,103.762999,MED-A2FD86E4,,Multiple neighbours bought same batch; all reported ineffectiveness.,8.26,22.0,35.74,True,Skudai,Johor Bahru,Johor,81300
+CMP-6052E8A1,2023-05-28,3.044003,101.444016,MED-48A0F963,,No improvement after full course; lab test confirmed inactive ingredient.,5.93,12.0,18.07,True,Titiwangsa,Kuala Lumpur,Kuala Lumpur,53200
+CMP-78BACDD3,2023-04-12,1.461637,103.762874,MED-9EB4B8D6,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,3.82,7.0,10.18,True,Ampang,Ampang,Selangor,68000
+CMP-00317335,2022-07-25,4.643175,101.094484,MED-B85A6ED2,FAC-28F771B5,Online purchase via Telegram; seller account now deleted.,5.31,5.5,0.19,True,Ipoh,Ipoh,Perak,30000
+CMP-A839728D,2023-09-25,1.462144,103.761969,MED-BFB0E7CA,,Seller refused to provide receipt; medicine stored without refrigeration.,16.31,30.0,43.69,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-25F91656,2024-10-08,3.162241,101.695763,MED-D0A5410E,,Unusual smell and texture; patient developed a rash after use.,2.29,4.0,5.71,True,Puchong,Puchong,Selangor,47100
+CMP-F097EE09,2024-12-09,3.077508,101.530189,MED-FB58034C,,No improvement after full course; lab test confirmed inactive ingredient.,11.43,22.0,32.57,True,Seberang Perai,Perai,Penang,13600
+CMP-45EB51CE,2024-05-18,3.133566,101.710359,MED-87F56986,FAC-9781E0DC,Price was 60% below standard — suspect adulterated product.,9.54,8.0,1.54,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-9C4DE2D8,2023-03-15,2.724588,101.942751,MED-C029044A,,Online purchase via Telegram; seller account now deleted.,3.4,9.0,14.6,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-AFA143CB,2024-09-06,5.645801,100.487287,MED-B85A6ED2,,Expiry date appears tampered — original date scratched off.,3.89,5.5,7.11,False,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-C469BE82,2023-09-18,2.729673,101.970539,MED-FB58034C,FAC-4C4DEC32,Seller refused to provide receipt; medicine stored without refrigeration.,25.17,22.0,3.17,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-9D53AB2C,2023-04-10,3.166391,101.696429,MED-94DCD221,,Unusual smell and texture; patient developed a rash after use.,2.4,6.0,9.6,True,Kulai,Kulai,Johor,81000
+CMP-D68A1986,2024-02-29,1.488971,103.764797,MED-FB58034C,FAC-3BA9B7FF,Packaging seal already broken upon purchase.,15.04,22.0,6.96,True,Kulai,Kulai,Johor,81000
+CMP-59E01A21,2024-12-19,2.726374,101.9464,MED-C029044A,,Blister pack labelling inconsistent with MOH-registered product.,5.08,9.0,12.92,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-ADAC000F,2023-03-23,2.727273,101.944043,MED-87F56986,,Packaging seal already broken upon purchase.,5.3,8.0,10.7,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-F6A0C88A,2024-08-07,3.162233,101.700508,MED-B71DF9FF,,Seller refused to provide receipt; medicine stored without refrigeration.,2.86,6.5,10.14,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-8D836EBE,2022-03-08,3.157181,101.696584,MED-94DCD221,,Seller refused to provide receipt; medicine stored without refrigeration.,3.68,6.0,8.32,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-965DFF85,2022-04-22,1.48543,103.746906,MED-B85A6ED2,FAC-4692ED35,Tablet colour differs from usual; patient experienced no relief.,6.68,5.5,1.18,False,Skudai,Johor Bahru,Johor,81300
+CMP-AEE71462,2022-03-19,5.448003,100.290011,MED-94DCD221,FAC-0A5D8A94,Barcode does not scan; product unverifiable in MOH system.,4.84,6.0,1.16,True,Seberang Perai,Perai,Penang,13600
+CMP-C6E0DD26,2024-03-21,3.039583,101.494351,MED-B036DD9C,FAC-2D52E3F2,Patient hospitalised after consumption; batch number not in national registry.,75.89,95.0,19.11,True,Puchong,Puchong,Selangor,47100
+CMP-CB2C0FEB,2023-01-12,4.590808,101.129092,MED-F1BD0EC9,FAC-3ECA68E5,Barcode does not scan; product unverifiable in MOH system.,7.82,8.5,0.68,True,Ipoh,Ipoh,Perak,30000
+CMP-A55DE39E,2024-08-01,2.193657,102.246446,MED-9EB4B8D6,,Online purchase via Telegram; seller account now deleted.,4.77,7.0,9.23,True,Puchong,Puchong,Selangor,47100
+CMP-CB2C48AA,2022-10-19,2.694282,101.904382,MED-C029044A,FAC-3CDFE1CB,Patient hospitalised after consumption; batch number not in national registry.,9.54,9.0,0.54,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-C563D851,2024-09-14,3.083758,101.504331,MED-94DCD221,FAC-5E4DE973,Online purchase via Telegram; seller account now deleted.,5.34,6.0,0.66,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-26A83D6E,2022-03-08,2.137398,102.242014,MED-0A195B42,FAC-5FB1305A,Blister pack labelling inconsistent with MOH-registered product.,9.28,14.0,4.72,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-89A18D88,2024-11-24,2.136907,102.241343,MED-A2FD86E4,FAC-5FB1305A,Barcode does not scan; product unverifiable in MOH system.,19.79,22.0,2.21,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-40A4464C,2022-11-22,3.165475,101.69682,MED-BFB0E7CA,,Medicine purchased from street vendor near the market.,14.58,30.0,45.42,True,Seberang Perai,Perai,Penang,13600
+CMP-257CDF9A,2023-04-19,2.227238,102.261761,MED-B85A6ED2,FAC-0218137B,Medicine purchased from street vendor near the market.,6.73,5.5,1.23,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-942015A9,2023-08-02,2.752557,101.932292,MED-9EB4B8D6,FAC-8F026DD1,Unusual smell and texture; patient developed a rash after use.,7.13,7.0,0.13,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-CFD7A26C,2022-09-05,3.157879,101.700488,MED-80150E17,,Unusual smell and texture; patient developed a rash after use.,10.2,18.0,25.8,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-DB124ECF,2023-02-15,4.591551,101.082087,MED-D0A5410E,,Patient hospitalised after consumption; batch number not in national registry.,1.32,4.0,6.68,False,Butterworth,Butterworth,Penang,12000
+CMP-AB07AE0B,2024-07-30,1.457394,103.757621,MED-59EB08A3,,Multiple neighbours bought same batch; all reported ineffectiveness.,5.57,12.0,18.43,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-4811D569,2022-02-09,5.447395,100.289651,MED-1711A01F,FAC-0A5D8A94,Expiry date appears tampered — original date scratched off.,2.51,2.5,0.01,False,Seberang Perai,Perai,Penang,13600
+CMP-D851894F,2022-01-19,3.077512,101.530749,MED-28EB3902,,Barcode does not scan; product unverifiable in MOH system.,31.12,55.0,78.88,False,Puchong,Puchong,Selangor,47100
+CMP-DCD8F8D1,2024-05-15,2.724358,101.94593,MED-99B74A7E,,Medicine purchased from street vendor near the market.,16.94,25.0,33.06,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-398F50BF,2022-06-06,2.767622,101.924772,MED-F1BD0EC9,FAC-B2831513,Seller refused to provide receipt; medicine stored without refrigeration.,10.28,8.5,1.78,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-E2B5C3CD,2024-02-27,4.588154,101.081196,MED-80150E17,,Unusual smell and texture; patient developed a rash after use.,10.99,18.0,25.01,False,Butterworth,Butterworth,Penang,12000
+CMP-36632F0E,2023-10-12,5.646269,100.48929,MED-B036DD9C,,Online purchase via Telegram; seller account now deleted.,41.21,95.0,148.79,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-0FF4CEE3,2023-04-07,2.732633,101.971201,MED-A2FD86E4,FAC-4C4DEC32,Outer box appeared genuine but inner foil pack had no hologram.,26.09,22.0,4.09,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-019DBF08,2022-09-21,2.195805,102.248179,MED-A2FD86E4,,Seller refused to provide receipt; medicine stored without refrigeration.,8.74,22.0,35.26,False,Kulim,Kulim,Kedah,09000
+CMP-E4195524,2023-12-28,3.082058,101.528151,MED-A601320E,,Expiry date appears tampered — original date scratched off.,11.16,18.5,25.84,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-22506690,2022-07-17,1.492343,103.763692,MED-B71DF9FF,FAC-3BA9B7FF,Packaging seal already broken upon purchase.,7.55,6.5,1.05,True,Kulai,Kulai,Johor,81000
+CMP-ED07AD4E,2023-12-21,3.164943,101.700987,MED-BFB0E7CA,,Tablet colour differs from usual; patient experienced no relief.,21.17,30.0,38.83,True,Kulai,Kulai,Johor,81000
+CMP-15EB3E5D,2023-12-07,4.592102,101.080747,MED-B85A6ED2,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,2.39,5.5,8.61,False,Manjung,Seri Manjung,Perak,32000
+CMP-2976203B,2023-07-22,2.753254,101.928314,MED-87F56986,FAC-8F026DD1,Unusual smell and texture; patient developed a rash after use.,8.1,8.0,0.1,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-47171CFF,2024-12-06,4.644447,101.095078,MED-B036DD9C,FAC-28F771B5,Multiple neighbours bought same batch; all reported ineffectiveness.,107.28,95.0,12.28,True,Ipoh,Ipoh,Perak,30000
+CMP-5F121BC3,2023-09-13,5.460038,100.30488,MED-1711A01F,FAC-E4D0C2D8,Unusual smell and texture; patient developed a rash after use.,2.88,2.5,0.38,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-F2401C28,2023-03-30,4.590978,101.128044,MED-B85A6ED2,FAC-3ECA68E5,Online purchase via Telegram; seller account now deleted.,3.15,5.5,2.35,True,Ipoh,Ipoh,Perak,30000
+CMP-16C68735,2022-12-25,3.15788,101.694858,MED-99B74A7E,,Expiry date appears tampered — original date scratched off.,15.38,25.0,34.62,True,Manjung,Seri Manjung,Perak,32000
+CMP-13B5D091,2023-12-08,2.194441,102.246336,MED-80150E17,,Multiple neighbours bought same batch; all reported ineffectiveness.,6.78,18.0,29.22,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-499ADF62,2024-03-19,3.077954,101.527329,MED-94DCD221,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,2.97,6.0,9.03,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-FE2D53D6,2022-03-31,2.193484,102.24784,MED-D0A5410E,,No improvement after full course; lab test confirmed inactive ingredient.,2.46,4.0,5.54,False,Puchong,Puchong,Selangor,47100
+CMP-B907CC56,2024-02-21,3.159723,101.695274,MED-94DCD221,,Expiry date appears tampered — original date scratched off.,3.63,6.0,8.37,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-27821D4C,2023-02-06,3.158978,101.701445,MED-B85A6ED2,,Tablet colour differs from usual; patient experienced no relief.,3.75,5.5,7.25,True,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-24001F93,2024-02-22,5.42215,100.33883,MED-87F56986,,Unusual smell and texture; patient developed a rash after use.,5.19,8.0,10.81,False,Sepang,Sepang,Selangor,43900
+CMP-CA431F6F,2024-11-04,2.19547,102.248562,MED-28EB3902,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,31.59,55.0,78.41,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-8B4062CC,2022-02-10,3.166839,101.697744,MED-A2FD86E4,,Tablet colour differs from usual; patient experienced no relief.,8.34,22.0,35.66,False,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-D16E65C7,2023-11-20,2.726869,101.944456,MED-B036DD9C,,Expiry date appears tampered — original date scratched off.,53.46,95.0,136.54,False,Jasin,Jasin,Melaka,77000
+CMP-8794FD7A,2023-04-01,1.46163,103.759056,MED-B036DD9C,,Expiry date appears tampered — original date scratched off.,40.2,95.0,149.8,False,Puchong,Puchong,Selangor,47100
+CMP-5503BFC4,2024-01-24,2.728413,101.970624,MED-A2FD86E4,FAC-4C4DEC32,Multiple neighbours bought same batch; all reported ineffectiveness.,27.04,22.0,5.04,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-834E85CB,2024-03-12,3.038959,101.495598,MED-B85A6ED2,FAC-2D52E3F2,Price was 60% below standard — suspect adulterated product.,6.92,5.5,1.42,False,Puchong,Puchong,Selangor,47100
+CMP-E7B5AD56,2024-12-05,5.422576,100.338479,MED-A601320E,,No improvement after full course; lab test confirmed inactive ingredient.,7.78,18.5,29.22,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-9B4D5DC5,2023-07-30,3.08013,101.532448,MED-FB58034C,,Outer box appeared genuine but inner foil pack had no hologram.,11.0,22.0,33.0,False,Georgetown,Georgetown,Penang,10000
+CMP-E1583F51,2022-12-06,3.082012,101.527737,MED-59EB08A3,,Price was 60% below standard — suspect adulterated product.,6.4,12.0,17.6,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-539D5340,2022-01-23,3.097552,101.700003,MED-A601320E,FAC-44382B09,Barcode does not scan; product unverifiable in MOH system.,18.84,18.5,0.34,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-CEF5CB1A,2023-04-05,3.08137,101.526826,MED-A601320E,,Seller refused to provide receipt; medicine stored without refrigeration.,12.44,18.5,24.56,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-EF9EAFB6,2024-06-16,3.161848,101.69879,MED-94DCD221,,Seller refused to provide receipt; medicine stored without refrigeration.,2.56,6.0,9.44,True,Kulai,Kulai,Johor,81000
+CMP-F56E3F9B,2023-09-18,1.461959,103.7585,MED-C029044A,,Outer box appeared genuine but inner foil pack had no hologram.,3.82,9.0,14.18,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-BCB3FEC5,2023-10-23,5.42412,100.342082,MED-D0A5410E,,Price was 60% below standard — suspect adulterated product.,2.58,4.0,5.42,True,Muar,Muar,Johor,84000
+CMP-61BE8A37,2022-11-11,3.079623,101.530441,MED-94DCD221,,Tablet colour differs from usual; patient experienced no relief.,2.86,6.0,9.14,True,Kajang,Kajang,Selangor,43000
+CMP-B6ECA2D2,2024-02-20,1.489708,103.761681,MED-87F56986,FAC-3BA9B7FF,Blister pack labelling inconsistent with MOH-registered product.,9.05,8.0,1.05,False,Kulai,Kulai,Johor,81000
+CMP-C4622A15,2024-09-15,6.083656,100.326528,MED-F1BD0EC9,FAC-F1874C81,Seller refused to provide receipt; medicine stored without refrigeration.,6.55,8.5,1.95,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-43E59E08,2023-02-20,3.165417,101.698513,MED-F1BD0EC9,,Multiple neighbours bought same batch; all reported ineffectiveness.,6.09,8.5,10.91,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-77011728,2023-07-14,4.587989,101.080719,MED-59EB08A3,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,7.48,12.0,16.52,False,Kajang,Kajang,Selangor,43000
+CMP-94173CB9,2023-05-27,3.090136,101.467346,MED-9EB4B8D6,FAC-F9EE4390,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,6.61,7.0,0.39,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-5E3D9564,2024-10-30,3.045772,101.442498,MED-87F56986,,Outer box appeared genuine but inner foil pack had no hologram.,4.11,8.0,11.89,False,Skudai,Johor Bahru,Johor,81300
+CMP-3F94F6B5,2024-01-06,4.589837,101.077517,MED-C029044A,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,2.95,9.0,15.05,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-E7402370,2022-03-24,5.424487,100.340958,MED-B71DF9FF,,Barcode does not scan; product unverifiable in MOH system.,2.27,6.5,10.73,True,Kulim,Kulim,Kedah,09000
+CMP-51F4DD76,2022-06-20,5.426683,100.341935,MED-D0A5410E,,Expiry date appears tampered — original date scratched off.,2.62,4.0,5.38,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-3030F9C0,2024-05-04,2.138362,102.240484,MED-59EB08A3,FAC-5FB1305A,Outer box appeared genuine but inner foil pack had no hologram.,15.05,12.0,3.05,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-B20AC35D,2023-12-07,5.44934,100.293472,MED-1711A01F,FAC-0A5D8A94,Unusual smell and texture; patient developed a rash after use.,2.64,2.5,0.14,True,Seberang Perai,Perai,Penang,13600
+CMP-A3DE06FC,2022-06-13,2.727503,101.945957,MED-B71DF9FF,,Unusual smell and texture; patient developed a rash after use.,3.24,6.5,9.76,True,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-ED6A9049,2024-12-29,3.079012,101.531091,MED-D0A5410E,,Patient hospitalised after consumption; batch number not in national registry.,2.19,4.0,5.81,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-53068270,2024-07-14,5.647152,100.488935,MED-9EB4B8D6,,Patient hospitalised after consumption; batch number not in national registry.,2.98,7.0,11.02,False,Butterworth,Butterworth,Penang,12000
+CMP-4628B0E8,2022-12-24,2.138599,102.243427,MED-59EB08A3,FAC-5FB1305A,Multiple neighbours bought same batch; all reported ineffectiveness.,7.91,12.0,4.09,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-ADB14EB8,2023-12-30,3.045002,101.441269,MED-B85A6ED2,,Outer box appeared genuine but inner foil pack had no hologram.,3.95,5.5,7.05,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-952F2A4D,2022-11-02,3.164204,101.693457,MED-B036DD9C,,Online purchase via Telegram; seller account now deleted.,42.49,95.0,147.51,False,Seberang Perai,Perai,Penang,13600
+CMP-C51B80BF,2022-04-11,5.457901,100.304888,MED-1711A01F,FAC-E4D0C2D8,Seller refused to provide receipt; medicine stored without refrigeration.,2.63,2.5,0.13,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-BF290C4C,2022-12-09,1.491224,103.730396,MED-99B74A7E,FAC-C84DEF5D,No improvement after full course; lab test confirmed inactive ingredient.,15.96,25.0,9.04,False,Kulai,Kulai,Johor,81000
+CMP-C9D59B16,2022-01-20,5.646588,100.485957,MED-87F56986,,Outer box appeared genuine but inner foil pack had no hologram.,4.12,8.0,11.88,False,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-5822FFC0,2023-10-23,2.136607,102.24377,MED-F1BD0EC9,FAC-5FB1305A,Seller refused to provide receipt; medicine stored without refrigeration.,7.68,8.5,0.82,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-C2ECA448,2023-09-24,3.08294,101.530635,MED-9EB4B8D6,,Medicine purchased from street vendor near the market.,4.12,7.0,9.88,True,Puchong,Puchong,Selangor,47100
+CMP-1B22297D,2023-03-21,3.162057,101.694183,MED-F1BD0EC9,,Patient hospitalised after consumption; batch number not in national registry.,4.88,8.5,12.12,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-D25EA25B,2024-04-02,1.460757,103.762013,MED-B85A6ED2,,Seller refused to provide receipt; medicine stored without refrigeration.,3.65,5.5,7.35,False,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-8E579402,2023-08-19,2.769332,101.922993,MED-D0A5410E,FAC-B2831513,Packaging seal already broken upon purchase.,3.89,4.0,0.11,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-83FFF522,2022-04-22,3.131826,101.712099,MED-1711A01F,FAC-9781E0DC,Packaging seal already broken upon purchase.,1.43,2.5,1.07,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-5C76CFFE,2024-03-23,3.158597,101.695144,MED-A601320E,,Tablet colour differs from usual; patient experienced no relief.,8.72,18.5,28.28,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-89F44A98,2024-03-02,3.158278,101.69565,MED-99B74A7E,,No improvement after full course; lab test confirmed inactive ingredient.,17.22,25.0,32.78,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-7EBEEAED,2024-07-11,2.158911,102.209551,MED-F1BD0EC9,FAC-19FADAF6,Expiry date appears tampered — original date scratched off.,7.79,8.5,0.71,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-0F2C8B5C,2022-10-03,3.115465,101.641679,MED-48A0F963,FAC-ADA334AB,Outer box appeared genuine but inner foil pack had no hologram.,11.69,12.0,0.31,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-F73E3D0F,2022-10-13,1.45985,103.763227,MED-C029044A,,Price was 60% below standard — suspect adulterated product.,3.36,9.0,14.64,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-DA6F2942,2022-04-02,3.046885,101.444598,MED-48A0F963,,Expiry date appears tampered — original date scratched off.,3.61,12.0,20.39,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-375CE521,2023-01-04,3.11473,101.641924,MED-9EB4B8D6,FAC-ADA334AB,Barcode does not scan; product unverifiable in MOH system.,4.95,7.0,2.05,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-22024E9B,2024-06-27,5.427329,100.33878,MED-80150E17,,Multiple neighbours bought same batch; all reported ineffectiveness.,10.6,18.0,25.4,False,Kulai,Kulai,Johor,81000
+CMP-B83AE97C,2023-10-05,3.160653,101.73211,MED-B71DF9FF,FAC-8CEDD07B,Seller refused to provide receipt; medicine stored without refrigeration.,6.1,6.5,0.4,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-BAD8EEFD,2022-11-18,5.424389,100.339853,MED-9EB4B8D6,,Tablet colour differs from usual; patient experienced no relief.,3.06,7.0,10.94,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-6435392F,2023-04-15,4.588054,101.080129,MED-B71DF9FF,,Price was 60% below standard — suspect adulterated product.,3.85,6.5,9.15,False,Ipoh,Ipoh,Perak,30000
+CMP-9DA25ECA,2024-01-09,3.080568,101.527778,MED-28EB3902,,Seller refused to provide receipt; medicine stored without refrigeration.,34.47,55.0,75.53,False,Kampar,Kampar,Perak,31400
+CMP-D1C5B9CF,2023-07-30,3.114176,101.642445,MED-A601320E,FAC-ADA334AB,No improvement after full course; lab test confirmed inactive ingredient.,10.39,18.5,8.11,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-266F4B4E,2022-01-17,3.078295,101.532448,MED-A2FD86E4,,Online purchase via Telegram; seller account now deleted.,15.18,22.0,28.82,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-E52ACEAA,2022-02-02,3.081215,101.528434,MED-1711A01F,,Seller refused to provide receipt; medicine stored without refrigeration.,0.9,2.5,4.1,False,Georgetown,Georgetown,Penang,10000
+CMP-CC206B53,2023-10-11,3.047844,101.444558,MED-BFB0E7CA,,Barcode does not scan; product unverifiable in MOH system.,9.75,30.0,50.25,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-79836E4E,2022-08-04,1.463118,103.759313,MED-BFB0E7CA,,Blister pack labelling inconsistent with MOH-registered product.,18.08,30.0,41.92,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-4B796BCC,2022-09-07,3.162243,101.699621,MED-28EB3902,,Seller refused to provide receipt; medicine stored without refrigeration.,32.75,55.0,77.25,False,Seberang Perai,Perai,Penang,13600
+CMP-686115BE,2024-07-24,5.646644,100.486635,MED-A601320E,,Outer box appeared genuine but inner foil pack had no hologram.,6.67,18.5,30.33,False,Muar,Muar,Johor,84000
+CMP-2AA30D02,2024-03-24,3.146611,101.650238,MED-D0A5410E,FAC-8B877AB2,Multiple neighbours bought same batch; all reported ineffectiveness.,5.17,4.0,1.17,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-32AB7A39,2022-07-19,5.425676,100.338446,MED-A601320E,,Online purchase via Telegram; seller account now deleted.,8.73,18.5,28.27,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-CB0430F4,2023-07-27,3.079237,101.528177,MED-87F56986,,Online purchase via Telegram; seller account now deleted.,4.91,8.0,11.09,False,Kulai,Kulai,Johor,81000
+CMP-39D49C76,2023-02-18,3.082328,101.531631,MED-94DCD221,,Unusual smell and texture; patient developed a rash after use.,3.85,6.0,8.15,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-34A74AAC,2024-11-09,4.590921,101.078424,MED-28EB3902,,Expiry date appears tampered — original date scratched off.,39.53,55.0,70.47,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-8C814C99,2022-06-28,4.591846,101.080663,MED-0A195B42,,Barcode does not scan; product unverifiable in MOH system.,5.43,14.0,22.57,True,Sepang,Sepang,Selangor,43900
+CMP-91A42DDA,2024-05-10,5.647248,100.489727,MED-A2FD86E4,,Medicine purchased from street vendor near the market.,15.82,22.0,28.18,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-C4F2E30D,2023-05-25,1.486662,103.745429,MED-80150E17,FAC-4692ED35,Medicine purchased from street vendor near the market.,10.37,18.0,7.63,True,Skudai,Johor Bahru,Johor,81300
+CMP-E140A50F,2022-12-15,1.461544,103.757263,MED-B036DD9C,,Patient hospitalised after consumption; batch number not in national registry.,66.39,95.0,123.61,False,Kulai,Kulai,Johor,81000
+CMP-DE9E12FF,2024-12-28,3.100452,101.696134,MED-D0A5410E,FAC-44382B09,No improvement after full course; lab test confirmed inactive ingredient.,3.52,4.0,0.48,True,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-04E70484,2024-11-24,1.491449,103.728613,MED-F1BD0EC9,FAC-C84DEF5D,Multiple neighbours bought same batch; all reported ineffectiveness.,4.49,8.5,4.01,False,Kulai,Kulai,Johor,81000
+CMP-4D3088CA,2024-10-08,1.461512,103.762383,MED-C029044A,,Blister pack labelling inconsistent with MOH-registered product.,5.97,9.0,12.03,True,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-64E48461,2024-01-17,2.685026,101.964901,MED-BFB0E7CA,FAC-A3606986,Multiple neighbours bought same batch; all reported ineffectiveness.,18.66,30.0,11.34,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-F639DC5B,2023-10-03,5.422494,100.340524,MED-A601320E,,Barcode does not scan; product unverifiable in MOH system.,6.71,18.5,30.29,False,Jasin,Jasin,Melaka,77000
+CMP-80C57108,2022-05-09,3.082192,101.506863,MED-A601320E,FAC-5E4DE973,Unusual smell and texture; patient developed a rash after use.,16.47,18.5,2.03,True,Shah Alam,Shah Alam,Selangor,40000
+CMP-5E64D036,2024-09-09,3.16708,101.696836,MED-F1BD0EC9,,Medicine purchased from street vendor near the market.,6.23,8.5,10.77,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-EAB451DA,2024-10-18,4.643191,101.093377,MED-94DCD221,FAC-28F771B5,Tablet colour differs from usual; patient experienced no relief.,3.65,6.0,2.35,True,Ipoh,Ipoh,Perak,30000
+CMP-031A3968,2024-01-19,3.046586,101.441627,MED-BFB0E7CA,,Blister pack labelling inconsistent with MOH-registered product.,10.21,30.0,49.79,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-A1D484A9,2023-04-16,2.727031,101.946451,MED-A601320E,,Packaging seal already broken upon purchase.,5.99,18.5,31.01,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-E11AF6B1,2024-04-12,3.088351,101.466813,MED-9EB4B8D6,FAC-F9EE4390,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,6.11,7.0,0.89,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-DCCAA752,2024-08-24,2.767263,101.925512,MED-B85A6ED2,FAC-B2831513,Outer box appeared genuine but inner foil pack had no hologram.,6.68,5.5,1.18,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-A1444D73,2022-08-19,5.646752,100.490032,MED-1711A01F,,Seller refused to provide receipt; medicine stored without refrigeration.,1.65,2.5,3.35,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-BEBE498C,2022-03-19,5.644672,100.489138,MED-9EB4B8D6,,Medicine purchased from street vendor near the market.,3.85,7.0,10.15,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-91143F2C,2024-04-22,3.159333,101.700933,MED-59EB08A3,,Multiple neighbours bought same batch; all reported ineffectiveness.,7.37,12.0,16.63,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-42681CB2,2024-06-25,3.16424,101.69333,MED-A601320E,,Packaging seal already broken upon purchase.,13.47,18.5,23.53,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-610F8D3D,2022-03-06,1.461005,103.759511,MED-59EB08A3,,No improvement after full course; lab test confirmed inactive ingredient.,3.84,12.0,20.16,True,Skudai,Johor Bahru,Johor,81300
+CMP-D4E01065,2024-03-11,3.080368,101.530782,MED-9EB4B8D6,,Packaging seal already broken upon purchase.,2.13,7.0,11.87,False,Langkawi,Kuah,Kedah,07000
+CMP-1FF37540,2024-11-23,3.046158,101.443061,MED-9EB4B8D6,,Price was 60% below standard — suspect adulterated product.,3.53,7.0,10.47,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-7120BE4A,2022-03-05,5.645464,100.487189,MED-48A0F963,,Online purchase via Telegram; seller account now deleted.,7.72,12.0,16.28,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-367E8BF7,2024-04-18,4.64209,101.095207,MED-BFB0E7CA,FAC-28F771B5,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,26.82,30.0,3.18,True,Ipoh,Ipoh,Perak,30000
+CMP-BA0CBECD,2023-10-17,1.457998,103.759835,MED-BFB0E7CA,,Multiple neighbours bought same batch; all reported ineffectiveness.,16.23,30.0,43.77,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-647D61D0,2023-03-16,5.449321,100.289486,MED-A2FD86E4,FAC-0A5D8A94,Online purchase via Telegram; seller account now deleted.,14.04,22.0,7.96,True,Seberang Perai,Perai,Penang,13600
+CMP-261D2F91,2023-03-05,3.048366,101.442766,MED-C029044A,,Seller refused to provide receipt; medicine stored without refrigeration.,4.52,9.0,13.48,False,Titiwangsa,Kuala Lumpur,Kuala Lumpur,53200
+CMP-C61A67CA,2022-03-25,5.423981,100.341606,MED-80150E17,,Blister pack labelling inconsistent with MOH-registered product.,6.3,18.0,29.7,True,Langkawi,Kuah,Kedah,07000
+CMP-D0E2E473,2023-10-13,2.68746,101.966153,MED-B71DF9FF,FAC-A3606986,Medicine purchased from street vendor near the market.,7.93,6.5,1.43,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-53FF2ED3,2023-02-04,5.422788,100.338564,MED-94DCD221,,Seller refused to provide receipt; medicine stored without refrigeration.,3.78,6.0,8.22,True,Kampar,Kampar,Perak,31400
+CMP-B47C4D9E,2023-02-06,6.139163,100.366421,MED-1711A01F,FAC-E691F464,Packaging seal already broken upon purchase.,2.96,2.5,0.46,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-7D58142B,2024-12-20,3.166548,101.697541,MED-B71DF9FF,,Expiry date appears tampered — original date scratched off.,3.0,6.5,10.0,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-029B979C,2022-12-21,3.041813,101.446354,MED-B71DF9FF,,Outer box appeared genuine but inner foil pack had no hologram.,3.61,6.5,9.39,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-0094C2F8,2022-12-10,6.0863,100.326386,MED-80150E17,FAC-F1874C81,Outer box appeared genuine but inner foil pack had no hologram.,23.15,18.0,5.15,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-7E9FA7A3,2022-03-13,2.725677,101.945694,MED-FB58034C,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,13.06,22.0,30.94,False,Ampang,Ampang,Selangor,68000
+CMP-4B75D070,2023-11-19,5.42762,100.33921,MED-28EB3902,,Seller refused to provide receipt; medicine stored without refrigeration.,29.93,55.0,80.07,False,Georgetown,Georgetown,Penang,10000
+CMP-D35A4086,2022-09-18,1.458941,103.762288,MED-B71DF9FF,,Medicine purchased from street vendor near the market.,4.36,6.5,8.64,False,Muar,Muar,Johor,84000
+CMP-49EC3419,2024-12-25,3.080894,101.529846,MED-99B74A7E,,Outer box appeared genuine but inner foil pack had no hologram.,12.59,25.0,37.41,False,Sepang,Sepang,Selangor,43900
+CMP-3AC95866,2022-04-08,2.135418,102.241932,MED-C029044A,FAC-5FB1305A,Expiry date appears tampered — original date scratched off.,10.68,9.0,1.68,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-81543AFD,2024-04-29,3.079981,101.530142,MED-F1BD0EC9,,Expiry date appears tampered — original date scratched off.,4.33,8.5,12.67,True,Klang,Klang,Selangor,41000
+CMP-F1DABFF9,2023-12-04,3.162744,101.6983,MED-B036DD9C,,Outer box appeared genuine but inner foil pack had no hologram.,64.19,95.0,125.81,False,Langkawi,Kuah,Kedah,07000
+CMP-CF86C887,2022-01-14,2.723711,101.94555,MED-FB58034C,,Packaging seal already broken upon purchase.,15.81,22.0,28.19,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-1DCD7294,2022-10-30,5.423638,100.338202,MED-80150E17,,Seller refused to provide receipt; medicine stored without refrigeration.,12.76,18.0,23.24,False,Langkawi,Kuah,Kedah,07000
+CMP-F3735BFC,2023-05-18,3.079448,101.526705,MED-0A195B42,,Medicine purchased from street vendor near the market.,7.13,14.0,20.87,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-4E50D8D9,2022-10-28,5.427561,100.33909,MED-99B74A7E,,Seller refused to provide receipt; medicine stored without refrigeration.,7.59,25.0,42.41,False,Kampar,Kampar,Perak,31400
+CMP-E28B66D7,2024-07-26,3.042137,101.444187,MED-48A0F963,,Medicine purchased from street vendor near the market.,3.82,12.0,20.18,True,Langkawi,Kuah,Kedah,07000
+CMP-FD9831A1,2024-04-22,3.083023,101.531328,MED-1711A01F,,Unusual smell and texture; patient developed a rash after use.,1.57,2.5,3.43,False,Langkawi,Kuah,Kedah,07000
+CMP-CFC9BA7F,2023-02-14,3.082828,101.528544,MED-B85A6ED2,,Expiry date appears tampered — original date scratched off.,2.21,5.5,8.79,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-20218E25,2022-06-13,2.159389,102.209073,MED-A2FD86E4,FAC-19FADAF6,No improvement after full course; lab test confirmed inactive ingredient.,22.65,22.0,0.65,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-9DBCE94E,2022-04-04,3.06423,101.565421,MED-99B74A7E,FAC-17D3633A,Tablet colour differs from usual; patient experienced no relief.,29.52,25.0,4.52,False,Klang,Klang,Selangor,41000
+CMP-8F6BF027,2022-07-08,3.087889,101.466812,MED-9EB4B8D6,FAC-F9EE4390,Online purchase via Telegram; seller account now deleted.,8.03,7.0,1.03,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-C1377E4B,2024-03-27,3.165195,101.696078,MED-80150E17,,Barcode does not scan; product unverifiable in MOH system.,9.84,18.0,26.16,False,Ipoh,Ipoh,Perak,30000
+CMP-FA332B9D,2022-09-01,5.426843,100.339865,MED-A2FD86E4,,Expiry date appears tampered — original date scratched off.,12.01,22.0,31.99,False,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-16E89F12,2023-09-15,5.42374,100.340056,MED-F1BD0EC9,,Seller refused to provide receipt; medicine stored without refrigeration.,5.96,8.5,11.04,False,Taiping,Taiping,Perak,34000
+CMP-760F1AA2,2023-09-30,4.587723,101.081274,MED-B036DD9C,,Packaging seal already broken upon purchase.,50.19,95.0,139.81,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-1CE115EF,2023-10-14,2.691131,101.906167,MED-F1BD0EC9,FAC-3CDFE1CB,Multiple neighbours bought same batch; all reported ineffectiveness.,5.45,8.5,3.05,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-3625B181,2023-12-05,2.159064,102.206249,MED-B85A6ED2,FAC-19FADAF6,No improvement after full course; lab test confirmed inactive ingredient.,3.1,5.5,2.4,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-C605F70A,2023-03-26,3.163435,101.701155,MED-9EB4B8D6,,Seller refused to provide receipt; medicine stored without refrigeration.,2.43,7.0,11.57,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-D62E252F,2022-05-05,3.160951,101.700236,MED-48A0F963,,Blister pack labelling inconsistent with MOH-registered product.,8.61,12.0,15.39,False,Sepang,Sepang,Selangor,43900
+CMP-2E7019EF,2024-04-25,3.163354,101.731317,MED-B85A6ED2,FAC-8CEDD07B,Patient hospitalised after consumption; batch number not in national registry.,3.34,5.5,2.16,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-598064D9,2023-04-11,2.195716,102.246347,MED-A2FD86E4,,Multiple neighbours bought same batch; all reported ineffectiveness.,9.67,22.0,34.33,True,Langkawi,Kuah,Kedah,07000
+CMP-22D1C513,2023-08-04,3.1142,101.639477,MED-B036DD9C,FAC-ADA334AB,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,114.27,95.0,19.27,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-33F328C3,2022-08-31,1.461072,103.758963,MED-9EB4B8D6,,Packaging seal already broken upon purchase.,5.18,7.0,8.82,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-7745DEB2,2024-04-10,3.079826,101.530284,MED-C029044A,,Price was 60% below standard — suspect adulterated product.,3.84,9.0,14.16,False,Langkawi,Kuah,Kedah,07000
+CMP-D2B2A275,2022-10-09,2.723827,101.942878,MED-C029044A,,Medicine purchased from street vendor near the market.,4.55,9.0,13.45,False,Muar,Muar,Johor,84000
+CMP-52D38ACE,2023-09-30,1.463214,103.760138,MED-80150E17,,Patient hospitalised after consumption; batch number not in national registry.,6.43,18.0,29.57,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-C5BBB0A8,2024-07-29,2.729512,101.969039,MED-94DCD221,FAC-4C4DEC32,Unusual smell and texture; patient developed a rash after use.,7.09,6.0,1.09,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-54414E65,2022-05-06,3.079897,101.529055,MED-B85A6ED2,,Expiry date appears tampered — original date scratched off.,2.43,5.5,8.57,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-356834B4,2022-03-31,2.193721,102.247183,MED-0A195B42,,Outer box appeared genuine but inner foil pack had no hologram.,7.94,14.0,20.06,False,Titiwangsa,Kuala Lumpur,Kuala Lumpur,53200
+CMP-D61C7B0D,2024-12-25,4.589748,101.077596,MED-28EB3902,,Multiple neighbours bought same batch; all reported ineffectiveness.,36.49,55.0,73.51,True,Teluk Intan,Teluk Intan,Perak,36000
+CMP-E2CB00C0,2022-09-25,1.488443,103.748352,MED-87F56986,FAC-4692ED35,Medicine purchased from street vendor near the market.,7.91,8.0,0.09,False,Skudai,Johor Bahru,Johor,81300
+CMP-AF3D306C,2023-03-02,2.228547,102.260711,MED-9EB4B8D6,FAC-0218137B,Seller refused to provide receipt; medicine stored without refrigeration.,6.28,7.0,0.72,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-BF5CB0CA,2024-12-03,3.083165,101.508922,MED-94DCD221,FAC-5E4DE973,Outer box appeared genuine but inner foil pack had no hologram.,3.5,6.0,2.5,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-B97005BD,2024-04-21,4.640287,101.09582,MED-94DCD221,FAC-28F771B5,Unusual smell and texture; patient developed a rash after use.,7.22,6.0,1.22,True,Ipoh,Ipoh,Perak,30000
+CMP-ADDAAEC6,2024-04-14,3.130755,101.707922,MED-87F56986,FAC-9781E0DC,Expiry date appears tampered — original date scratched off.,9.83,8.0,1.83,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-1827387D,2024-05-21,3.165338,101.697896,MED-D0A5410E,,Seller refused to provide receipt; medicine stored without refrigeration.,1.92,4.0,6.08,True,Ampang,Ampang,Selangor,68000
+CMP-53348034,2022-01-14,2.167267,102.226452,MED-28EB3902,FAC-2C0C96B7,Multiple neighbours bought same batch; all reported ineffectiveness.,49.18,55.0,5.82,False,Jasin,Jasin,Melaka,77000
+CMP-3EE2AC1E,2023-09-05,3.089407,101.46615,MED-80150E17,FAC-F9EE4390,Unusual smell and texture; patient developed a rash after use.,9.7,18.0,8.3,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-E4ED330A,2024-03-03,1.45876,103.758763,MED-9EB4B8D6,,Online purchase via Telegram; seller account now deleted.,2.97,7.0,11.03,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-7CB03EC3,2024-06-13,3.040798,101.495642,MED-F1BD0EC9,FAC-2D52E3F2,Multiple neighbours bought same batch; all reported ineffectiveness.,9.23,8.5,0.73,False,Puchong,Puchong,Selangor,47100
+CMP-46AD420A,2022-06-24,3.099219,101.698283,MED-B036DD9C,FAC-44382B09,Unusual smell and texture; patient developed a rash after use.,92.85,95.0,2.15,True,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-5A654D7A,2024-07-28,2.754387,101.928525,MED-59EB08A3,FAC-8F026DD1,Outer box appeared genuine but inner foil pack had no hologram.,13.27,12.0,1.27,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-B8BA9375,2024-06-13,3.080721,101.530642,MED-F1BD0EC9,,Packaging seal already broken upon purchase.,3.1,8.5,13.9,True,Jasin,Jasin,Melaka,77000
+CMP-79303BB1,2024-09-02,3.157748,101.695504,MED-9EB4B8D6,,Unusual smell and texture; patient developed a rash after use.,2.73,7.0,11.27,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-5DF99620,2022-09-18,3.046692,101.44701,MED-BFB0E7CA,,Price was 60% below standard — suspect adulterated product.,21.65,30.0,38.35,True,Kajang,Kajang,Selangor,43000
+CMP-CB3AC074,2023-02-16,3.081456,101.530493,MED-94DCD221,,Tablet colour differs from usual; patient experienced no relief.,3.02,6.0,8.98,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-61289B41,2023-05-05,2.751065,101.929196,MED-B036DD9C,FAC-8F026DD1,Outer box appeared genuine but inner foil pack had no hologram.,50.24,95.0,44.76,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-04F7792F,2024-12-01,2.210245,102.232271,MED-48A0F963,FAC-7CD58BBC,Unusual smell and texture; patient developed a rash after use.,6.97,12.0,5.03,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-B3BD9FE1,2023-02-25,5.445151,100.302885,MED-D0A5410E,FAC-AD254158,No improvement after full course; lab test confirmed inactive ingredient.,2.32,4.0,1.68,True,Georgetown,Georgetown,Penang,10000
+CMP-AB0545E5,2024-11-05,3.046643,101.442065,MED-FB58034C,,No improvement after full course; lab test confirmed inactive ingredient.,7.76,22.0,36.24,False,Kajang,Kajang,Selangor,43000
+CMP-F172F9BB,2024-05-15,2.195611,102.248698,MED-A2FD86E4,,Patient hospitalised after consumption; batch number not in national registry.,9.83,22.0,34.17,False,Jasin,Jasin,Melaka,77000
+CMP-C6DF0CCE,2022-11-26,2.138613,102.242959,MED-9EB4B8D6,FAC-5FB1305A,Unusual smell and texture; patient developed a rash after use.,5.0,7.0,2.0,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-01C54FD2,2024-01-09,3.144703,101.652389,MED-A2FD86E4,FAC-8B877AB2,Seller refused to provide receipt; medicine stored without refrigeration.,11.89,22.0,10.11,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-B2234333,2024-04-25,3.161469,101.70329,MED-28EB3902,,Multiple neighbours bought same batch; all reported ineffectiveness.,39.62,55.0,70.38,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-829EFDC0,2022-01-08,3.07953,101.531879,MED-D0A5410E,,Patient hospitalised after consumption; batch number not in national registry.,1.41,4.0,6.59,False,Skudai,Johor Bahru,Johor,81300
+CMP-7AEAE1E3,2023-04-30,1.461225,103.759046,MED-28EB3902,,Seller refused to provide receipt; medicine stored without refrigeration.,16.68,55.0,93.32,False,Jasin,Jasin,Melaka,77000
+CMP-28AE5A04,2022-08-10,3.15839,101.695409,MED-F1BD0EC9,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,4.29,8.5,12.71,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-6755C69A,2022-05-28,3.130954,101.707634,MED-FB58034C,FAC-9781E0DC,Seller refused to provide receipt; medicine stored without refrigeration.,22.38,22.0,0.38,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-4EEC5FE4,2022-05-29,2.752449,101.92864,MED-C029044A,FAC-8F026DD1,Barcode does not scan; product unverifiable in MOH system.,8.14,9.0,0.86,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-0C891D17,2023-02-23,5.425236,100.341152,MED-B85A6ED2,,Expiry date appears tampered — original date scratched off.,3.06,5.5,7.94,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-31A10230,2022-02-23,5.64559,100.486439,MED-28EB3902,,Blister pack labelling inconsistent with MOH-registered product.,22.22,55.0,87.78,True,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-AFFBBA84,2024-10-22,5.644611,100.487053,MED-A601320E,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,12.46,18.5,24.54,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-4DCFD46B,2022-02-07,3.044666,101.442734,MED-48A0F963,,Expiry date appears tampered — original date scratched off.,6.96,12.0,17.04,False,Kulai,Kulai,Johor,81000
+CMP-1CD0F8FA,2022-11-27,3.116837,101.642804,MED-B85A6ED2,FAC-ADA334AB,Outer box appeared genuine but inner foil pack had no hologram.,3.68,5.5,1.82,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-F07CF2FE,2022-09-26,3.080458,101.527659,MED-9EB4B8D6,,Online purchase via Telegram; seller account now deleted.,2.79,7.0,11.21,True,Langkawi,Kuah,Kedah,07000
+CMP-4D635254,2023-01-26,4.643527,101.095691,MED-0A195B42,FAC-28F771B5,Seller refused to provide receipt; medicine stored without refrigeration.,9.41,14.0,4.59,True,Ipoh,Ipoh,Perak,30000
+CMP-0EB595FB,2024-10-05,2.167686,102.226907,MED-48A0F963,FAC-2C0C96B7,Online purchase via Telegram; seller account now deleted.,11.96,12.0,0.04,False,Jasin,Jasin,Melaka,77000
+CMP-5C3415ED,2022-12-06,3.083273,101.507732,MED-B71DF9FF,FAC-5E4DE973,Multiple neighbours bought same batch; all reported ineffectiveness.,6.7,6.5,0.2,True,Shah Alam,Shah Alam,Selangor,40000
+CMP-37CC1684,2023-09-06,3.157414,101.699829,MED-B85A6ED2,,Blister pack labelling inconsistent with MOH-registered product.,2.21,5.5,8.79,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-A389171C,2023-07-10,2.158279,102.207187,MED-F1BD0EC9,FAC-19FADAF6,Online purchase via Telegram; seller account now deleted.,8.63,8.5,0.13,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-28EA4738,2024-05-03,5.456024,100.304978,MED-1711A01F,FAC-E4D0C2D8,Patient hospitalised after consumption; batch number not in national registry.,1.79,2.5,0.71,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-2B4E220E,2023-11-05,3.163009,101.698298,MED-28EB3902,,Packaging seal already broken upon purchase.,40.97,55.0,69.03,True,Jasin,Jasin,Melaka,77000
+CMP-78555067,2023-08-05,3.158277,101.699941,MED-F1BD0EC9,,No improvement after full course; lab test confirmed inactive ingredient.,3.26,8.5,13.74,True,Puchong,Puchong,Selangor,47100
+CMP-B583AC63,2023-09-05,1.46225,103.762609,MED-B036DD9C,,Medicine purchased from street vendor near the market.,64.06,95.0,125.94,True,Ampang,Ampang,Selangor,68000
+CMP-5604AAD5,2024-11-23,3.164842,101.698922,MED-BFB0E7CA,,Seller refused to provide receipt; medicine stored without refrigeration.,10.11,30.0,49.89,False,Skudai,Johor Bahru,Johor,81300
+CMP-5F41D241,2022-12-26,3.039974,101.494444,MED-BFB0E7CA,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,20.36,30.0,9.64,True,Puchong,Puchong,Selangor,47100
+CMP-A3EDBC86,2023-02-26,3.164285,101.693939,MED-87F56986,,Unusual smell and texture; patient developed a rash after use.,5.84,8.0,10.16,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-D185BA11,2022-10-02,2.209261,102.232994,MED-0A195B42,FAC-7CD58BBC,Blister pack labelling inconsistent with MOH-registered product.,11.86,14.0,2.14,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-2B293355,2024-02-24,5.450333,100.289451,MED-28EB3902,FAC-0A5D8A94,Packaging seal already broken upon purchase.,31.36,55.0,23.64,True,Seberang Perai,Perai,Penang,13600
+CMP-BE4DF262,2024-10-25,5.450824,100.289895,MED-94DCD221,FAC-0A5D8A94,Blister pack labelling inconsistent with MOH-registered product.,4.65,6.0,1.35,True,Seberang Perai,Perai,Penang,13600
+CMP-A9C83974,2023-06-26,3.078543,101.529779,MED-BFB0E7CA,,Multiple neighbours bought same batch; all reported ineffectiveness.,18.91,30.0,41.09,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-9B7128DE,2023-06-26,3.114211,101.639067,MED-48A0F963,FAC-ADA334AB,Packaging seal already broken upon purchase.,12.33,12.0,0.33,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-D68ACDCA,2022-05-19,5.427363,100.342077,MED-1711A01F,,Barcode does not scan; product unverifiable in MOH system.,1.49,2.5,3.51,False,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-89B5F032,2023-08-19,3.161715,101.730936,MED-BFB0E7CA,FAC-8CEDD07B,Outer box appeared genuine but inner foil pack had no hologram.,29.98,30.0,0.02,True,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-FA6C3D4C,2024-11-28,2.194665,102.246606,MED-F1BD0EC9,,Price was 60% below standard — suspect adulterated product.,4.06,8.5,12.94,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-DBC7BEDF,2022-11-05,3.044599,101.446435,MED-0A195B42,,Price was 60% below standard — suspect adulterated product.,4.91,14.0,23.09,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-C8D2611E,2022-07-08,3.158415,101.69865,MED-1711A01F,,Tablet colour differs from usual; patient experienced no relief.,1.55,2.5,3.45,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-6F355E92,2023-03-02,1.460998,103.75739,MED-F1BD0EC9,,Tablet colour differs from usual; patient experienced no relief.,3.49,8.5,13.51,True,Kampar,Kampar,Perak,31400
+CMP-318F8C59,2023-03-29,1.460199,103.757907,MED-D0A5410E,,Price was 60% below standard — suspect adulterated product.,1.38,4.0,6.62,True,Muar,Muar,Johor,84000
+CMP-349294C4,2022-06-30,3.048333,101.44671,MED-28EB3902,,Outer box appeared genuine but inner foil pack had no hologram.,20.96,55.0,89.04,False,Jasin,Jasin,Melaka,77000
+CMP-3AEB5580,2024-10-28,5.424991,100.341889,MED-0A195B42,,Tablet colour differs from usual; patient experienced no relief.,6.45,14.0,21.55,False,Skudai,Johor Bahru,Johor,81300
+CMP-66111F49,2023-12-25,3.165754,101.697764,MED-C029044A,,Unusual smell and texture; patient developed a rash after use.,5.82,9.0,12.18,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-C9265538,2022-05-04,3.157106,101.700032,MED-28EB3902,,Online purchase via Telegram; seller account now deleted.,23.66,55.0,86.34,False,Johor Bahru,Johor Bahru,Johor,80000
+CMP-5105A3E6,2022-09-05,4.59047,101.081122,MED-B85A6ED2,,Outer box appeared genuine but inner foil pack had no hologram.,3.66,5.5,7.34,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-A54044A6,2024-12-01,3.15934,101.693333,MED-94DCD221,,Multiple neighbours bought same batch; all reported ineffectiveness.,2.37,6.0,9.63,True,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-6E3FA180,2024-02-15,1.489588,103.747807,MED-A601320E,FAC-4692ED35,Expiry date appears tampered — original date scratched off.,16.75,18.5,1.75,False,Skudai,Johor Bahru,Johor,81300
+CMP-038C38D8,2023-05-29,5.646849,100.489927,MED-1711A01F,,Medicine purchased from street vendor near the market.,1.61,2.5,3.39,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-71CEBBC3,2023-02-09,4.588614,101.081625,MED-28EB3902,,Online purchase via Telegram; seller account now deleted.,32.64,55.0,77.36,True,Langkawi,Kuah,Kedah,07000
+CMP-0219B907,2022-11-29,4.58909,101.078531,MED-80150E17,,No improvement after full course; lab test confirmed inactive ingredient.,13.44,18.0,22.56,False,Puchong,Puchong,Selangor,47100
+CMP-D2CD8233,2024-02-21,2.196879,102.248175,MED-87F56986,,Expiry date appears tampered — original date scratched off.,4.65,8.0,11.35,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-203BF969,2024-02-11,3.081201,101.507064,MED-BFB0E7CA,FAC-5E4DE973,Outer box appeared genuine but inner foil pack had no hologram.,28.68,30.0,1.32,True,Shah Alam,Shah Alam,Selangor,40000
+CMP-88670DA8,2023-05-06,5.422551,100.340106,MED-B85A6ED2,,Blister pack labelling inconsistent with MOH-registered product.,2.57,5.5,8.43,False,Kulim,Kulim,Kedah,09000
+CMP-A0A0D23D,2024-01-16,2.724529,101.943241,MED-9EB4B8D6,,Multiple neighbours bought same batch; all reported ineffectiveness.,3.29,7.0,10.71,False,Johor Bahru,Johor Bahru,Johor,80000
+CMP-4BF82C73,2024-03-31,2.738442,101.909458,MED-59EB08A3,FAC-8AE744B9,Patient hospitalised after consumption; batch number not in national registry.,14.93,12.0,2.93,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-5DF8E229,2022-11-28,3.081111,101.532157,MED-0A195B42,,Multiple neighbours bought same batch; all reported ineffectiveness.,9.05,14.0,18.95,True,Kulim,Kulim,Kedah,09000
+CMP-8425D7C5,2022-07-04,3.078935,101.532376,MED-BFB0E7CA,,No improvement after full course; lab test confirmed inactive ingredient.,21.82,30.0,38.18,False,Manjung,Seri Manjung,Perak,32000
+CMP-329F3046,2022-07-19,3.16562,101.694751,MED-BFB0E7CA,,Expiry date appears tampered — original date scratched off.,9.36,30.0,50.64,True,Langkawi,Kuah,Kedah,07000
+CMP-2E66F428,2024-11-06,3.160938,101.693316,MED-B85A6ED2,,Patient hospitalised after consumption; batch number not in national registry.,2.26,5.5,8.74,False,Taiping,Taiping,Perak,34000
+CMP-B250C885,2023-09-10,5.423726,100.337374,MED-9EB4B8D6,,Price was 60% below standard — suspect adulterated product.,2.2,7.0,11.8,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-C04A89B4,2024-09-01,2.746513,101.978216,MED-A2FD86E4,FAC-0CCF18D7,Online purchase via Telegram; seller account now deleted.,23.08,22.0,1.08,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-A5E10D5F,2024-02-21,3.046007,101.445287,MED-B036DD9C,,Barcode does not scan; product unverifiable in MOH system.,62.76,95.0,127.24,True,Seberang Perai,Perai,Penang,13600
+CMP-74CFC340,2024-05-06,3.164373,101.700332,MED-0A195B42,,Seller refused to provide receipt; medicine stored without refrigeration.,4.53,14.0,23.47,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-F674DA93,2022-12-28,4.590601,101.080162,MED-94DCD221,,Packaging seal already broken upon purchase.,3.95,6.0,8.05,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-4926C095,2024-03-04,3.161079,101.731722,MED-48A0F963,FAC-8CEDD07B,Outer box appeared genuine but inner foil pack had no hologram.,7.23,12.0,4.77,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-3C46BC14,2024-08-22,2.727297,101.943869,MED-59EB08A3,,Packaging seal already broken upon purchase.,7.7,12.0,16.3,True,Ampang,Ampang,Selangor,68000
+CMP-0D79A425,2022-08-12,3.079989,101.527369,MED-87F56986,,Outer box appeared genuine but inner foil pack had no hologram.,4.51,8.0,11.49,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-B2DD88E6,2024-11-23,3.161898,101.701892,MED-87F56986,,Multiple neighbours bought same batch; all reported ineffectiveness.,5.94,8.0,10.06,False,Sentul,Kuala Lumpur,Kuala Lumpur,51000
+CMP-842448F6,2024-09-11,4.59042,101.082326,MED-48A0F963,,Patient hospitalised after consumption; batch number not in national registry.,8.97,12.0,15.03,False,Kajang,Kajang,Selangor,43000
+CMP-D2568FF5,2024-01-06,3.079118,101.530364,MED-B036DD9C,,Blister pack labelling inconsistent with MOH-registered product.,28.64,95.0,161.36,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-DE991AE5,2023-10-06,1.488059,103.74897,MED-A601320E,FAC-4692ED35,Tablet colour differs from usual; patient experienced no relief.,10.19,18.5,8.31,False,Skudai,Johor Bahru,Johor,81300
+CMP-96AC21BC,2024-12-22,4.592447,101.128987,MED-B71DF9FF,FAC-3ECA68E5,Medicine purchased from street vendor near the market.,8.19,6.5,1.69,False,Ipoh,Ipoh,Perak,30000
+CMP-9E3E2FB0,2024-11-07,4.643427,101.097871,MED-B85A6ED2,FAC-28F771B5,Multiple neighbours bought same batch; all reported ineffectiveness.,4.87,5.5,0.63,False,Ipoh,Ipoh,Perak,30000
+CMP-3890E773,2022-10-27,3.082774,101.50528,MED-59EB08A3,FAC-5E4DE973,Seller refused to provide receipt; medicine stored without refrigeration.,12.33,12.0,0.33,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-5C408E4E,2023-06-08,2.208994,102.232702,MED-87F56986,FAC-7CD58BBC,Multiple neighbours bought same batch; all reported ineffectiveness.,9.61,8.0,1.61,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-7BB64BC0,2022-12-24,2.727121,101.944973,MED-0A195B42,,Online purchase via Telegram; seller account now deleted.,9.6,14.0,18.4,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-DC13455C,2022-05-07,1.462513,103.762518,MED-80150E17,,Online purchase via Telegram; seller account now deleted.,8.46,18.0,27.54,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-524545BF,2023-06-06,1.487594,103.762826,MED-FB58034C,FAC-3BA9B7FF,Medicine purchased from street vendor near the market.,18.49,22.0,3.51,False,Kulai,Kulai,Johor,81000
+CMP-E5702298,2022-12-08,3.060348,101.565624,MED-80150E17,FAC-17D3633A,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,18.34,18.0,0.34,True,Klang,Klang,Selangor,41000
+CMP-CFF59156,2023-12-24,5.645723,100.485681,MED-FB58034C,,Online purchase via Telegram; seller account now deleted.,14.06,22.0,29.94,True,Butterworth,Butterworth,Penang,12000
+CMP-25A49E8C,2022-05-29,3.099693,101.700087,MED-D0A5410E,FAC-44382B09,Blister pack labelling inconsistent with MOH-registered product.,4.24,4.0,0.24,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-C1C7131D,2024-01-15,4.644702,101.094212,MED-B85A6ED2,FAC-28F771B5,Seller refused to provide receipt; medicine stored without refrigeration.,4.83,5.5,0.67,True,Ipoh,Ipoh,Perak,30000
+CMP-E8E05A99,2022-08-30,2.749165,101.976903,MED-94DCD221,FAC-0CCF18D7,Medicine purchased from street vendor near the market.,5.23,6.0,0.77,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-4D5981D1,2024-08-28,3.162797,101.695047,MED-F1BD0EC9,,Online purchase via Telegram; seller account now deleted.,6.26,8.5,10.74,True,Kulim,Kulim,Kedah,09000
+CMP-B44F9D81,2022-03-02,3.16393,101.700183,MED-FB58034C,,No improvement after full course; lab test confirmed inactive ingredient.,12.85,22.0,31.15,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-0A2BDC80,2024-08-13,1.459282,103.76018,MED-B036DD9C,,Patient hospitalised after consumption; batch number not in national registry.,67.83,95.0,122.17,True,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-D3BAEA71,2024-05-11,3.077718,101.532333,MED-D0A5410E,,Patient hospitalised after consumption; batch number not in national registry.,2.46,4.0,5.54,False,Kajang,Kajang,Selangor,43000
+CMP-72584C62,2022-07-26,6.138088,100.366486,MED-D0A5410E,FAC-E691F464,Blister pack labelling inconsistent with MOH-registered product.,2.67,4.0,1.33,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-5EB2CDCB,2022-09-03,3.087524,101.467333,MED-F1BD0EC9,FAC-F9EE4390,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,7.4,8.5,1.1,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-FDE5263F,2022-12-18,3.044337,101.444328,MED-FB58034C,,Unusual smell and texture; patient developed a rash after use.,10.67,22.0,33.33,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-29D71F2B,2023-12-28,4.591416,101.079238,MED-F1BD0EC9,,Tablet colour differs from usual; patient experienced no relief.,3.89,8.5,13.11,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-DD3C4B8D,2024-04-08,3.047371,101.442691,MED-D0A5410E,,Online purchase via Telegram; seller account now deleted.,2.16,4.0,5.84,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-F7E7A059,2022-07-01,3.165594,101.698976,MED-9EB4B8D6,,Tablet colour differs from usual; patient experienced no relief.,5.21,7.0,8.79,False,Puchong,Puchong,Selangor,47100
+CMP-FF078A17,2024-03-07,2.737484,101.906854,MED-BFB0E7CA,FAC-8AE744B9,Outer box appeared genuine but inner foil pack had no hologram.,16.25,30.0,13.75,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-3FF67E81,2022-04-22,2.684998,101.966618,MED-59EB08A3,FAC-A3606986,Price was 60% below standard — suspect adulterated product.,12.44,12.0,0.44,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-0F7AA9E3,2024-12-28,3.133298,101.710521,MED-C029044A,FAC-9781E0DC,Tablet colour differs from usual; patient experienced no relief.,5.71,9.0,3.29,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-30366141,2022-05-19,4.589737,101.08224,MED-1711A01F,,Blister pack labelling inconsistent with MOH-registered product.,1.12,2.5,3.88,True,Langkawi,Kuah,Kedah,07000
+CMP-A8CD0868,2022-04-04,5.450665,100.289615,MED-FB58034C,FAC-0A5D8A94,Unusual smell and texture; patient developed a rash after use.,12.15,22.0,9.85,False,Seberang Perai,Perai,Penang,13600
+CMP-CB21A695,2024-09-26,3.041612,101.444745,MED-FB58034C,,Tablet colour differs from usual; patient experienced no relief.,15.74,22.0,28.26,True,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-1FCAB16C,2023-01-05,2.750205,101.976101,MED-FB58034C,FAC-0CCF18D7,Multiple neighbours bought same batch; all reported ineffectiveness.,13.52,22.0,8.48,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-2A7920B2,2023-10-31,2.724318,101.944566,MED-B71DF9FF,,Online purchase via Telegram; seller account now deleted.,4.86,6.5,8.14,True,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-28FC1E5E,2023-10-29,3.160154,101.695205,MED-B71DF9FF,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,2.82,6.5,10.18,False,Johor Bahru,Johor Bahru,Johor,80000
+CMP-8E64278A,2023-04-24,1.46188,103.758289,MED-0A195B42,,Unusual smell and texture; patient developed a rash after use.,6.61,14.0,21.39,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-2461CDE1,2022-08-07,4.59048,101.080238,MED-87F56986,,Outer box appeared genuine but inner foil pack had no hologram.,4.78,8.0,11.22,False,Manjung,Seri Manjung,Perak,32000
+CMP-848226C0,2023-09-21,2.746911,101.976858,MED-A2FD86E4,FAC-0CCF18D7,Expiry date appears tampered — original date scratched off.,24.1,22.0,2.1,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-CCF44CD1,2024-07-18,5.427259,100.340315,MED-0A195B42,,Tablet colour differs from usual; patient experienced no relief.,5.41,14.0,22.59,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-ECC2587D,2023-07-05,1.491832,103.731086,MED-48A0F963,FAC-C84DEF5D,Patient hospitalised after consumption; batch number not in national registry.,8.17,12.0,3.83,True,Kulai,Kulai,Johor,81000
+CMP-8B31BF79,2024-04-06,2.211472,102.230948,MED-C029044A,FAC-7CD58BBC,Tablet colour differs from usual; patient experienced no relief.,11.33,9.0,2.33,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-4993C0AE,2024-02-10,3.081054,101.504176,MED-C029044A,FAC-5E4DE973,Online purchase via Telegram; seller account now deleted.,8.22,9.0,0.78,True,Shah Alam,Shah Alam,Selangor,40000
+CMP-BBC475C5,2023-10-24,1.458831,103.763408,MED-BFB0E7CA,,Multiple neighbours bought same batch; all reported ineffectiveness.,10.75,30.0,49.25,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-AD5A4617,2024-03-17,3.045762,101.444063,MED-C029044A,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,3.84,9.0,14.16,True,Seberang Perai,Perai,Penang,13600
+CMP-61871B90,2023-10-30,5.42545,100.340294,MED-9EB4B8D6,,Expiry date appears tampered — original date scratched off.,2.47,7.0,11.53,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-3250B9C2,2023-01-16,5.648031,100.486269,MED-BFB0E7CA,,Price was 60% below standard — suspect adulterated product.,19.2,30.0,40.8,True,Skudai,Johor Bahru,Johor,81300
+CMP-849C11B4,2024-07-23,3.06322,101.565211,MED-99B74A7E,FAC-17D3633A,Unusual smell and texture; patient developed a rash after use.,20.52,25.0,4.48,False,Klang,Klang,Selangor,41000
+CMP-DDD6F57E,2023-02-23,1.460128,103.763359,MED-59EB08A3,,Packaging seal already broken upon purchase.,8.75,12.0,15.25,True,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-7A3476E3,2023-07-06,2.223296,102.239326,MED-28EB3902,FAC-6B4B764D,Packaging seal already broken upon purchase.,66.85,55.0,11.85,False,Jasin,Jasin,Melaka,77000
+CMP-B4E9FB79,2022-10-30,1.460822,103.75841,MED-48A0F963,,Unusual smell and texture; patient developed a rash after use.,3.79,12.0,20.21,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-2D65DBCE,2023-05-19,5.451776,100.290684,MED-28EB3902,FAC-0A5D8A94,Outer box appeared genuine but inner foil pack had no hologram.,54.52,55.0,0.48,True,Seberang Perai,Perai,Penang,13600
+CMP-36FE4689,2022-05-31,6.086756,100.328258,MED-D0A5410E,FAC-F1874C81,Multiple neighbours bought same batch; all reported ineffectiveness.,2.52,4.0,1.48,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-637F339A,2022-03-24,1.456757,103.760132,MED-28EB3902,,Barcode does not scan; product unverifiable in MOH system.,21.11,55.0,88.89,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-22CC6824,2024-12-07,2.228712,102.26257,MED-BFB0E7CA,FAC-0218137B,No improvement after full course; lab test confirmed inactive ingredient.,33.67,30.0,3.67,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-DA1918FF,2022-12-12,3.044867,101.44866,MED-9EB4B8D6,,Outer box appeared genuine but inner foil pack had no hologram.,4.25,7.0,9.75,False,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-1AE2ADDF,2024-03-13,4.588156,101.080192,MED-B036DD9C,,Packaging seal already broken upon purchase.,34.64,95.0,155.36,False,Teluk Intan,Teluk Intan,Perak,36000
+CMP-1D886B5C,2023-01-04,1.461967,103.761854,MED-9EB4B8D6,,Online purchase via Telegram; seller account now deleted.,4.4,7.0,9.6,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-02A1FBBA,2024-04-25,4.588628,101.080346,MED-59EB08A3,,Online purchase via Telegram; seller account now deleted.,8.05,12.0,15.95,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-DDC197FF,2024-03-24,5.426653,100.338345,MED-0A195B42,,Tablet colour differs from usual; patient experienced no relief.,6.47,14.0,21.53,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-81B831C5,2024-03-29,3.165058,101.695232,MED-B036DD9C,,Patient hospitalised after consumption; batch number not in national registry.,39.45,95.0,150.55,False,Ipoh,Ipoh,Perak,30000
+CMP-3562A83A,2024-11-07,3.081708,101.531273,MED-FB58034C,,Price was 60% below standard — suspect adulterated product.,15.19,22.0,28.81,True,Skudai,Johor Bahru,Johor,81300
+CMP-613A0120,2023-08-06,2.752817,101.927565,MED-48A0F963,FAC-8F026DD1,Seller refused to provide receipt; medicine stored without refrigeration.,14.82,12.0,2.82,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-501D0089,2022-12-25,2.740773,101.908395,MED-B036DD9C,FAC-8AE744B9,Outer box appeared genuine but inner foil pack had no hologram.,119.37,95.0,24.37,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-F39EA968,2022-09-28,2.729309,101.969015,MED-59EB08A3,FAC-4C4DEC32,Outer box appeared genuine but inner foil pack had no hologram.,6.09,12.0,5.91,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-BD45CCB7,2024-05-26,2.726602,101.944177,MED-28EB3902,,Online purchase via Telegram; seller account now deleted.,28.49,55.0,81.51,False,Kajang,Kajang,Selangor,43000
+CMP-B32AFFAE,2022-03-14,2.753099,101.928402,MED-C029044A,FAC-8F026DD1,Patient hospitalised after consumption; batch number not in national registry.,7.41,9.0,1.59,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-5C3C7417,2024-10-09,3.046944,101.442109,MED-28EB3902,,Outer box appeared genuine but inner foil pack had no hologram.,35.59,55.0,74.41,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-97F31FF1,2022-07-02,4.589667,101.080058,MED-48A0F963,,Seller refused to provide receipt; medicine stored without refrigeration.,4.04,12.0,19.96,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-5D73ED30,2023-08-21,4.643903,101.097173,MED-B036DD9C,FAC-28F771B5,Barcode does not scan; product unverifiable in MOH system.,73.44,95.0,21.56,True,Ipoh,Ipoh,Perak,30000
+CMP-00C4F21F,2024-02-23,2.752843,101.929489,MED-48A0F963,FAC-8F026DD1,Outer box appeared genuine but inner foil pack had no hologram.,8.48,12.0,3.52,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-F1E6F500,2024-12-12,3.078556,101.533274,MED-C029044A,,Patient hospitalised after consumption; batch number not in national registry.,4.43,9.0,13.57,False,Kulim,Kulim,Kedah,09000
+CMP-76134DD7,2023-10-01,3.043728,101.444775,MED-48A0F963,,Outer box appeared genuine but inner foil pack had no hologram.,4.22,12.0,19.78,False,Manjung,Seri Manjung,Perak,32000
+CMP-F75FF3DF,2022-01-27,2.193884,102.248362,MED-99B74A7E,,Packaging seal already broken upon purchase.,8.58,25.0,41.42,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-CAE47B6D,2024-06-12,2.769697,101.924583,MED-D0A5410E,FAC-B2831513,Unusual smell and texture; patient developed a rash after use.,2.71,4.0,1.29,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-409CF32D,2024-06-06,5.451106,100.293042,MED-28EB3902,FAC-0A5D8A94,Price was 60% below standard — suspect adulterated product.,34.89,55.0,20.11,False,Seberang Perai,Perai,Penang,13600
+CMP-7E79422F,2023-04-14,6.138987,100.366373,MED-FB58034C,FAC-E691F464,Price was 60% below standard — suspect adulterated product.,28.24,22.0,6.24,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-8A69E62D,2022-08-08,2.196303,102.247732,MED-BFB0E7CA,,Blister pack labelling inconsistent with MOH-registered product.,10.72,30.0,49.28,False,Puchong,Puchong,Selangor,47100
+CMP-B58B384D,2023-11-22,2.15939,102.207795,MED-B71DF9FF,FAC-19FADAF6,Expiry date appears tampered — original date scratched off.,6.58,6.5,0.08,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-FD02D710,2022-04-30,3.046019,101.443453,MED-28EB3902,,Unusual smell and texture; patient developed a rash after use.,40.29,55.0,69.71,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-0B467077,2023-10-25,1.463292,103.758572,MED-B85A6ED2,,Patient hospitalised after consumption; batch number not in national registry.,3.74,5.5,7.26,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-0B89E378,2024-01-14,5.422173,100.340327,MED-87F56986,,Tablet colour differs from usual; patient experienced no relief.,3.14,8.0,12.86,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-4149068D,2022-03-10,2.738357,101.911485,MED-B85A6ED2,FAC-8AE744B9,Multiple neighbours bought same batch; all reported ineffectiveness.,4.01,5.5,1.49,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-542FD5B7,2022-01-13,3.098933,101.697614,MED-0A195B42,FAC-44382B09,Outer box appeared genuine but inner foil pack had no hologram.,8.33,14.0,5.67,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-96E2E69F,2023-05-04,5.423622,100.341567,MED-FB58034C,,Medicine purchased from street vendor near the market.,7.99,22.0,36.01,True,Georgetown,Georgetown,Penang,10000
+CMP-CEF83349,2024-02-04,3.162308,101.701812,MED-99B74A7E,,Expiry date appears tampered — original date scratched off.,13.03,25.0,36.97,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-DD8EFB3B,2024-04-03,3.077342,101.527842,MED-80150E17,,Online purchase via Telegram; seller account now deleted.,13.32,18.0,22.68,False,Manjung,Seri Manjung,Perak,32000
+CMP-25FDB772,2024-09-17,2.736354,101.909394,MED-A2FD86E4,FAC-8AE744B9,Unusual smell and texture; patient developed a rash after use.,20.84,22.0,1.16,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-C2B005C5,2022-08-02,6.086066,100.328808,MED-D0A5410E,FAC-F1874C81,Online purchase via Telegram; seller account now deleted.,4.05,4.0,0.05,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-31F302C1,2022-09-11,3.08232,101.530723,MED-0A195B42,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,6.24,14.0,21.76,True,Kulai,Kulai,Johor,81000
+CMP-03764DD1,2022-02-19,4.590332,101.079532,MED-F1BD0EC9,,Price was 60% below standard — suspect adulterated product.,3.85,8.5,13.15,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-DA6E7F29,2022-09-11,3.147211,101.65044,MED-A2FD86E4,FAC-8B877AB2,Outer box appeared genuine but inner foil pack had no hologram.,22.18,22.0,0.18,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-674A2E85,2024-03-20,2.75533,101.931353,MED-D0A5410E,FAC-8F026DD1,Expiry date appears tampered — original date scratched off.,3.28,4.0,0.72,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-3962B236,2024-08-16,5.646247,100.486083,MED-0A195B42,,Packaging seal already broken upon purchase.,5.27,14.0,22.73,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-3D8F03F9,2024-05-13,1.459888,103.761981,MED-48A0F963,,Tablet colour differs from usual; patient experienced no relief.,3.75,12.0,20.25,False,Skudai,Johor Bahru,Johor,81300
+CMP-2B6B6E07,2022-09-05,3.165586,101.696112,MED-FB58034C,,No improvement after full course; lab test confirmed inactive ingredient.,12.78,22.0,31.22,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-A3600D38,2024-01-02,2.687356,101.967891,MED-87F56986,FAC-A3606986,Packaging seal already broken upon purchase.,10.09,8.0,2.09,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-81AD8B54,2023-08-19,2.685899,101.968011,MED-B85A6ED2,FAC-A3606986,Outer box appeared genuine but inner foil pack had no hologram.,5.17,5.5,0.33,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-473DC97F,2022-07-23,3.165124,101.698899,MED-C029044A,,Packaging seal already broken upon purchase.,5.57,9.0,12.43,False,Jasin,Jasin,Melaka,77000
+CMP-EA8EDDF1,2023-09-04,5.648937,100.489253,MED-A2FD86E4,,No improvement after full course; lab test confirmed inactive ingredient.,11.76,22.0,32.24,True,Manjung,Seri Manjung,Perak,32000
+CMP-D0BB73EC,2022-04-08,2.727548,101.944165,MED-C029044A,,Barcode does not scan; product unverifiable in MOH system.,6.11,9.0,11.89,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-B6D7E9D9,2023-07-09,2.196017,102.24625,MED-48A0F963,,Barcode does not scan; product unverifiable in MOH system.,7.34,12.0,16.66,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-9AD7066F,2024-10-03,2.195151,102.2476,MED-D0A5410E,,Expiry date appears tampered — original date scratched off.,2.2,4.0,5.8,True,Taiping,Taiping,Perak,34000
+CMP-6CC91DBE,2023-08-04,3.042755,101.445991,MED-B036DD9C,,Packaging seal already broken upon purchase.,49.87,95.0,140.13,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-CF2DFC1D,2023-05-21,3.160994,101.701438,MED-28EB3902,,Expiry date appears tampered — original date scratched off.,28.63,55.0,81.37,False,Langkawi,Kuah,Kedah,07000
+CMP-A2A5E582,2023-11-29,3.03984,101.495891,MED-59EB08A3,FAC-2D52E3F2,Seller refused to provide receipt; medicine stored without refrigeration.,13.74,12.0,1.74,True,Puchong,Puchong,Selangor,47100
+CMP-420EC260,2022-05-20,2.194216,102.250049,MED-99B74A7E,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,11.46,25.0,38.54,False,Seberang Perai,Perai,Penang,13600
+CMP-C63EC9AF,2022-08-22,3.042072,101.445825,MED-D0A5410E,,Medicine purchased from street vendor near the market.,2.7,4.0,5.3,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-CA0FC830,2023-02-19,3.046336,101.44281,MED-87F56986,,No improvement after full course; lab test confirmed inactive ingredient.,5.79,8.0,10.21,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-5BAA056D,2022-05-14,3.166359,101.699608,MED-28EB3902,,Packaging seal already broken upon purchase.,30.49,55.0,79.51,True,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-CDA0301E,2024-12-23,5.449509,100.290934,MED-C029044A,FAC-0A5D8A94,No improvement after full course; lab test confirmed inactive ingredient.,9.95,9.0,0.95,True,Seberang Perai,Perai,Penang,13600
+CMP-47AA0BB1,2024-12-06,2.135649,102.242391,MED-A2FD86E4,FAC-5FB1305A,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,25.23,22.0,3.23,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-7F5077D8,2023-01-10,2.748952,101.978532,MED-48A0F963,FAC-0CCF18D7,Outer box appeared genuine but inner foil pack had no hologram.,13.32,12.0,1.32,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-5E7C2E5A,2022-10-23,3.100317,101.696066,MED-BFB0E7CA,FAC-44382B09,Unusual smell and texture; patient developed a rash after use.,22.08,30.0,7.92,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-B1310B3A,2024-01-04,3.078506,101.526826,MED-A2FD86E4,,Outer box appeared genuine but inner foil pack had no hologram.,14.02,22.0,29.98,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-3BB74014,2024-03-25,5.44701,100.304075,MED-99B74A7E,FAC-AD254158,Medicine purchased from street vendor near the market.,18.67,25.0,6.33,True,Georgetown,Georgetown,Penang,10000
+CMP-C12E6D1B,2023-03-11,4.589368,101.079524,MED-48A0F963,,Seller refused to provide receipt; medicine stored without refrigeration.,4.32,12.0,19.68,True,Langkawi,Kuah,Kedah,07000
+CMP-A6BE2EDA,2024-08-27,2.196078,102.249785,MED-48A0F963,,Price was 60% below standard — suspect adulterated product.,8.26,12.0,15.74,False,Seberang Perai,Perai,Penang,13600
+CMP-1C6E2EBF,2022-11-11,3.0433,101.443395,MED-FB58034C,,Blister pack labelling inconsistent with MOH-registered product.,13.67,22.0,30.33,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-FF511426,2024-06-03,4.591945,101.080614,MED-87F56986,,Expiry date appears tampered — original date scratched off.,2.58,8.0,13.42,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-8EEBFB3C,2022-01-05,3.045872,101.441623,MED-F1BD0EC9,,Patient hospitalised after consumption; batch number not in national registry.,6.05,8.5,10.95,False,Kulai,Kulai,Johor,81000
+CMP-5F7F00D1,2023-12-31,3.043852,101.446197,MED-D0A5410E,,Tablet colour differs from usual; patient experienced no relief.,1.3,4.0,6.7,True,Langkawi,Kuah,Kedah,07000
+CMP-436D4B8F,2024-09-06,2.192934,102.248171,MED-B71DF9FF,,Price was 60% below standard — suspect adulterated product.,4.27,6.5,8.73,False,Langkawi,Kuah,Kedah,07000
+CMP-E48791F7,2024-12-28,3.166431,101.696623,MED-A601320E,,Price was 60% below standard — suspect adulterated product.,8.37,18.5,28.63,False,Seberang Perai,Perai,Penang,13600
+CMP-44B470C4,2023-10-23,1.460316,103.762449,MED-F1BD0EC9,,Patient hospitalised after consumption; batch number not in national registry.,6.32,8.5,10.68,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-3BE764D3,2022-11-05,2.746178,101.976748,MED-F1BD0EC9,FAC-0CCF18D7,Packaging seal already broken upon purchase.,4.62,8.5,3.88,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-A99EDCAE,2022-12-15,6.087107,100.326329,MED-F1BD0EC9,FAC-F1874C81,Online purchase via Telegram; seller account now deleted.,4.75,8.5,3.75,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-896430BC,2023-06-28,6.086846,100.328685,MED-80150E17,FAC-F1874C81,No improvement after full course; lab test confirmed inactive ingredient.,15.43,18.0,2.57,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-A2349565,2023-03-01,5.647406,100.488777,MED-B85A6ED2,,Barcode does not scan; product unverifiable in MOH system.,2.66,5.5,8.34,True,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-5DD1D1A3,2023-09-06,5.423667,100.339481,MED-48A0F963,,Blister pack labelling inconsistent with MOH-registered product.,6.31,12.0,17.69,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-D6DBB4F8,2022-12-19,3.080035,101.529504,MED-28EB3902,,Outer box appeared genuine but inner foil pack had no hologram.,17.63,55.0,92.37,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-6D6C7DCD,2024-02-02,6.139471,100.367295,MED-1711A01F,FAC-E691F464,Blister pack labelling inconsistent with MOH-registered product.,2.65,2.5,0.15,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-B4F96AEF,2022-10-26,3.041726,101.442787,MED-D0A5410E,,Medicine purchased from street vendor near the market.,2.98,4.0,5.02,True,Jasin,Jasin,Melaka,77000
+CMP-3B34D71C,2024-02-29,3.043494,101.44915,MED-94DCD221,,No improvement after full course; lab test confirmed inactive ingredient.,2.07,6.0,9.93,True,Seberang Perai,Perai,Penang,13600
+CMP-4517C55F,2022-12-07,3.165297,101.697127,MED-C029044A,,Expiry date appears tampered — original date scratched off.,5.83,9.0,12.17,True,Manjung,Seri Manjung,Perak,32000
+CMP-00A23ACD,2023-02-03,2.752263,101.931244,MED-B71DF9FF,FAC-8F026DD1,Medicine purchased from street vendor near the market.,4.69,6.5,1.81,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-223F227B,2024-09-09,1.46009,103.761227,MED-94DCD221,,Unusual smell and texture; patient developed a rash after use.,3.12,6.0,8.88,False,Georgetown,Georgetown,Penang,10000
+CMP-ADFA1E36,2022-02-13,3.079228,101.53329,MED-1711A01F,,Outer box appeared genuine but inner foil pack had no hologram.,1.16,2.5,3.84,False,Kulim,Kulim,Kedah,09000
+CMP-FD932878,2022-10-18,3.037469,101.496776,MED-B85A6ED2,FAC-2D52E3F2,Multiple neighbours bought same batch; all reported ineffectiveness.,2.85,5.5,2.65,True,Puchong,Puchong,Selangor,47100
+CMP-D17BF38D,2022-02-19,3.044996,101.445569,MED-C029044A,,Medicine purchased from street vendor near the market.,3.36,9.0,14.64,False,Jasin,Jasin,Melaka,77000
+CMP-E426DFB0,2023-03-06,3.080452,101.52746,MED-1711A01F,,Medicine purchased from street vendor near the market.,1.72,2.5,3.28,True,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-7F24B167,2023-03-01,3.047673,101.442364,MED-48A0F963,,No improvement after full course; lab test confirmed inactive ingredient.,6.16,12.0,17.84,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-E8E7699C,2024-01-29,1.487687,103.764151,MED-B71DF9FF,FAC-3BA9B7FF,Price was 60% below standard — suspect adulterated product.,5.96,6.5,0.54,True,Kulai,Kulai,Johor,81000
+CMP-158914F6,2024-08-01,5.647244,100.486154,MED-80150E17,,Online purchase via Telegram; seller account now deleted.,10.63,18.0,25.37,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-7982C6F7,2022-06-22,3.112554,101.491258,MED-FB58034C,FAC-5197A2F9,Outer box appeared genuine but inner foil pack had no hologram.,21.88,22.0,0.12,False,Puchong,Puchong,Selangor,47100
+CMP-8F8932FF,2024-08-05,5.646149,100.488957,MED-F1BD0EC9,,No improvement after full course; lab test confirmed inactive ingredient.,6.08,8.5,10.92,True,Georgetown,Georgetown,Penang,10000
+CMP-B3C7FE1F,2023-02-25,3.145943,101.653639,MED-59EB08A3,FAC-8B877AB2,Seller refused to provide receipt; medicine stored without refrigeration.,6.07,12.0,5.93,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-835B5558,2022-03-18,3.076835,101.52947,MED-D0A5410E,,Seller refused to provide receipt; medicine stored without refrigeration.,2.08,4.0,5.92,False,Ampang,Ampang,Selangor,68000
+CMP-7C4D3579,2022-12-16,3.163916,101.702083,MED-9EB4B8D6,,Packaging seal already broken upon purchase.,3.41,7.0,10.59,True,Manjung,Seri Manjung,Perak,32000
+CMP-832B4F52,2024-11-12,2.166816,102.226514,MED-0A195B42,FAC-2C0C96B7,Unusual smell and texture; patient developed a rash after use.,9.05,14.0,4.95,True,Jasin,Jasin,Melaka,77000
+CMP-E33B6026,2024-02-25,4.591528,101.079047,MED-1711A01F,,Tablet colour differs from usual; patient experienced no relief.,0.78,2.5,4.22,True,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-D521AD2C,2023-10-10,5.424929,100.339346,MED-B036DD9C,,Tablet colour differs from usual; patient experienced no relief.,30.51,95.0,159.49,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-C0E2D8AD,2022-09-28,3.042919,101.441868,MED-A2FD86E4,,Online purchase via Telegram; seller account now deleted.,11.01,22.0,32.99,False,Kampar,Kampar,Perak,31400
+CMP-403555BE,2022-10-10,1.459406,103.758005,MED-B85A6ED2,,Price was 60% below standard — suspect adulterated product.,2.27,5.5,8.73,False,Taiping,Taiping,Perak,34000
+CMP-FBEDC900,2023-06-06,1.461677,103.760165,MED-B71DF9FF,,Barcode does not scan; product unverifiable in MOH system.,4.55,6.5,8.45,True,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-E5CCA552,2022-05-06,3.043501,101.442672,MED-99B74A7E,,Tablet colour differs from usual; patient experienced no relief.,16.12,25.0,33.88,False,Teluk Intan,Teluk Intan,Perak,36000
+CMP-B43FF72E,2022-11-11,3.159907,101.702052,MED-C029044A,,Packaging seal already broken upon purchase.,3.44,9.0,14.56,True,Kulai,Kulai,Johor,81000
+CMP-24D5379F,2023-05-04,1.457409,103.761294,MED-0A195B42,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,8.53,14.0,19.47,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-77F6220A,2022-03-05,3.041299,101.443412,MED-99B74A7E,,Blister pack labelling inconsistent with MOH-registered product.,8.24,25.0,41.76,False,Iskandar Puteri,Johor Bahru,Johor,79100
+CMP-87D02972,2023-06-07,1.457664,103.761571,MED-0A195B42,,Outer box appeared genuine but inner foil pack had no hologram.,6.31,14.0,21.69,False,Ipoh,Ipoh,Perak,30000
+CMP-9B315085,2023-12-31,1.462335,103.760252,MED-48A0F963,,Medicine purchased from street vendor near the market.,5.1,12.0,18.9,False,Manjung,Seri Manjung,Perak,32000
+CMP-12F96D15,2024-09-06,2.167367,102.224505,MED-F1BD0EC9,FAC-2C0C96B7,Barcode does not scan; product unverifiable in MOH system.,9.69,8.5,1.19,True,Jasin,Jasin,Melaka,77000
+CMP-A61DB4AE,2023-01-06,3.163598,101.693412,MED-0A195B42,,Multiple neighbours bought same batch; all reported ineffectiveness.,9.13,14.0,18.87,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-2C79A810,2023-03-26,2.694641,101.905805,MED-C029044A,FAC-3CDFE1CB,Patient hospitalised after consumption; batch number not in national registry.,4.9,9.0,4.1,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-A59E32B2,2023-06-12,2.138481,102.241506,MED-C029044A,FAC-5FB1305A,Blister pack labelling inconsistent with MOH-registered product.,11.21,9.0,2.21,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-43A74126,2024-04-24,2.692387,101.908011,MED-B036DD9C,FAC-3CDFE1CB,Tablet colour differs from usual; patient experienced no relief.,55.3,95.0,39.7,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-5F771A16,2022-10-30,4.642842,101.096108,MED-59EB08A3,FAC-28F771B5,Price was 60% below standard — suspect adulterated product.,10.18,12.0,1.82,False,Ipoh,Ipoh,Perak,30000
+CMP-514F7DD1,2024-06-15,2.19587,102.247904,MED-9EB4B8D6,,Multiple neighbours bought same batch; all reported ineffectiveness.,4.0,7.0,10.0,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-AF8BF342,2024-01-25,5.644678,100.488312,MED-99B74A7E,,Seller refused to provide receipt; medicine stored without refrigeration.,13.23,25.0,36.77,True,Jasin,Jasin,Melaka,77000
+CMP-9C289391,2023-10-02,5.645612,100.486374,MED-B036DD9C,,Online purchase via Telegram; seller account now deleted.,46.34,95.0,143.66,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-922F5957,2023-12-29,3.046408,101.446618,MED-A2FD86E4,,Multiple neighbours bought same batch; all reported ineffectiveness.,8.82,22.0,35.18,True,Teluk Intan,Teluk Intan,Perak,36000
+CMP-37AF160E,2023-03-07,3.047439,101.448305,MED-1711A01F,,Unusual smell and texture; patient developed a rash after use.,1.18,2.5,3.82,False,Kajang,Kajang,Selangor,43000
+CMP-EB0CDEBC,2022-12-09,3.157381,101.695334,MED-B036DD9C,,Multiple neighbours bought same batch; all reported ineffectiveness.,55.56,95.0,134.44,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-A25DAC3F,2023-08-26,3.157519,101.700123,MED-D0A5410E,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,2.71,4.0,5.29,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-402A3EA0,2022-06-30,5.451341,100.292315,MED-94DCD221,FAC-0A5D8A94,Packaging seal already broken upon purchase.,6.77,6.0,0.77,False,Seberang Perai,Perai,Penang,13600
+CMP-D6D444BF,2024-06-28,3.161106,101.70011,MED-F1BD0EC9,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,3.6,8.5,13.4,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-4A4131BA,2022-03-29,3.16413,101.701956,MED-94DCD221,,No improvement after full course; lab test confirmed inactive ingredient.,2.01,6.0,9.99,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-E816CB2F,2022-12-09,5.648012,100.487383,MED-59EB08A3,,Tablet colour differs from usual; patient experienced no relief.,4.79,12.0,19.21,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-4CAFE385,2024-03-04,3.161358,101.696916,MED-B71DF9FF,,Blister pack labelling inconsistent with MOH-registered product.,2.37,6.5,10.63,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-3D951192,2022-02-24,5.425752,100.342766,MED-BFB0E7CA,,Multiple neighbours bought same batch; all reported ineffectiveness.,13.1,30.0,46.9,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-5A06B8F5,2022-07-10,3.165969,101.69567,MED-1711A01F,,Barcode does not scan; product unverifiable in MOH system.,1.34,2.5,3.66,False,Taiping,Taiping,Perak,34000
+CMP-BBD4BCDA,2024-02-15,6.086175,100.325789,MED-1711A01F,FAC-F1874C81,Blister pack labelling inconsistent with MOH-registered product.,2.24,2.5,0.26,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-3E4A1C4E,2022-07-07,3.157313,101.698664,MED-B036DD9C,,Tablet colour differs from usual; patient experienced no relief.,44.52,95.0,145.48,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-A57670C2,2024-03-07,2.729406,101.968481,MED-28EB3902,FAC-4C4DEC32,No improvement after full course; lab test confirmed inactive ingredient.,65.55,55.0,10.55,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-E3A32C05,2023-06-15,3.089104,101.464316,MED-59EB08A3,FAC-F9EE4390,Online purchase via Telegram; seller account now deleted.,11.59,12.0,0.41,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-1FFEA351,2022-06-29,1.461378,103.758659,MED-99B74A7E,,No improvement after full course; lab test confirmed inactive ingredient.,10.97,25.0,39.03,False,Jasin,Jasin,Melaka,77000
+CMP-EDB34126,2022-09-24,1.489596,103.762552,MED-FB58034C,FAC-3BA9B7FF,Online purchase via Telegram; seller account now deleted.,12.64,22.0,9.36,False,Kulai,Kulai,Johor,81000
+CMP-D700FF68,2023-12-24,2.725376,101.943102,MED-48A0F963,,Multiple neighbours bought same batch; all reported ineffectiveness.,6.7,12.0,17.3,True,Langkawi,Kuah,Kedah,07000
+CMP-C45AF810,2023-04-23,4.589684,101.08061,MED-B85A6ED2,,No improvement after full course; lab test confirmed inactive ingredient.,2.58,5.5,8.42,True,Rembau,Rembau,Negeri Sembilan,71300
+CMP-AD5A5516,2024-12-24,3.157353,101.700082,MED-F1BD0EC9,,Unusual smell and texture; patient developed a rash after use.,5.45,8.5,11.55,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-8C8B8E7C,2022-09-15,3.162777,101.702232,MED-F1BD0EC9,,Unusual smell and texture; patient developed a rash after use.,3.58,8.5,13.42,False,Klang,Klang,Selangor,41000
+CMP-9A9C7690,2024-03-09,3.162836,101.694365,MED-48A0F963,,Medicine purchased from street vendor near the market.,7.63,12.0,16.37,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-FDBE1B08,2023-03-27,1.462027,103.761055,MED-B85A6ED2,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,1.68,5.5,9.32,False,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-72C3D9C1,2022-09-07,4.589785,101.080577,MED-B85A6ED2,,Outer box appeared genuine but inner foil pack had no hologram.,2.72,5.5,8.28,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-77404DD2,2024-09-13,1.459376,103.757908,MED-80150E17,,Seller refused to provide receipt; medicine stored without refrigeration.,10.0,18.0,26.0,True,Alor Setar,Alor Setar,Kedah,05000
+CMP-3058E843,2022-11-10,2.21216,102.23184,MED-FB58034C,FAC-7CD58BBC,No improvement after full course; lab test confirmed inactive ingredient.,15.45,22.0,6.55,False,Melaka Tengah,Melaka,Melaka,75000
+CMP-1536EFCD,2023-07-29,2.768017,101.922769,MED-B85A6ED2,FAC-B2831513,Price was 60% below standard — suspect adulterated product.,3.11,5.5,2.39,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-18D4E47F,2023-02-10,1.456735,103.759044,MED-A601320E,,Seller refused to provide receipt; medicine stored without refrigeration.,10.68,18.5,26.32,False,Teluk Intan,Teluk Intan,Perak,36000
+CMP-8505084F,2022-03-31,3.129564,101.710085,MED-BFB0E7CA,FAC-9781E0DC,Unusual smell and texture; patient developed a rash after use.,25.69,30.0,4.31,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-4684DC08,2023-01-04,3.078771,101.530316,MED-FB58034C,,Tablet colour differs from usual; patient experienced no relief.,16.16,22.0,27.84,False,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-4CDE5E1F,2024-09-30,1.462559,103.762263,MED-48A0F963,,No improvement after full course; lab test confirmed inactive ingredient.,7.42,12.0,16.58,False,Kampar,Kampar,Perak,31400
+CMP-8E93776B,2024-08-10,3.080401,101.531432,MED-C029044A,,Outer box appeared genuine but inner foil pack had no hologram.,3.51,9.0,14.49,False,Ipoh,Ipoh,Perak,30000
+CMP-4A13E5EA,2024-09-12,3.047012,101.446002,MED-C029044A,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,5.03,9.0,12.97,False,Butterworth,Butterworth,Penang,12000
+CMP-56F79A1B,2022-08-28,5.648074,100.488808,MED-BFB0E7CA,,Multiple neighbours bought same batch; all reported ineffectiveness.,21.85,30.0,38.15,True,Johor Bahru,Johor Bahru,Johor,80000
+CMP-15C966F6,2023-07-23,5.422647,100.339301,MED-F1BD0EC9,,Patient hospitalised after consumption; batch number not in national registry.,3.3,8.5,13.7,False,Seremban,Seremban,Negeri Sembilan,70000
+CMP-5A1F2918,2022-04-18,5.423144,100.33945,MED-B85A6ED2,,Online purchase via Telegram; seller account now deleted.,2.03,5.5,8.97,False,Bayan Lepas,Bayan Lepas,Penang,11900
+CMP-ED8762A6,2022-04-22,2.694804,101.906288,MED-D0A5410E,FAC-3CDFE1CB,Price was 60% below standard — suspect adulterated product.,3.16,4.0,0.84,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-C151F377,2022-11-12,3.080246,101.528456,MED-87F56986,,Unusual smell and texture; patient developed a rash after use.,5.44,8.0,10.56,False,Langkawi,Kuah,Kedah,07000
+CMP-0715EC4E,2024-12-19,2.196273,102.247308,MED-FB58034C,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,13.49,22.0,30.51,False,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-32E7125C,2022-09-04,6.139248,100.364827,MED-FB58034C,FAC-E691F464,Seller refused to provide receipt; medicine stored without refrigeration.,19.05,22.0,2.95,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-0DB76C22,2024-03-04,2.726855,101.946655,MED-48A0F963,,Medicine purchased from street vendor near the market.,7.44,12.0,16.56,False,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-59F4EA32,2023-05-09,5.424085,100.340913,MED-A601320E,,No improvement after full course; lab test confirmed inactive ingredient.,13.5,18.5,23.5,True,Jasin,Jasin,Melaka,77000
+CMP-54296108,2023-09-16,2.692671,101.90651,MED-B71DF9FF,FAC-3CDFE1CB,Online purchase via Telegram; seller account now deleted.,8.26,6.5,1.76,True,Nilai,Nilai,Negeri Sembilan,71800
+CMP-7874E284,2024-10-18,3.046513,101.447695,MED-28EB3902,,Barcode does not scan; product unverifiable in MOH system.,18.11,55.0,91.89,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-86BEA9A7,2024-01-08,5.648223,100.488762,MED-28EB3902,,Online purchase via Telegram; seller account now deleted.,30.66,55.0,79.34,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-D5C48DA1,2024-01-09,5.44689,100.306221,MED-B85A6ED2,FAC-AD254158,Tablet colour differs from usual; patient experienced no relief.,3.43,5.5,2.07,True,Georgetown,Georgetown,Penang,10000
+CMP-48C4715E,2022-11-17,3.080094,101.528812,MED-48A0F963,,Barcode does not scan; product unverifiable in MOH system.,7.16,12.0,16.84,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-CD03F695,2023-01-20,4.589399,101.07825,MED-A601320E,,Expiry date appears tampered — original date scratched off.,8.39,18.5,28.61,False,Kajang,Kajang,Selangor,43000
+CMP-B8A658AA,2024-08-19,3.082722,101.507544,MED-A601320E,FAC-5E4DE973,Online purchase via Telegram; seller account now deleted.,14.6,18.5,3.9,True,Shah Alam,Shah Alam,Selangor,40000
+CMP-DCDF2940,2024-10-04,3.162833,101.699816,MED-94DCD221,,No improvement after full course; lab test confirmed inactive ingredient.,3.52,6.0,8.48,True,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-B1171241,2024-12-11,1.460033,103.758244,MED-A601320E,,Unusual smell and texture; patient developed a rash after use.,12.46,18.5,24.54,True,Taiping,Taiping,Perak,34000
+CMP-855639B3,2022-02-22,5.448376,100.303668,MED-B85A6ED2,FAC-AD254158,No improvement after full course; lab test confirmed inactive ingredient.,3.63,5.5,1.87,True,Georgetown,Georgetown,Penang,10000
+CMP-B53A4052,2023-05-24,3.160841,101.733546,MED-A2FD86E4,FAC-8CEDD07B,Unusual smell and texture; patient developed a rash after use.,18.37,22.0,3.63,True,Brickfields,Kuala Lumpur,Kuala Lumpur,50470
+CMP-4E6C1660,2022-07-11,5.647838,100.486742,MED-59EB08A3,,Packaging seal already broken upon purchase.,7.03,12.0,16.97,False,Klang,Klang,Selangor,41000
+CMP-EEDADA3E,2023-07-29,3.077375,101.527597,MED-FB58034C,,Packaging seal already broken upon purchase.,9.93,22.0,34.07,True,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-A0C233EC,2023-01-31,5.426376,100.34172,MED-B85A6ED2,,Tablet colour differs from usual; patient experienced no relief.,4.08,5.5,6.92,False,Langkawi,Kuah,Kedah,07000
+CMP-9EAC8126,2022-04-08,5.422126,100.339673,MED-0A195B42,,Multiple neighbours bought same batch; all reported ineffectiveness.,8.15,14.0,19.85,False,Alor Setar,Alor Setar,Kedah,05000
+CMP-5FAC2FAC,2024-02-21,1.492416,103.73104,MED-B71DF9FF,FAC-C84DEF5D,Blister pack labelling inconsistent with MOH-registered product.,5.18,6.5,1.32,True,Kulai,Kulai,Johor,81000
+CMP-761CD8D0,2023-09-07,5.425822,100.338333,MED-59EB08A3,,Expiry date appears tampered — original date scratched off.,7.12,12.0,16.88,False,Kampar,Kampar,Perak,31400
+CMP-DE96546C,2022-05-16,1.460454,103.762763,MED-59EB08A3,,Blister pack labelling inconsistent with MOH-registered product.,5.06,12.0,18.94,False,Puchong,Puchong,Selangor,47100
+CMP-E553AEF5,2024-04-09,2.768603,101.925755,MED-28EB3902,FAC-B2831513,Multiple neighbours bought same batch; all reported ineffectiveness.,63.26,55.0,8.26,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-72E774ED,2023-02-15,5.423518,100.339046,MED-BFB0E7CA,,No improvement after full course; lab test confirmed inactive ingredient.,19.24,30.0,40.76,True,Butterworth,Butterworth,Penang,12000
+CMP-F30BB288,2022-01-12,3.148332,101.651162,MED-A2FD86E4,FAC-8B877AB2,Seller refused to provide receipt; medicine stored without refrigeration.,15.54,22.0,6.46,False,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-827053EE,2022-05-06,3.162366,101.698856,MED-B036DD9C,,Unusual smell and texture; patient developed a rash after use.,48.93,95.0,141.07,False,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-D4FE5F57,2024-10-18,3.163474,101.698331,MED-9EB4B8D6,,Outer box appeared genuine but inner foil pack had no hologram.,3.37,7.0,10.63,False,Nilai,Nilai,Negeri Sembilan,71800
+CMP-48940A43,2024-09-14,1.461718,103.758222,MED-B71DF9FF,,Tablet colour differs from usual; patient experienced no relief.,3.43,6.5,9.57,False,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-670758BA,2023-02-02,3.045144,101.448728,MED-B85A6ED2,,Blister pack labelling inconsistent with MOH-registered product.,2.63,5.5,8.37,False,Bangsar,Kuala Lumpur,Kuala Lumpur,59000
+CMP-AA4FC830,2023-05-12,3.160462,101.700682,MED-A601320E,,Seller refused to provide receipt; medicine stored without refrigeration.,9.59,18.5,27.41,False,Shah Alam,Shah Alam,Selangor,40000
+CMP-7DF071C7,2024-01-21,3.16286,101.702244,MED-87F56986,,No improvement after full course; lab test confirmed inactive ingredient.,4.77,8.0,11.23,False,Ipoh,Ipoh,Perak,30000
+CMP-80E3D2C1,2023-02-18,3.080442,101.527235,MED-C029044A,,Tablet colour differs from usual; patient experienced no relief.,5.08,9.0,12.92,False,Alor Gajah,Alor Gajah,Melaka,78000
+CMP-C4966785,2024-08-27,3.158068,101.696586,MED-C029044A,,Patient hospitalised after consumption; batch number not in national registry.,5.64,9.0,12.36,True,Ipoh,Ipoh,Perak,30000
+CMP-45EBBA09,2024-05-12,3.078179,101.527243,MED-BFB0E7CA,,Medicine purchased from street vendor near the market.,10.7,30.0,49.3,False,Teluk Intan,Teluk Intan,Perak,36000
+CMP-3C35DFDC,2024-10-21,1.460377,103.761576,MED-59EB08A3,,Packaging seal already broken upon purchase.,6.0,12.0,18.0,True,Seputeh,Kuala Lumpur,Kuala Lumpur,58000
+CMP-0718A861,2024-10-30,2.210359,102.233144,MED-48A0F963,FAC-7CD58BBC,Packaging seal already broken upon purchase.,6.21,12.0,5.79,True,Melaka Tengah,Melaka,Melaka,75000
+CMP-0F4E8FAC,2022-09-10,4.64206,101.095404,MED-59EB08A3,FAC-28F771B5,Multiple neighbours bought same batch; all reported ineffectiveness.,14.04,12.0,2.04,False,Ipoh,Ipoh,Perak,30000
+CMP-E1688CD5,2022-11-26,2.688522,101.966625,MED-C029044A,FAC-A3606986,Packaging seal already broken upon purchase.,8.19,9.0,0.81,True,Port Dickson,Port Dickson,Negeri Sembilan,71000
+CMP-F08C3B44,2023-11-03,3.085534,101.465171,MED-1711A01F,FAC-F9EE4390,Packaging seal already broken upon purchase.,1.33,2.5,1.17,True,Petaling Jaya,Petaling Jaya,Selangor,47800
+CMP-5A423471,2023-12-02,2.220611,102.238246,MED-59EB08A3,FAC-6B4B764D,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,6.89,12.0,5.11,False,Jasin,Jasin,Melaka,77000
+CMP-00539D68,2023-10-20,3.130833,101.711,MED-1711A01F,FAC-9781E0DC,Expiry date appears tampered — original date scratched off.,2.62,2.5,0.12,False,Chow Kit,Kuala Lumpur,Kuala Lumpur,50350
+CMP-43BBD73A,2022-07-05,3.147908,101.650306,MED-D0A5410E,FAC-8B877AB2,Unusual smell and texture; patient developed a rash after use.,4.4,4.0,0.4,True,Wangsa Maju,Kuala Lumpur,Kuala Lumpur,53300
+CMP-1BE9B7EF,2024-01-02,3.160338,101.697192,MED-F1BD0EC9,,Capsule dissolves immediately unlike genuine product; suspected counterfeit.,4.09,8.5,12.91,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-DC1631B5,2024-08-22,1.459441,103.759202,MED-A2FD86E4,,Online purchase via Telegram; seller account now deleted.,7.18,22.0,36.82,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-4DE75E47,2023-05-27,3.042231,101.447953,MED-B036DD9C,,No improvement after full course; lab test confirmed inactive ingredient.,70.31,95.0,119.69,True,Seremban,Seremban,Negeri Sembilan,70000
+CMP-D1633F91,2023-04-22,3.039556,101.494868,MED-B85A6ED2,FAC-2D52E3F2,Patient hospitalised after consumption; batch number not in national registry.,3.15,5.5,2.35,True,Puchong,Puchong,Selangor,47100
+CMP-2433A7C2,2023-08-19,3.062687,101.566259,MED-87F56986,FAC-17D3633A,Blister pack labelling inconsistent with MOH-registered product.,9.59,8.0,1.59,False,Klang,Klang,Selangor,41000
+CMP-489DB333,2023-03-01,3.079178,101.533185,MED-99B74A7E,,Unusual smell and texture; patient developed a rash after use.,16.45,25.0,33.55,False,Muar,Muar,Johor,84000
+CMP-D7DFF053,2024-03-24,4.644729,101.0944,MED-87F56986,FAC-28F771B5,Barcode does not scan; product unverifiable in MOH system.,4.56,8.0,3.44,True,Ipoh,Ipoh,Perak,30000
+CMP-AE757851,2023-04-12,5.458519,100.30282,MED-B036DD9C,FAC-E4D0C2D8,Packaging seal already broken upon purchase.,121.41,95.0,26.41,True,Bukit Mertajam,Bukit Mertajam,Penang,14000
+CMP-97875F01,2024-11-17,3.07848,101.527789,MED-C029044A,,Patient hospitalised after consumption; batch number not in national registry.,2.85,9.0,15.15,False,Rembau,Rembau,Negeri Sembilan,71300
+CMP-A8D09885,2022-11-14,3.161505,101.698124,MED-80150E17,,Blister pack labelling inconsistent with MOH-registered product.,10.11,18.0,25.89,False,Jasin,Jasin,Melaka,77000
+CMP-FCC219DE,2024-08-16,1.462946,103.760481,MED-1711A01F,,Expiry date appears tampered — original date scratched off.,1.8,2.5,3.2,True,Ampang,Ampang,Selangor,68000
+CMP-D4EA3D47,2023-04-26,2.219578,102.237616,MED-99B74A7E,FAC-6B4B764D,Seller refused to provide receipt; medicine stored without refrigeration.,27.24,25.0,2.24,True,Jasin,Jasin,Melaka,77000
+CMP-7911E199,2024-08-23,6.136969,100.367341,MED-A2FD86E4,FAC-E691F464,Patient hospitalised after consumption; batch number not in national registry.,15.17,22.0,6.83,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-4A842119,2023-04-04,1.484801,103.746619,MED-80150E17,FAC-4692ED35,Outer box appeared genuine but inner foil pack had no hologram.,19.42,18.0,1.42,False,Skudai,Johor Bahru,Johor,81300
+CMP-6C654BF8,2023-02-25,5.645056,100.487785,MED-B85A6ED2,,Seller refused to provide receipt; medicine stored without refrigeration.,2.0,5.5,9.0,True,Subang Jaya,Subang Jaya,Selangor,47500
+CMP-4B771147,2023-10-04,1.45842,103.759198,MED-BFB0E7CA,,Barcode does not scan; product unverifiable in MOH system.,19.4,30.0,40.6,True,Sungai Petani,Sungai Petani,Kedah,08000
+CMP-C21264D1,2023-07-30,3.080752,101.528322,MED-B85A6ED2,,Seller refused to provide receipt; medicine stored without refrigeration.,1.76,5.5,9.24,True,Batu Pahat,Batu Pahat,Johor,83000
+CMP-192C9FA3,2022-09-16,3.114156,101.490188,MED-FB58034C,FAC-5197A2F9,Packaging seal already broken upon purchase.,18.8,22.0,3.2,True,Puchong,Puchong,Selangor,47100
+CMP-2376033A,2024-02-19,1.461979,103.758301,MED-87F56986,,Tablet colour differs from usual; patient experienced no relief.,5.02,8.0,10.98,False,Batu Pahat,Batu Pahat,Johor,83000
+CMP-272A3B5D,2024-06-17,3.045884,101.444432,MED-B85A6ED2,,Multiple neighbours bought same batch; all reported ineffectiveness.,2.94,5.5,8.06,True,Georgetown,Georgetown,Penang,10000

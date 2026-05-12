@@ -1,0 +1,31 @@
+supplier_id,name,lat,lng,address,city,state,postcode,license_no,is_suspicious
+SUP-E5836D62,Duopharma Biotech Sdn Bhd,1.539259,103.705158,"No.180, Jalan Industri 3, Iskandar Puteri",Johor Bahru,Johor,79100,LIC-738720,False
+SUP-29321E1E,CCM Duopharma Marketing Sdn Bhd,1.463816,103.73759,"No.98, Jalan Industri 9, Muar",Muar,Johor,84000,LIC-771088,False
+SUP-0E15D787,Pharmaniaga Logistics Sdn Bhd,5.361113,100.363774,"No.59, Jalan Industri 2, Butterworth",Butterworth,Penang,12000,LIC-944151,False
+SUP-391F5EC2,Hovid Bhd,6.151299,100.364817,"No.146, Jalan Industri 11, Langkawi",Kuah,Kedah,07000,LIC-322955,False
+SUP-81C187DB,Apex Pharmacy Marketing,2.151299,102.29337,"No.37, Jalan Industri 9, Alor Gajah",Alor Gajah,Melaka,78000,LIC-246413,False
+SUP-BE8BE5D1,Caring Pharmacy Group,5.398997,100.268367,"No.110, Jalan Industri 19, Seberang Perai",Perai,Penang,13600,LIC-518801,False
+SUP-17FBCBC5,KPJ Healthcare Supply,6.11795,100.395302,"No.127, Jalan Industri 3, Sungai Petani",Sungai Petani,Kedah,08000,LIC-892495,False
+SUP-4BEE866F,Alpro Pharmacy Sdn Bhd,3.16262,101.703425,"No.175, Jalan Industri 14, Brickfields",Kuala Lumpur,Kuala Lumpur,50470,LIC-725380,False
+SUP-851DF0D6,Mega Lifesciences (M) Sdn Bhd,3.122505,101.465365,"No.136, Jalan Industri 9, Puchong",Puchong,Selangor,47100,LIC-680099,False
+SUP-C6C69EF3,Kotra Pharma Sdn Bhd,3.090974,101.664928,"No.69, Jalan Industri 11, Brickfields",Kuala Lumpur,Kuala Lumpur,50470,LIC-216970,False
+SUP-3665AE16,Wellesta Holdings Sdn Bhd,4.600941,101.09234,"No.185, Jalan Industri 9, Manjung",Seri Manjung,Perak,32000,LIC-624902,False
+SUP-B46ABA29,Southern Pharma Distribution,1.457611,103.798763,"No.77, Jalan Industri 17, Muar",Muar,Johor,84000,LIC-738551,False
+SUP-DEAE3B56,Northern Med Supplies Sdn Bhd,5.434723,100.308457,"No.200, Jalan Industri 17, Bayan Lepas",Bayan Lepas,Penang,11900,LIC-100599,False
+SUP-25296D22,Eastpoint Pharmaceuticals Sdn Bhd,6.12688,100.437451,"No.79, Jalan Industri 8, Langkawi",Kuah,Kedah,07000,LIC-160738,False
+SUP-B822BD17,Medispec (M) Sdn Bhd,5.407199,100.348732,"No.125, Jalan Industri 3, Seberang Perai",Perai,Penang,13600,LIC-897549,False
+SUP-9077FB58,Best Price Trading (Tiada Lesen),1.455729,103.717856,"Lot 11, Kawasan Skudai",Johor Bahru,Johor,81300,,True
+SUP-258C1ADE,MegaDrug Wholesale,2.712791,101.973407,"Lot 45, Kawasan Port Dickson",Port Dickson,Negeri Sembilan,71000,,True
+SUP-DA6F530B,FastMed Supply Co.,4.596393,101.126396,"Lot 29, Kawasan Manjung",Seri Manjung,Perak,32000,UNLICENSED-8397,True
+SUP-79FD2183,CheapRx Distribution,3.099661,101.522446,"Lot 38, Kawasan Klang",Klang,Selangor,41000,UNLICENSED-4608,True
+SUP-AC99BEE8,HealthPlus Traders,3.128452,101.684039,"Lot 5, Kawasan Brickfields",Kuala Lumpur,Kuala Lumpur,50470,UNLICENSED-6413,True
+SUP-9E4AD200,UniMed Unregistered Sdn Bhd,3.104683,101.512715,"Lot 35, Kawasan Klang",Klang,Selangor,41000,,True
+SUP-DD30A8A2,QuickCure Supplies,2.150076,102.258835,"Lot 13, Kawasan Melaka Tengah",Melaka,Melaka,75000,,True
+SUP-CF4243EC,BudgetPharma Network,2.74392,101.910798,"Lot 47, Kawasan Nilai",Nilai,Negeri Sembilan,71800,,True
+SUP-42840C43,MedXpress Informal,3.088871,101.496821,"Lot 7, Kawasan Petaling Jaya",Petaling Jaya,Selangor,47800,,True
+SUP-61967BB9,PharmaGo Borderless,5.423383,100.301054,"Lot 18, Kawasan Seberang Perai",Perai,Penang,13600,UNLICENSED-2235,True
+SUP-3C9F7C66,DrugMart Shadow,2.210593,102.279807,"Lot 35, Kawasan Jasin",Jasin,Melaka,77000,UNLICENSED-2528,True
+SUP-8729D8F8,NoRegMed Co.,5.431436,100.302797,"Lot 26, Kawasan Bayan Lepas",Bayan Lepas,Penang,11900,UNLICENSED-3697,True
+SUP-B6EAFADB,AltMed Supply Chain,2.727562,101.961198,"Lot 30, Kawasan Seremban",Seremban,Negeri Sembilan,70000,,True
+SUP-E9E069AB,PseudoPharm Holdings,2.209136,102.25785,"Lot 4, Kawasan Melaka Tengah",Melaka,Melaka,75000,UNLICENSED-9883,True
+SUP-BBB04004,FakeCure Distribution Sdn Bhd,3.151102,101.719132,"Lot 33, Kawasan Titiwangsa",Kuala Lumpur,Kuala Lumpur,53200,UNLICENSED-9701,True
