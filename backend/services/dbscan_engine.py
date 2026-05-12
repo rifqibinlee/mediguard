@@ -26,7 +26,15 @@ BETA       = 2.0
 ELBOW_PCT  = 0.745
 K_FLOOR    = 4
 
-# ── Disk persistence ───────────────────────────────────────────────────────
+# ── Environment config ─────────────────────────────────────────────────────
+USE_S3    = os.getenv("USE_S3", "false").lower() == "true"
+S3_BUCKET = os.getenv("S3_BUCKET", "mediguard_mappro_demo")
+S3_PREFIX = os.getenv("S3_PREFIX", "mediguard/data/")
+
+if USE_S3:
+    import boto3
+
+# ── Disk / S3 persistence ───────────────────────────────────────────────────
 CLUSTER_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "clusters")
 os.makedirs(CLUSTER_DIR, exist_ok=True)
 
@@ -52,24 +60,47 @@ def _json_safe(obj):
     return obj
 
 
+def _s3_key(key: tuple) -> str:
+    return f"{S3_PREFIX}clusters/cluster_{int(key[0])}_{int(key[1])}_{int(key[2])}.json"
+
+
 def _save_to_disk(key: tuple, result: dict):
-    try:
-        with open(_cache_path(key), "w") as f:
-            json.dump(_json_safe(result), f)
-        print(f"  Cluster result saved → {_cache_path(key)}")
-    except Exception as e:
-        print(f"  Warning: could not save cluster result: {e}")
+    if USE_S3:
+        try:
+            boto3.client("s3").put_object(
+                Bucket=S3_BUCKET,
+                Key=_s3_key(key),
+                Body=json.dumps(_json_safe(result)),
+                ContentType="application/json",
+            )
+            print(f"  Cluster saved → s3://{S3_BUCKET}/{_s3_key(key)}")
+        except Exception as e:
+            print(f"  Warning: could not save cluster to S3: {e}")
+    else:
+        try:
+            with open(_cache_path(key), "w") as f:
+                json.dump(_json_safe(result), f)
+            print(f"  Cluster saved → {_cache_path(key)}")
+        except Exception as e:
+            print(f"  Warning: could not save cluster locally: {e}")
 
 
 def _load_from_disk(key: tuple) -> dict | None:
-    path = _cache_path(key)
-    if os.path.exists(path):
+    if USE_S3:
         try:
-            with open(path) as f:
-                return json.load(f)
+            obj = boto3.client("s3").get_object(Bucket=S3_BUCKET, Key=_s3_key(key))
+            return json.loads(obj["Body"].read())
         except Exception:
             return None
-    return None
+    else:
+        path = _cache_path(key)
+        if os.path.exists(path):
+            try:
+                with open(path) as f:
+                    return json.load(f)
+            except Exception:
+                return None
+        return None
 
 
 def get_cached_result() -> dict | None:
@@ -80,31 +111,48 @@ def get_cached_result() -> dict | None:
 
 
 def load_latest_cluster() -> tuple | None:
-    """
-    Called at app startup — loads the most recently saved cluster result
-    into memory so the frontend gets data immediately without re-running.
-    """
-    if not os.path.exists(CLUSTER_DIR):
+    """Load most recently saved cluster into memory on startup (local or S3)."""
+    if USE_S3:
+        try:
+            s3  = boto3.client("s3")
+            pfx = f"{S3_PREFIX}clusters/"
+            res = s3.list_objects_v2(Bucket=S3_BUCKET, Prefix=pfx)
+            objects = [o for o in res.get("Contents", [])
+                       if o["Key"].endswith(".json") and "cluster_" in o["Key"]]
+            if not objects:
+                return None
+            latest = max(objects, key=lambda o: o["LastModified"])
+            name   = latest["Key"].split("/")[-1].replace("cluster_","").replace(".json","")
+            parts  = name.split("_")
+            key    = (float(parts[0]), float(parts[1]), float(parts[2]))
+            result = _load_from_disk(key)
+            if result:
+                _cache[key] = result
+                print(f"  Cluster cache loaded from S3: params={key}")
+                return key
+        except Exception as e:
+            print(f"  Warning: could not load cluster from S3: {e}")
         return None
-    files = [
-        f for f in os.listdir(CLUSTER_DIR)
-        if f.startswith("cluster_") and f.endswith(".json")
-    ]
-    if not files:
+    else:
+        if not os.path.exists(CLUSTER_DIR):
+            return None
+        files = [f for f in os.listdir(CLUSTER_DIR)
+                 if f.startswith("cluster_") and f.endswith(".json")]
+        if not files:
+            return None
+        latest = max(files, key=lambda f: os.path.getmtime(os.path.join(CLUSTER_DIR, f)))
+        try:
+            name  = latest.replace("cluster_", "").replace(".json", "")
+            parts = name.split("_")
+            key   = (float(parts[0]), float(parts[1]), float(parts[2]))
+            result = _load_from_disk(key)
+            if result:
+                _cache[key] = result
+                print(f"  Cluster cache loaded from disk: params={key}")
+                return key
+        except Exception as e:
+            print(f"  Warning: could not load cluster cache: {e}")
         return None
-    latest = max(files, key=lambda f: os.path.getmtime(os.path.join(CLUSTER_DIR, f)))
-    try:
-        name   = latest.replace("cluster_", "").replace(".json", "")
-        parts  = name.split("_")
-        key    = (float(parts[0]), float(parts[1]), float(parts[2]))
-        result = _load_from_disk(key)
-        if result:
-            _cache[key] = result
-            print(f"  Cluster cache loaded from disk: params={key}")
-            return key
-    except Exception as e:
-        print(f"  Warning: could not load cluster cache: {e}")
-    return None
 
 
 # ── Haversine helpers ──────────────────────────────────────────────────────
