@@ -305,7 +305,7 @@
     .cmp-pane-label.current{color:#fbbf24}
     .cmp-pane-label.historical{color:#38bdf8}
     .cmp-pane-map{flex:1;position:relative;overflow:hidden}
-    .cmp-pane-map > div[id]{position:absolute;inset:0}
+    #compare-map-current,#compare-map-hist{position:absolute;inset:0}
 
     /* Historical controls strip */
     .hist-controls{
@@ -329,14 +329,23 @@
       height:36px;overflow:hidden;
       transition:height .3s cubic-bezier(.4,0,.2,1);
     }
-    .cmp-vp-bar.open{height:130px}
+    .cmp-vp-bar.open{height:160px}
     .cmp-vp-toggle{height:36px;flex-shrink:0;display:flex;align-items:center;gap:8px;padding:0 12px;cursor:pointer;border:none;background:none;color:var(--muted);width:100%;font-family:var(--hf);font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:color .2s}
     .cmp-vp-toggle:hover{color:var(--text)}
     .cmp-vp-icon{transition:transform .3s;flex-shrink:0}
     .cmp-vp-bar.open .cmp-vp-icon{transform:rotate(180deg)}
-    .cmp-vp-content{display:flex;gap:6px;overflow-x:auto;padding:4px 10px 8px;align-items:center}
+    .cmp-vp-sections{display:flex;height:calc(100% - 36px);overflow:hidden}
+    .cmp-vp-section{flex:1;display:flex;flex-direction:column;overflow:hidden;padding:0 8px}
+    .cmp-vp-sec-title{font-family:var(--hf);font-size:7px;letter-spacing:2px;text-transform:uppercase;padding-top:5px;flex-shrink:0;opacity:.55}
+    .cmp-vp-divider{width:1px;background:var(--border);margin:4px 0 6px;flex-shrink:0}
+    .cmp-vp-content{display:flex;gap:5px;overflow-x:auto;overflow-y:hidden;padding:3px 0 6px;align-items:flex-start;flex:1}
     .cmp-vp-content::-webkit-scrollbar{height:2px}
+    .cmp-vp-content::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1)}
     .cmp-cluster-card{flex-shrink:0;width:120px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid var(--border);cursor:pointer;transition:border-color .2s}
+    .cmp-med-card{flex-shrink:0;width:84px;padding:5px 7px;background:rgba(255,255,255,.03);border:1px solid var(--border)}
+    .cmp-med-name{font-size:9px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}
+    .cmp-med-count{font-family:var(--hf);font-size:13px;font-weight:900;color:#fff;line-height:1}
+    .cmp-med-label{font-size:8px;color:var(--dim);letter-spacing:1px;margin-top:1px}
     .cmp-cluster-card.current:hover{border-color:rgba(251,191,36,.4)}
     .cmp-cluster-card.hist:hover{border-color:rgba(56,189,248,.4)}
     .ccc-id{font-family:var(--hf);font-size:9px;letter-spacing:1px;margin-bottom:3px}
@@ -609,11 +618,20 @@
       <div class="cmp-vp-bar" id="cmp-vp-current">
         <button class="cmp-vp-toggle" id="cmp-vp-toggle-current">
           <i data-feather="chevron-up" width="10" height="10" class="cmp-vp-icon"></i>
-          <span style="flex:1">Worst in View</span>
+          <span style="flex:1">Viewport Insights</span>
           <span style="font-size:8px;color:#fbbf24;letter-spacing:1px" id="cmp-vp-cnt-current">0 clusters</span>
+          <span style="font-size:8px;color:var(--dim);letter-spacing:1px;margin-left:8px" id="cmp-vp-vis-cmp-current">0 complaints</span>
         </button>
-        <div class="cmp-vp-content" id="cmp-vp-list-current">
-          <span class="vp-empty">No clusters in view</span>
+        <div class="cmp-vp-sections">
+          <div class="cmp-vp-section">
+            <div class="cmp-vp-sec-title" style="color:#fbbf24">Worst Clusters</div>
+            <div class="cmp-vp-content" id="cmp-vp-list-current"><span class="vp-empty">No clusters in view</span></div>
+          </div>
+          <div class="cmp-vp-divider"></div>
+          <div class="cmp-vp-section">
+            <div class="cmp-vp-sec-title" style="color:#fbbf24">Top Medicines</div>
+            <div class="cmp-vp-content" id="cmp-vp-meds-current"><span class="vp-empty">No data in view</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -643,11 +661,20 @@
       <div class="cmp-vp-bar" id="cmp-vp-hist">
         <button class="cmp-vp-toggle" id="cmp-vp-toggle-hist">
           <i data-feather="chevron-up" width="10" height="10" class="cmp-vp-icon"></i>
-          <span style="flex:1">Worst in View</span>
+          <span style="flex:1">Viewport Insights</span>
           <span style="font-size:8px;color:#38bdf8;letter-spacing:1px" id="cmp-vp-cnt-hist">0 clusters</span>
+          <span style="font-size:8px;color:var(--dim);letter-spacing:1px;margin-left:8px" id="cmp-vp-vis-cmp-hist">0 complaints</span>
         </button>
-        <div class="cmp-vp-content" id="cmp-vp-list-hist">
-          <span class="vp-empty">Load historical data first</span>
+        <div class="cmp-vp-sections">
+          <div class="cmp-vp-section">
+            <div class="cmp-vp-sec-title" style="color:#38bdf8">Worst Clusters</div>
+            <div class="cmp-vp-content" id="cmp-vp-list-hist"><span class="vp-empty">Load historical data first</span></div>
+          </div>
+          <div class="cmp-vp-divider"></div>
+          <div class="cmp-vp-section">
+            <div class="cmp-vp-sec-title" style="color:#38bdf8">Top Medicines</div>
+            <div class="cmp-vp-content" id="cmp-vp-meds-hist"><span class="vp-empty">No data in view</span></div>
+          </div>
         </div>
       </div>
     </div>
