@@ -743,7 +743,41 @@
   );
 </script>
 
+<!-- Legend -->
+<script>
+  const legendBtn   = document.getElementById('legend-btn');
+  const legendPanel = document.getElementById('legend-panel');
+  legendBtn.addEventListener('click', () => {
+    const open = legendPanel.classList.toggle('open');
+    legendBtn.classList.toggle('active', open);
+  });
+</script>
+
+<!-- Three.js Globe -->
+<script>
+try {
+  const canvas=document.getElementById('globe-canvas'),renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(48,innerWidth/innerHeight,.1,500);
+  camera.position.z=5;
+  const sv=new Float32Array(6000*3);for(let i=0;i<sv.length;i++)sv[i]=(Math.random()-.5)*300;
+  const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sv,3));
+  scene.add(new THREE.Points(sg,new THREE.PointsMaterial({color:0xffffff,size:.06,transparent:true,opacity:.45})));
+  const G=new THREE.Group();G.position.x=2.3;scene.add(G);const R=1.9;
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(R,64,64),new THREE.MeshPhongMaterial({color:0x020912,emissive:0x05101e,specular:0x334455,shininess:10})));
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(R+.007,32,32),new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,transparent:true,opacity:.04})));
+  [[0,.22],[30,.10],[-30,.10],[60,.05],[-60,.05]].forEach(([lat,op])=>{const phi=(90-lat)*Math.PI/180,ry=(R+.012)*Math.cos(phi),rr=(R+.012)*Math.sin(phi);const pts=Array.from({length:161},(_,i)=>{const t=(i/160)*Math.PI*2;return new THREE.Vector3(Math.cos(t)*rr,ry,Math.sin(t)*rr)});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:op})));});
+  for(let l=0;l<360;l+=30){const pts=Array.from({length:81},(_,i)=>{const lat=(i/80*180)-90,phi=(90-lat)*Math.PI/180,th=(l+180)*Math.PI/180;return new THREE.Vector3(-(R+.012)*Math.sin(phi)*Math.cos(th),(R+.012)*Math.cos(phi),(R+.012)*Math.sin(phi)*Math.sin(th))});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.04})));}
+  [[3.14,101.68],[1.35,103.82],[13.75,100.52],[51.51,-.12],[40.71,-74.0],[35.68,139.69]].forEach(([la,lo])=>{const phi=(90-la)*Math.PI/180,th=(lo+180)*Math.PI/180;const pos=new THREE.Vector3(-(R+.04)*Math.sin(phi)*Math.cos(th),(R+.04)*Math.cos(phi),(R+.04)*Math.sin(phi)*Math.sin(th));const d=new THREE.Mesh(new THREE.SphereGeometry(.015,8,8),new THREE.MeshBasicMaterial({color:0xffffff}));d.position.copy(pos);G.add(d);});
+  const ap=new THREE.Vector3(2.3,0,0);[[R+.15,.02,0xffffff],[R+.30,.01,0x88aacc]].forEach(([r,op,col])=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,64,64),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:op,side:THREE.BackSide}));m.position.copy(ap);scene.add(m);});
+  scene.add(new THREE.AmbientLight(0x1a2233,2.5));const dl=new THREE.DirectionalLight(0xffffff,.55);dl.position.set(5,3,4);scene.add(dl);
+  (function tick(){requestAnimationFrame(tick);G.rotation.y+=.0016;renderer.render(scene,camera)})();
+  window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+}catch(e){console.warn('Globe:',e)}
+</script>
+
 <script src="js/map.js"></script>
+<script src="js/analytics.js"></script>
 <script src="js/compare.js"></script>
 </body>
 </html>
