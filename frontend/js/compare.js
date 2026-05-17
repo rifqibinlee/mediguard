@@ -18,6 +18,7 @@ const TYPE_COL = { hospital: '#22c55e', clinic: '#3b82f6', pharmacy: '#a855f7' }
 
 // ── State ──────────────────────────────────────────────────────────────────
 let _initialized = false;
+let _syncing = false;
 
 const CUR = {
   map: null, tile: null,
@@ -44,6 +45,9 @@ window.initCompare = function () {
   }
   _initialized = true;
 
+  // Defer map init so the page div is visible and has real dimensions
+  setTimeout(() => {
+
   // ── Current map ──────────────────────────────────────────────────────────
   CUR.map  = L.map('compare-map-current', {
     center: [4.0, 109.5], zoom: 6,
@@ -57,6 +61,10 @@ window.initCompare = function () {
   CUR.map.on('moveend zoomend', () => {
     clearTimeout(_vpTimerCur);
     _vpTimerCur = setTimeout(() => updateCmpVpBar('current'), 250);
+    if (_syncing) return;
+    _syncing = true;
+    HIST.map.setView(CUR.map.getCenter(), CUR.map.getZoom(), { animate: false });
+    _syncing = false;
   });
 
   // ── Historical map ───────────────────────────────────────────────────────
@@ -72,6 +80,10 @@ window.initCompare = function () {
   HIST.map.on('moveend zoomend', () => {
     clearTimeout(_vpTimerHist);
     _vpTimerHist = setTimeout(() => updateCmpVpBar('hist'), 250);
+    if (_syncing) return;
+    _syncing = true;
+    CUR.map.setView(HIST.map.getCenter(), HIST.map.getZoom(), { animate: false });
+    _syncing = false;
   });
 
   // ── Buttons ──────────────────────────────────────────────────────────────
@@ -91,6 +103,8 @@ window.initCompare = function () {
 
   // Auto-load default historical range
   runHistoricalClustering();
+
+  }, 100); // end deferred init — page must be visible before Leaflet measures containers
 };
 
 // ── Wiring for compact viewport bar ───────────────────────────────────────
