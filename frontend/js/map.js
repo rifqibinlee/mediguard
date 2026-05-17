@@ -356,7 +356,7 @@ function initViewportBar() {
     const isOpen = bar.classList.toggle('open');
     // Push layers/controls/legend up when bar is open
     const wrap = document.getElementById('main-map-wrap');
-    if (wrap) wrap.style.setProperty('--vp-offset', isOpen ? '124px' : '0px');
+    if (wrap) wrap.style.setProperty('--vp-offset', isOpen ? '160px' : '36px');
     feather.replace({ 'stroke-width': 1.5 });
   });
 }
