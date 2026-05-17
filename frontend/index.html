@@ -304,8 +304,8 @@
     .cmp-pane-label{font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
     .cmp-pane-label.current{color:#fbbf24}
     .cmp-pane-label.historical{color:#38bdf8}
-    .cmp-pane-map{flex:1;position:relative;overflow:hidden}
-    #compare-map-current,#compare-map-hist{position:absolute;inset:0}
+    .cmp-pane-map{flex:1;position:relative;overflow:hidden;z-index:0}
+    #compare-map-current,#compare-map-hist{position:absolute;inset:0;z-index:1}
 
     /* Historical controls strip */
     .hist-controls{
