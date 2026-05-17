@@ -58,6 +58,12 @@ window.initCompare = function () {
   CUR.lg.complaints = L.layerGroup().addTo(CUR.map);
   CUR.lg.hulls      = L.layerGroup().addTo(CUR.map);
 
+  CUR.map.on('move', () => {
+    if (_syncing) return;
+    _syncing = true;
+    HIST.map.setView(CUR.map.getCenter(), CUR.map.getZoom(), { animate: false });
+    _syncing = false;
+  });
   CUR.map.on('moveend zoomend', () => {
     clearTimeout(_vpTimerCur);
     _vpTimerCur = setTimeout(() => updateCmpVpBar('current'), 250);
@@ -77,6 +83,12 @@ window.initCompare = function () {
   HIST.lg.complaints = L.layerGroup().addTo(HIST.map);
   HIST.lg.hulls      = L.layerGroup().addTo(HIST.map);
 
+  HIST.map.on('move', () => {
+    if (_syncing) return;
+    _syncing = true;
+    CUR.map.setView(HIST.map.getCenter(), HIST.map.getZoom(), { animate: false });
+    _syncing = false;
+  });
   HIST.map.on('moveend zoomend', () => {
     clearTimeout(_vpTimerHist);
     _vpTimerHist = setTimeout(() => updateCmpVpBar('hist'), 250);
@@ -264,33 +276,64 @@ function updateCmpVpBar(pane) {
   const result  = state.result;
   if (!mapInst || !result?.dbscan_clusters) return;
 
-  const bounds = mapInst.getBounds();
+  const suffix   = pane === 'hist' ? 'hist' : 'current';
+  const accentClr = pane === 'hist' ? '#38bdf8' : '#fbbf24';
+  const bounds   = mapInst.getBounds();
+
+  // Visible clusters
   const vis = (result.dbscan_clusters || [])
     .filter(c => bounds.contains([+c.centroid_lat, +c.centroid_lng]))
     .sort((a, b) => b.severity_score - a.severity_score);
 
-  const cntEl  = document.getElementById(`cmp-vp-cnt-${pane}`);
-  const listEl = document.getElementById(`cmp-vp-list-${pane}`);
+  // Visible complaints + top medicines
+  const visCmps = (result.complaints || []).filter(c => bounds.contains([+c.lat, +c.lng]));
+  const medCounts = {};
+  for (const c of visCmps) {
+    if (c.cluster_type !== 'dbscan') continue;
+    const med = c.medicine_name || c.medicine_id || 'Unknown';
+    medCounts[med] = (medCounts[med] || 0) + 1;
+  }
+  const topMeds = Object.entries(medCounts).sort((a, b) => b[1] - a[1]).slice(0, 6);
 
+  // Badges
+  const cntEl = document.getElementById(`cmp-vp-cnt-${suffix}`);
+  const visEl = document.getElementById(`cmp-vp-vis-cmp-${suffix}`);
   if (cntEl) cntEl.textContent = `${vis.length} cluster${vis.length !== 1 ? 's' : ''}`;
+  if (visEl) visEl.textContent = `${visCmps.length} complaint${visCmps.length !== 1 ? 's' : ''}`;
 
+  // Cluster cards
+  const listEl = document.getElementById(`cmp-vp-list-${suffix}`);
   if (listEl) {
     if (!vis.length) {
       listEl.innerHTML = '<span class="vp-empty">No clusters in view</span>';
     } else {
-      const cardCls  = pane === 'hist' ? 'ccc-id hist'  : 'ccc-id current';
-      const fillClr  = pane === 'hist' ? '#38bdf8'       : '#fbbf24';
+      const cardCls = pane === 'hist' ? 'ccc-id hist' : 'ccc-id current';
       listEl.innerHTML = vis.map(c => {
         const topMed  = Object.keys(c.top_medicines || {})[0] || '—';
         const fillPct = Math.min(100, Math.round(c.severity_score));
         return `
           <div class="cmp-cluster-card ${pane}" onclick="window._cmpClickCluster('${pane}','${c.cluster_id}')">
             <div class="${cardCls}">${c.cluster_id}</div>
-            <div class="ccc-sev-bar"><div class="ccc-sev-fill" style="width:${fillPct}%;background:${fillClr}"></div></div>
+            <div class="ccc-sev-bar"><div class="ccc-sev-fill" style="width:${fillPct}%;background:${accentClr}"></div></div>
             <div class="ccc-cmp">${c.complaint_count} · sev ${c.severity_score}</div>
             <div class="ccc-med" title="${topMed}">${topMed}</div>
           </div>`;
       }).join('');
+    }
+  }
+
+  // Medicine cards
+  const medsEl = document.getElementById(`cmp-vp-meds-${suffix}`);
+  if (medsEl) {
+    if (!topMeds.length) {
+      medsEl.innerHTML = '<span class="vp-empty">No data in view</span>';
+    } else {
+      medsEl.innerHTML = topMeds.map(([med, cnt]) => `
+        <div class="cmp-med-card">
+          <div class="cmp-med-name" title="${med}">${med}</div>
+          <div class="cmp-med-count" style="color:${accentClr}">${cnt}</div>
+          <div class="cmp-med-label">complaints</div>
+        </div>`).join('');
     }
   }
 }
