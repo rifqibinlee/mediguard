@@ -6,7 +6,7 @@ import os
 
 from backend.services.data_loader import get_store
 from backend.services.dbscan_engine import load_latest_cluster
-from backend.routers import facilities, complaints, suppliers, clusters, analytics
+from backend.routers import facilities, complaints, suppliers, clusters, analytics, officers
 
 
 @asynccontextmanager
@@ -31,6 +31,7 @@ app.include_router(complaints.router, prefix="/api", tags=["Complaints"])
 app.include_router(suppliers.router,  prefix="/api", tags=["Suppliers"])
 app.include_router(clusters.router,   prefix="/api", tags=["Clusters"])
 app.include_router(analytics.router,  prefix="/api", tags=["Analytics"])
+app.include_router(officers.router,   prefix="/api", tags=["Officers"])
 
 
 @app.get("/api/health", tags=["System"])
