@@ -74,7 +74,7 @@
     .btn-run.busy{opacity:.5;pointer-events:none}
 
     /* Map container */
-    .map-wrap{flex:1;position:relative;overflow:hidden;--vp-offset:0px}
+    .map-wrap{flex:1;position:relative;overflow:hidden;--vp-offset:36px}
     #map{position:absolute;inset:0}
     .leaflet-container{background:#020912 !important}
 
@@ -642,17 +642,15 @@
     <div class="cmp-pane-header">
       <i data-feather="archive" width="12" height="12" style="stroke:#38bdf8"></i>
       <span class="cmp-pane-label historical">Historical Archive</span>
+      <span style="flex:1"></span>
+      <i data-feather="calendar" width="11" height="11" style="stroke:var(--muted);flex-shrink:0"></i>
+      <input type="date" class="hist-inp" id="hist-from" value="2021-01-01" />
+      <span class="hist-arrow">→</span>
+      <input type="date" class="hist-inp" id="hist-to" value="2023-12-31" />
+      <button class="btn-hist-load" id="btn-hist-load">Load</button>
     </div>
     <div class="cmp-pane-map">
       <div id="compare-map-hist"></div>
-      <!-- Historical date controls -->
-      <div class="hist-controls" id="hist-controls">
-        <i data-feather="calendar" width="11" height="11" style="stroke:var(--muted)"></i>
-        <input type="date" class="hist-inp" id="hist-from" value="2021-01-01" />
-        <span class="hist-arrow">→</span>
-        <input type="date" class="hist-inp" id="hist-to" value="2023-12-31" />
-        <button class="btn-hist-load" id="btn-hist-load">Load Historical</button>
-      </div>
       <div class="cmp-stats" id="cmp-stats-hist">
         <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-hist-cls">—</span><span class="cmp-stat-l">Clusters</span></div>
         <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-hist-cmp">—</span><span class="cmp-stat-l">Archived</span></div>
