@@ -277,6 +277,40 @@ def clear_cache():
     _cache.clear()
 
 
+def compute_historical_clusters(
+    historical_df:         pd.DataFrame,
+    facilities_df:         pd.DataFrame,
+    medicines_df:          pd.DataFrame,
+    facility_medicines_df: pd.DataFrame,
+    suppliers_df:          pd.DataFrame,
+    hospital_buffer_m:  float = 800,
+    clinic_buffer_m:    float = 500,
+    pharmacy_buffer_m:  float = 400,
+) -> dict:
+    """Run the full clustering pipeline on historical (archived) complaints.
+    Not cached — always recomputed for arbitrary date slices.
+    Returns same schema as compute_clusters().
+    """
+    if historical_df.empty:
+        return {
+            "params": {"hospital_buffer_m": hospital_buffer_m,
+                       "clinic_buffer_m": clinic_buffer_m,
+                       "pharmacy_buffer_m": pharmacy_buffer_m},
+            "auto_dbscan": {},
+            "summary": {"total_complaints": 0, "inside_buffer": 0, "outside_buffer": 0,
+                        "dbscan_clustered": 0, "noise_points": 0,
+                        "n_dbscan_clusters": 0, "n_buffer_clusters": 0},
+            "complaints": [],
+            "dbscan_clusters": [],
+            "buffer_clusters": [],
+        }
+    return _run(
+        historical_df, facilities_df, medicines_df,
+        facility_medicines_df, suppliers_df,
+        hospital_buffer_m, clinic_buffer_m, pharmacy_buffer_m,
+    )
+
+
 # ── Internal pipeline ──────────────────────────────────────────────────────
 
 def _run(

@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MediGuard</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <!-- Leaflet -->
   <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
-  <!-- Leaflet MarkerCluster -->
   <link href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" rel="stylesheet" />
   <link href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" rel="stylesheet" />
   <style>
@@ -18,6 +16,7 @@
       --hf:'Raleway',sans-serif;--bf:'DM Sans',sans-serif;
       --col-hospital:#22c55e;--col-clinic:#3b82f6;--col-pharmacy:#a855f7;
       --col-supplier:#ec4899;--col-cmp-out:#f97316;--col-cluster:#fbbf24;
+      --col-hist:#38bdf8;
       --nav-h:64px;--sidebar-w:272px;
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -75,22 +74,21 @@
     .btn-run.busy{opacity:.5;pointer-events:none}
 
     /* Map container */
-    .map-wrap{flex:1;position:relative;overflow:hidden}
+    .map-wrap{flex:1;position:relative;overflow:hidden;--vp-offset:0px}
     #map{position:absolute;inset:0}
-    /* Leaflet override — dark container bg */
     .leaflet-container{background:#020912 !important}
 
-    /* Stats bar — 5 stats */
-    .map-stats{position:absolute;top:14px;right:14px;z-index:5;display:flex;gap:6px}
+    /* Stats bar */
+    .map-stats{position:absolute;top:14px;right:14px;z-index:1000;display:flex;gap:6px}
     .map-stat{background:rgba(4,14,28,.90);border:1px solid var(--border);backdrop-filter:blur(12px);padding:8px 12px;display:flex;flex-direction:column;align-items:center}
     .map-stat-n{font-family:var(--hf);font-size:18px;font-weight:900;color:#fff;line-height:1}
     .map-stat-l{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:nowrap}
 
-    /* Floating Layers button + panel */
-    .map-layers-btn{position:absolute;bottom:20px;left:14px;z-index:10;display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+    /* ── Floating controls — bottom offset by viewport bar ── */
+    .map-layers-btn{position:absolute;bottom:calc(20px + var(--vp-offset));left:14px;z-index:1010;display:flex;align-items:center;gap:7px;padding:8px 16px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s,bottom .3s ease}
     .map-layers-btn:hover{border-color:var(--border-h);color:var(--text)}
     .map-layers-btn.active{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06)}
-    .map-layers-panel{position:absolute;bottom:62px;left:14px;z-index:15;width:230px;background:rgba(4,14,28,.97);border:1px solid var(--border);backdrop-filter:blur(20px);display:none}
+    .map-layers-panel{position:absolute;bottom:calc(62px + var(--vp-offset));left:14px;z-index:1015;width:230px;background:rgba(4,14,28,.97);border:1px solid var(--border);backdrop-filter:blur(20px);display:none;transition:bottom .3s ease}
     .map-layers-panel.open{display:block}
     .lp-head{padding:11px 16px;border-bottom:1px solid var(--border);font-family:var(--hf);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28)}
     .lp-sec{padding:12px 16px;border-bottom:1px solid var(--border)}
@@ -108,8 +106,8 @@
     .toggle input:checked+.toggle-track{border-color:rgba(255,255,255,.3)}
     .toggle input:checked+.toggle-track::after{transform:translateX(15px);background:#fff}
 
-    /* Legend collapsible */
-    .map-legend-wrap{position:absolute;bottom:156px;right:14px;z-index:10}
+    /* Legend */
+    .map-legend-wrap{position:absolute;bottom:calc(156px + var(--vp-offset));right:14px;z-index:1010;transition:bottom .3s ease}
     .legend-toggle-btn{width:34px;height:34px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
     .legend-toggle-btn:hover{border-color:var(--border-h);color:var(--text)}
     .legend-toggle-btn.active{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.06)}
@@ -121,43 +119,31 @@
     .leg-ring{width:11px;height:11px;border-radius:50%;border:1.5px solid currentColor;flex-shrink:0}
 
     /* Zoom controls */
-    .map-controls{position:absolute;bottom:20px;right:14px;z-index:5;display:flex;flex-direction:column;gap:6px}
+    .map-controls{position:absolute;bottom:calc(20px + var(--vp-offset));right:14px;z-index:1005;display:flex;flex-direction:column;gap:6px;transition:bottom .3s ease}
     .map-ctrl-btn{width:34px;height:34px;background:rgba(4,14,28,.92);border:1px solid var(--border);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
     .map-ctrl-btn:hover{border-color:var(--border-h);color:var(--text)}
 
     /* ── Custom Leaflet marker icons ── */
-    .centroid-dot {
-      background: #fbbf24;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;
-      font-family:var(--hf);font-size:12px;font-weight:800;color:#1a0f00;
-      border:2px solid rgba(30,15,0,.5);
-      box-shadow:0 0 14px rgba(251,191,36,.5);cursor:pointer;
-    }
-    .centroid-agg {
-      background:rgba(251,191,36,.85);border-radius:50%;
-      display:flex;align-items:center;justify-content:center;
-      font-family:var(--hf);font-size:13px;font-weight:900;color:#1a0f00;
-      border:2.5px solid #fbbf24;
-      box-shadow:0 0 22px rgba(251,191,36,.6),0 0 6px rgba(251,191,36,.3);
-      cursor:pointer;
-    }
-    /* Override Leaflet default cluster styles */
+    .centroid-dot{background:#fbbf24;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:12px;font-weight:800;color:#1a0f00;border:2px solid rgba(30,15,0,.5);box-shadow:0 0 14px rgba(251,191,36,.5);cursor:pointer}
+    .centroid-agg{background:rgba(251,191,36,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:13px;font-weight:900;color:#1a0f00;border:2.5px solid #fbbf24;box-shadow:0 0 22px rgba(251,191,36,.6),0 0 6px rgba(251,191,36,.3);cursor:pointer}
+    .centroid-dot-hist{background:#38bdf8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:12px;font-weight:800;color:#001a28;border:2px solid rgba(0,26,40,.5);box-shadow:0 0 14px rgba(56,189,248,.5);cursor:pointer}
+    .centroid-agg-hist{background:rgba(56,189,248,.85);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:13px;font-weight:900;color:#001a28;border:2.5px solid #38bdf8;box-shadow:0 0 22px rgba(56,189,248,.6);cursor:pointer}
     .marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{display:none}
-    /* Leaflet tooltip override */
     .lf-tip{background:rgba(4,14,28,.95);border:1px solid var(--border);color:var(--text);font-family:var(--bf);font-size:12px;padding:6px 10px;border-radius:0;box-shadow:none}
     .lf-tip::before{display:none}
 
     /* Cluster panel */
-    .cluster-panel{position:absolute;left:0;right:0;bottom:0;z-index:50;height:360px;background:rgba(4,14,28,.97);border-top:1px solid var(--border);backdrop-filter:blur(24px);transform:translateY(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+    .cluster-panel{position:absolute;left:0;right:0;bottom:0;z-index:1050;height:360px;background:rgba(4,14,28,.97);border-top:1px solid var(--border);backdrop-filter:blur(24px);transform:translateY(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
     .cluster-panel.open{transform:translateY(0)}
     .cp-header{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--border);flex-shrink:0}
-    .cp-title{font-family:var(--hf);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text);display:flex;align-items:center;gap:10px}
+    .cp-title{font-family:var(--hf);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
     .cp-badge{font-size:10px;padding:3px 9px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);color:#fbbf24;letter-spacing:1px}
     .cp-stats{display:flex;gap:20px;margin-left:8px}
     .cp-stat{font-size:12px;color:var(--muted)}
     .cp-stat strong{color:var(--text);font-weight:600}
     .cp-close{background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;transition:color .2s}
     .cp-close:hover{color:var(--text)}
+    .cp-actions{display:flex;gap:8px;margin-left:auto;margin-right:12px}
     .cp-body{display:grid;grid-template-columns:1fr 1fr;flex:1;overflow:hidden}
     .cp-col{padding:14px 22px;overflow-y:auto}
     .cp-col+.cp-col{border-left:1px solid var(--border)}
@@ -181,7 +167,85 @@
     .sup-flag.ok{background:rgba(34,197,94,.06);color:#22c55e;border:1px solid rgba(34,197,94,.18)}
     .empty-hint{display:flex;align-items:center;justify-content:center;flex:1;font-family:var(--hf);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);padding:20px 0}
 
-    /* ═══ ANALYTICS PAGE ═══ */
+    /* Assignment badge in cluster panel */
+    .assign-badge{font-size:10px;padding:3px 9px;letter-spacing:1px;display:inline-flex;align-items:center;gap:5px}
+    .assign-badge.assigned{background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25);color:#38bdf8}
+    .assign-badge.completed{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);color:#22c55e}
+    .btn-assign{padding:6px 14px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.22);color:#38bdf8;font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+    .btn-assign:hover{background:rgba(56,189,248,.14);border-color:rgba(56,189,248,.5)}
+    .btn-complete{padding:6px 14px;background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.22);color:#22c55e;font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+    .btn-complete:hover{background:rgba(34,197,94,.14);border-color:rgba(34,197,94,.5)}
+
+    /* ══════════════════════════════════════
+       VIEWPORT INSIGHTS BAR
+    ══════════════════════════════════════ */
+    .vp-bar{
+      position:absolute;bottom:0;left:0;right:0;z-index:1045;
+      background:rgba(4,14,28,.97);border-top:1px solid var(--border);
+      backdrop-filter:blur(20px);
+      display:flex;flex-direction:column;
+      transition:height .3s cubic-bezier(.4,0,.2,1);
+      height:36px;overflow:hidden;
+    }
+    .vp-bar.open{height:160px}
+    .vp-toggle{
+      height:36px;flex-shrink:0;display:flex;align-items:center;gap:10px;
+      padding:0 16px;cursor:pointer;border:none;background:none;
+      color:var(--muted);width:100%;text-align:left;
+      font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+      transition:color .2s;
+    }
+    .vp-toggle:hover{color:var(--text)}
+    .vp-toggle-icon{transition:transform .3s;flex-shrink:0}
+    .vp-bar.open .vp-toggle-icon{transform:rotate(180deg)}
+    .vp-toggle-title{flex:1}
+    .vp-badge-cnt{font-size:9px;padding:2px 8px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.22);color:#fbbf24;letter-spacing:1px}
+    .vp-badge-meds{font-size:9px;padding:2px 8px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.18);color:#38bdf8;letter-spacing:1px;margin-left:4px}
+
+    .vp-content{
+      flex:1;display:grid;grid-template-columns:1fr 1px 1fr;overflow:hidden;
+      padding:0 0 8px 0;
+    }
+    .vp-divider{background:var(--border)}
+    .vp-section{display:flex;flex-direction:column;overflow:hidden;padding:0 14px}
+    .vp-sec-title{font-family:var(--hf);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.22);padding:6px 0 6px;flex-shrink:0}
+    .vp-scroll{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding-bottom:4px;flex:1;align-items:center}
+    .vp-scroll::-webkit-scrollbar{height:2px}
+    .vp-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1)}
+
+    /* Cluster card in viewport bar */
+    .vp-cluster-card{
+      flex-shrink:0;width:130px;padding:8px 10px;
+      background:rgba(255,255,255,.03);border:1px solid var(--border);
+      cursor:pointer;transition:border-color .2s;position:relative;
+    }
+    .vp-cluster-card:hover{border-color:rgba(251,191,36,.4)}
+    .vp-cluster-card.status-investigating{border-left:2px solid #38bdf8}
+    .vp-cluster-card.status-completed{border-left:2px solid #22c55e;opacity:.6}
+    .vpc-id{font-family:var(--hf);font-size:10px;color:#fbbf24;letter-spacing:1px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:center}
+    .vpc-status-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+    .vpc-status-dot.investigating{background:#38bdf8;box-shadow:0 0 4px #38bdf8}
+    .vpc-status-dot.completed{background:#22c55e;box-shadow:0 0 4px #22c55e}
+    .vpc-sev-bar{height:2px;background:var(--border);margin-bottom:5px;border-radius:1px;overflow:hidden}
+    .vpc-sev-fill{height:100%;border-radius:1px;transition:width .5s ease}
+    .vpc-cmp{font-size:10px;color:var(--muted);margin-bottom:2px}
+    .vpc-med{font-size:11px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .vpc-loss{font-size:10px;color:var(--col-cmp-out);font-family:var(--hf)}
+
+    /* Medicine card in viewport bar */
+    .vp-med-card{
+      flex-shrink:0;width:120px;padding:8px 10px;
+      background:rgba(255,255,255,.03);border:1px solid var(--border);
+    }
+    .vpm-name{font-size:11px;color:var(--text);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .vpm-count{font-family:var(--hf);font-size:16px;font-weight:800;color:#38bdf8;line-height:1}
+    .vpm-label{font-size:9px;color:var(--dim);letter-spacing:1px;text-transform:uppercase}
+
+    .vp-empty{font-family:var(--hf);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);padding:8px 4px}
+
+    /* ══════════════════════════════════════
+       ANALYTICS PAGE
+    ══════════════════════════════════════ */
     #page-analytics{flex-direction:column;overflow-y:auto;overflow-x:hidden}
     .an-filters{flex-shrink:0;padding:14px 24px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
     .fl-label{font-family:var(--hf);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.22);white-space:nowrap}
@@ -225,14 +289,93 @@
     .s-badge.s{background:rgba(239,68,68,.08);color:#ef4444;border:1px solid rgba(239,68,68,.18)}
     .s-badge.l{background:rgba(34,197,94,.06);color:#22c55e;border:1px solid rgba(34,197,94,.18)}
     .placeholder{display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--hf);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim)}
-    /* Lift all map UI overlays above Leaflet's internal panes (max z ~700) */
-    .map-stats        { z-index: 1000 !important; }
-    .map-layers-btn   { z-index: 1010 !important; }
-    .map-layers-panel { z-index: 1015 !important; }
-    .map-legend-wrap  { z-index: 1010 !important; }
-    .map-controls     { z-index: 1005 !important; }
-    .cluster-panel    { z-index: 1050 !important; }
-    /* Tabular lining numerals — consistent digit size and baseline everywhere */
+
+    /* ══════════════════════════════════════
+       COMPARE PAGE  (split screen)
+    ══════════════════════════════════════ */
+    #page-compare{flex-direction:row;overflow:hidden}
+    .compare-pane{flex:1;position:relative;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+    .compare-pane+.compare-pane{border-left:2px solid var(--border)}
+    .cmp-pane-header{
+      flex-shrink:0;height:44px;display:flex;align-items:center;gap:10px;
+      padding:0 14px;background:rgba(4,14,28,.95);border-bottom:1px solid var(--border);
+      z-index:10;
+    }
+    .cmp-pane-label{font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+    .cmp-pane-label.current{color:#fbbf24}
+    .cmp-pane-label.historical{color:#38bdf8}
+    .cmp-pane-map{flex:1;position:relative;overflow:hidden}
+    .cmp-pane-map > div[id]{position:absolute;inset:0}
+
+    /* Historical controls strip */
+    .hist-controls{
+      position:absolute;top:8px;left:50%;transform:translateX(-50%);
+      z-index:100;display:flex;align-items:center;gap:8px;
+      background:rgba(4,14,28,.94);border:1px solid var(--border);
+      backdrop-filter:blur(16px);padding:7px 14px;
+    }
+    .hist-inp{padding:5px 8px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--bf);font-size:11px;appearance:none;outline:none;transition:border-color .2s;width:110px}
+    .hist-inp:focus{border-color:var(--border-h)}
+    .hist-arrow{font-size:10px;color:var(--dim)}
+    .btn-hist-load{padding:6px 14px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.22);color:#38bdf8;font-family:var(--hf);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;white-space:nowrap}
+    .btn-hist-load:hover{background:rgba(56,189,248,.14);border-color:rgba(56,189,248,.5)}
+    .btn-hist-load.busy{opacity:.45;pointer-events:none}
+
+    /* Viewport bar for compare pane (compact) */
+    .cmp-vp-bar{
+      position:absolute;bottom:0;left:0;right:0;z-index:50;
+      background:rgba(4,14,28,.96);border-top:1px solid var(--border);
+      backdrop-filter:blur(16px);
+      height:36px;overflow:hidden;
+      transition:height .3s cubic-bezier(.4,0,.2,1);
+    }
+    .cmp-vp-bar.open{height:130px}
+    .cmp-vp-toggle{height:36px;flex-shrink:0;display:flex;align-items:center;gap:8px;padding:0 12px;cursor:pointer;border:none;background:none;color:var(--muted);width:100%;font-family:var(--hf);font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:color .2s}
+    .cmp-vp-toggle:hover{color:var(--text)}
+    .cmp-vp-icon{transition:transform .3s;flex-shrink:0}
+    .cmp-vp-bar.open .cmp-vp-icon{transform:rotate(180deg)}
+    .cmp-vp-content{display:flex;gap:6px;overflow-x:auto;padding:4px 10px 8px;align-items:center}
+    .cmp-vp-content::-webkit-scrollbar{height:2px}
+    .cmp-cluster-card{flex-shrink:0;width:120px;padding:7px 9px;background:rgba(255,255,255,.03);border:1px solid var(--border);cursor:pointer;transition:border-color .2s}
+    .cmp-cluster-card.current:hover{border-color:rgba(251,191,36,.4)}
+    .cmp-cluster-card.hist:hover{border-color:rgba(56,189,248,.4)}
+    .ccc-id{font-family:var(--hf);font-size:9px;letter-spacing:1px;margin-bottom:3px}
+    .ccc-id.current{color:#fbbf24}
+    .ccc-id.hist{color:#38bdf8}
+    .ccc-sev-bar{height:2px;background:var(--border);margin-bottom:4px;border-radius:1px;overflow:hidden}
+    .ccc-sev-fill{height:100%;border-radius:1px}
+    .ccc-cmp{font-size:10px;color:var(--muted);margin-bottom:1px}
+    .ccc-med{font-size:10px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+    /* Compare stats */
+    .cmp-stats{position:absolute;top:8px;right:8px;z-index:100;display:flex;gap:4px}
+    .cmp-stat{background:rgba(4,14,28,.88);border:1px solid var(--border);padding:5px 9px;display:flex;flex-direction:column;align-items:center}
+    .cmp-stat-n{font-family:var(--hf);font-size:14px;font-weight:900;color:#fff;line-height:1}
+    .cmp-stat-l{font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:2px;white-space:nowrap}
+
+    /* ══════════════════════════════════════
+       OFFICER ASSIGNMENT MODAL
+    ══════════════════════════════════════ */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+    .modal-overlay.open{display:flex}
+    .modal{width:520px;max-height:520px;background:rgba(4,14,28,.99);border:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
+    .modal-head{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+    .modal-title{font-family:var(--hf);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text);display:flex;align-items:center;gap:10px}
+    .modal-close{background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;transition:color .2s}
+    .modal-close:hover{color:var(--text)}
+    .modal-sub{padding:10px 22px;border-bottom:1px solid var(--border);font-size:12px;color:var(--muted);flex-shrink:0}
+    .modal-body{flex:1;overflow-y:auto;padding:8px 0}
+    .officer-row{display:flex;align-items:center;gap:12px;padding:10px 22px;cursor:pointer;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.03)}
+    .officer-row:last-child{border-bottom:none}
+    .officer-row:hover{background:rgba(255,255,255,.04)}
+    .off-avatar{width:34px;height:34px;border-radius:50%;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.22);display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:13px;font-weight:800;color:#38bdf8;flex-shrink:0}
+    .off-info{flex:1;min-width:0}
+    .off-name{font-size:13px;color:var(--text);margin-bottom:2px}
+    .off-meta{font-size:11px;color:var(--dim)}
+    .off-state{font-size:11px;color:var(--muted);white-space:nowrap}
+    .btn-off-assign{padding:5px 14px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.22);color:#38bdf8;font-family:var(--hf);font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
+    .btn-off-assign:hover{background:rgba(56,189,248,.18);border-color:rgba(56,189,248,.5)}
+
     * { font-variant-numeric: tabular-nums lining-nums; }
   </style>
 </head>
@@ -244,10 +387,13 @@
 <nav>
   <a href="#" class="nav-logo">MEDI<em>GUARD</em></a>
   <ul class="nav-tabs">
-    <li><a href="#" class="active" data-page="map" id="tab-map"><i data-feather="map" width="13" height="13"></i> Map</a></li>
-    <li><a href="#" data-page="analytics" id="tab-analytics"><i data-feather="bar-chart-2" width="13" height="13"></i> Analytics</a></li>
+    <li><a href="#" class="active" data-page="map"     id="tab-map"><i data-feather="map"         width="13" height="13"></i> Map</a></li>
+    <li><a href="#"               data-page="analytics" id="tab-analytics"><i data-feather="bar-chart-2" width="13" height="13"></i> Analytics</a></li>
+    <li><a href="#"               data-page="compare"   id="tab-compare"><i data-feather="columns"     width="13" height="13"></i> Compare</a></li>
   </ul>
-  <div class="nav-right"></div>
+  <div class="nav-right">
+    <div class="nav-live"><span class="live-dot"></span> Live</div>
+  </div>
 </nav>
 
 <!-- ════════ MAP PAGE ════════ -->
@@ -279,7 +425,6 @@
 
     <div class="sb-sec">
       <div class="sb-label">Navigate</div>
-
       <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">State</div>
       <select class="ctrl-sel" id="nav-state">
         <option value="">All Malaysia</option>
@@ -292,23 +437,17 @@
         <option value="state:Negeri Sembilan">Negeri Sembilan</option>
         <option value="state:Melaka">Melaka</option>
       </select>
-
       <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">District</div>
-      <select class="ctrl-sel" id="nav-district">
-        <option value="">Loading…</option>
-      </select>
-
+      <select class="ctrl-sel" id="nav-district"><option value="">Loading…</option></select>
       <div style="font-size:9px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">Cluster</div>
-      <select class="ctrl-sel" id="nav-cluster">
-        <option value="">Run clustering first</option>
-      </select>
+      <select class="ctrl-sel" id="nav-cluster"><option value="">Run clustering first</option></select>
     </div>
   </aside>
 
-  <div class="map-wrap">
+  <div class="map-wrap" id="main-map-wrap">
     <div id="map"></div>
 
-    <!-- Stats bar: 5 stats -->
+    <!-- Stats bar -->
     <div class="map-stats">
       <div class="map-stat"><span class="map-stat-n" id="stat-total-cmp">—</span><span class="map-stat-l">Total Compl.</span></div>
       <div class="map-stat"><span class="map-stat-n" id="stat-vis-cmp">—</span><span class="map-stat-l">Visible</span></div>
@@ -360,8 +499,8 @@
 
     <!-- Zoom controls -->
     <div class="map-controls">
-      <button class="map-ctrl-btn" id="btn-zi"><i data-feather="plus" width="13" height="13"></i></button>
-      <button class="map-ctrl-btn" id="btn-zo"><i data-feather="minus" width="13" height="13"></i></button>
+      <button class="map-ctrl-btn" id="btn-zi"><i data-feather="plus"      width="13" height="13"></i></button>
+      <button class="map-ctrl-btn" id="btn-zo"><i data-feather="minus"     width="13" height="13"></i></button>
       <button class="map-ctrl-btn" id="btn-rst"><i data-feather="crosshair" width="13" height="13"></i></button>
     </div>
 
@@ -377,11 +516,41 @@
             <span class="cp-stat">Severity <strong id="cp-sev">—</strong></span>
           </div>
         </div>
+        <div class="cp-actions">
+          <span class="assign-badge" id="cp-assign-badge" style="display:none"></span>
+          <button class="btn-assign" id="btn-assign-officer">Assign Officer</button>
+          <button class="btn-complete" id="btn-complete-raid" style="display:none">Mark Raided</button>
+        </div>
         <button class="cp-close" id="cp-close"><i data-feather="x" width="15" height="15"></i></button>
       </div>
       <div class="cp-body">
         <div class="cp-col"><div class="cp-col-lbl">Complaints in Cluster</div><div id="cp-cmp-list"><div class="empty-hint">Select a cluster centroid</div></div></div>
         <div class="cp-col"><div class="cp-col-lbl">Linked Suppliers</div><div id="cp-sup-list"><div class="empty-hint">Select a cluster centroid</div></div></div>
+      </div>
+    </div>
+
+    <!-- Viewport Insights Bar -->
+    <div class="vp-bar" id="vp-bar">
+      <button class="vp-toggle" id="vp-toggle">
+        <i data-feather="chevron-up" width="11" height="11" class="vp-toggle-icon"></i>
+        <span class="vp-toggle-title">Viewport Insights</span>
+        <span class="vp-badge-cnt" id="vp-cluster-badge">0 clusters</span>
+        <span class="vp-badge-meds" id="vp-meds-badge">0 medicines</span>
+      </button>
+      <div class="vp-content">
+        <div class="vp-section">
+          <div class="vp-sec-title">Worst Clusters in View</div>
+          <div class="vp-scroll" id="vp-clusters-list">
+            <span class="vp-empty">No clusters in current view</span>
+          </div>
+        </div>
+        <div class="vp-divider"></div>
+        <div class="vp-section">
+          <div class="vp-sec-title">Most Faked Medicines in View</div>
+          <div class="vp-scroll" id="vp-meds-list">
+            <span class="vp-empty">No data in current view</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -420,6 +589,89 @@
   </div>
 </div>
 
+<!-- ════════ COMPARE PAGE ════════ -->
+<div id="page-compare" class="page">
+  <!-- Left pane: current active clusters -->
+  <div class="compare-pane" id="compare-pane-current">
+    <div class="cmp-pane-header">
+      <i data-feather="activity" width="12" height="12" style="stroke:#fbbf24"></i>
+      <span class="cmp-pane-label current">Active Clusters</span>
+      <span style="font-size:11px;color:var(--muted);margin-left:8px;">Current DBSCAN result</span>
+      <button class="btn-run" id="compare-run-btn" style="width:auto;margin:0;margin-left:auto;padding:6px 14px;font-size:9px;">Run Clustering</button>
+    </div>
+    <div class="cmp-pane-map">
+      <div id="compare-map-current"></div>
+      <div class="cmp-stats" id="cmp-stats-current">
+        <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-cur-cls">—</span><span class="cmp-stat-l">Clusters</span></div>
+        <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-cur-cmp">—</span><span class="cmp-stat-l">Complaints</span></div>
+      </div>
+      <!-- Viewport bar for current compare pane -->
+      <div class="cmp-vp-bar" id="cmp-vp-current">
+        <button class="cmp-vp-toggle" id="cmp-vp-toggle-current">
+          <i data-feather="chevron-up" width="10" height="10" class="cmp-vp-icon"></i>
+          <span style="flex:1">Worst in View</span>
+          <span style="font-size:8px;color:#fbbf24;letter-spacing:1px" id="cmp-vp-cnt-current">0 clusters</span>
+        </button>
+        <div class="cmp-vp-content" id="cmp-vp-list-current">
+          <span class="vp-empty">No clusters in view</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right pane: historical clusters -->
+  <div class="compare-pane" id="compare-pane-hist">
+    <div class="cmp-pane-header">
+      <i data-feather="archive" width="12" height="12" style="stroke:#38bdf8"></i>
+      <span class="cmp-pane-label historical">Historical Archive</span>
+    </div>
+    <div class="cmp-pane-map">
+      <div id="compare-map-hist"></div>
+      <!-- Historical date controls -->
+      <div class="hist-controls" id="hist-controls">
+        <i data-feather="calendar" width="11" height="11" style="stroke:var(--muted)"></i>
+        <input type="date" class="hist-inp" id="hist-from" value="2021-01-01" />
+        <span class="hist-arrow">→</span>
+        <input type="date" class="hist-inp" id="hist-to" value="2023-12-31" />
+        <button class="btn-hist-load" id="btn-hist-load">Load Historical</button>
+      </div>
+      <div class="cmp-stats" id="cmp-stats-hist">
+        <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-hist-cls">—</span><span class="cmp-stat-l">Clusters</span></div>
+        <div class="cmp-stat"><span class="cmp-stat-n" id="cmp-hist-cmp">—</span><span class="cmp-stat-l">Archived</span></div>
+      </div>
+      <!-- Viewport bar for historical compare pane -->
+      <div class="cmp-vp-bar" id="cmp-vp-hist">
+        <button class="cmp-vp-toggle" id="cmp-vp-toggle-hist">
+          <i data-feather="chevron-up" width="10" height="10" class="cmp-vp-icon"></i>
+          <span style="flex:1">Worst in View</span>
+          <span style="font-size:8px;color:#38bdf8;letter-spacing:1px" id="cmp-vp-cnt-hist">0 clusters</span>
+        </button>
+        <div class="cmp-vp-content" id="cmp-vp-list-hist">
+          <span class="vp-empty">Load historical data first</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Officer Assignment Modal -->
+<div class="modal-overlay" id="officer-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title">
+        <i data-feather="user-check" width="13" height="13" style="stroke:#38bdf8"></i>
+        Assign Field Officer
+        <span style="font-size:10px;padding:3px 9px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);color:#fbbf24;letter-spacing:1px" id="modal-cluster-id">—</span>
+      </div>
+      <button class="modal-close" id="modal-close"><i data-feather="x" width="15" height="15"></i></button>
+    </div>
+    <div class="modal-sub" id="modal-cluster-info">Loading cluster info…</div>
+    <div class="modal-body" id="officer-list">
+      <div class="placeholder" style="height:120px">Loading officers…</div>
+    </div>
+  </div>
+</div>
+
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
@@ -434,7 +686,7 @@
 
 <!-- Page switching -->
 <script>
-  const PAGES = ['map','analytics'];
+  const PAGES = ['map','analytics','compare'];
   function switchPage(id) {
     PAGES.forEach(p => {
       document.getElementById(`page-${p}`).classList.toggle('active', p === id);
@@ -442,6 +694,7 @@
     });
     document.getElementById('globe-canvas').classList.toggle('visible', id === 'analytics');
     if (id === 'analytics' && typeof window.loadAnalytics === 'function') window.loadAnalytics();
+    if (id === 'compare'   && typeof window.initCompare    === 'function') window.initCompare();
   }
   document.querySelectorAll('[data-page]').forEach(el =>
     el.addEventListener('click', e => { e.preventDefault(); switchPage(el.dataset.page); })
@@ -490,40 +743,7 @@
   );
 </script>
 
-<!-- Legend -->
-<script>
-  const legendBtn   = document.getElementById('legend-btn');
-  const legendPanel = document.getElementById('legend-panel');
-  legendBtn.addEventListener('click', () => {
-    const open = legendPanel.classList.toggle('open');
-    legendBtn.classList.toggle('active', open);
-  });
-</script>
-
-<!-- Three.js Globe -->
-<script>
-try {
-  const canvas=document.getElementById('globe-canvas'),renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
-  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
-  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(48,innerWidth/innerHeight,.1,500);
-  camera.position.z=5;
-  const sv=new Float32Array(6000*3);for(let i=0;i<sv.length;i++)sv[i]=(Math.random()-.5)*300;
-  const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sv,3));
-  scene.add(new THREE.Points(sg,new THREE.PointsMaterial({color:0xffffff,size:.06,transparent:true,opacity:.45})));
-  const G=new THREE.Group();G.position.x=2.3;scene.add(G);const R=1.9;
-  G.add(new THREE.Mesh(new THREE.SphereGeometry(R,64,64),new THREE.MeshPhongMaterial({color:0x020912,emissive:0x05101e,specular:0x334455,shininess:10})));
-  G.add(new THREE.Mesh(new THREE.SphereGeometry(R+.007,32,32),new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,transparent:true,opacity:.04})));
-  [[0,.22],[30,.10],[-30,.10],[60,.05],[-60,.05]].forEach(([lat,op])=>{const phi=(90-lat)*Math.PI/180,ry=(R+.012)*Math.cos(phi),rr=(R+.012)*Math.sin(phi);const pts=Array.from({length:161},(_,i)=>{const t=(i/160)*Math.PI*2;return new THREE.Vector3(Math.cos(t)*rr,ry,Math.sin(t)*rr)});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:op})));});
-  for(let l=0;l<360;l+=30){const pts=Array.from({length:81},(_,i)=>{const lat=(i/80*180)-90,phi=(90-lat)*Math.PI/180,th=(l+180)*Math.PI/180;return new THREE.Vector3(-(R+.012)*Math.sin(phi)*Math.cos(th),(R+.012)*Math.cos(phi),(R+.012)*Math.sin(phi)*Math.sin(th))});G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.04})));}
-  [[3.14,101.68],[1.35,103.82],[13.75,100.52],[51.51,-.12],[40.71,-74.0],[35.68,139.69]].forEach(([la,lo])=>{const phi=(90-la)*Math.PI/180,th=(lo+180)*Math.PI/180;const pos=new THREE.Vector3(-(R+.04)*Math.sin(phi)*Math.cos(th),(R+.04)*Math.cos(phi),(R+.04)*Math.sin(phi)*Math.sin(th));const d=new THREE.Mesh(new THREE.SphereGeometry(.015,8,8),new THREE.MeshBasicMaterial({color:0xffffff}));d.position.copy(pos);G.add(d);});
-  const ap=new THREE.Vector3(2.3,0,0);[[R+.15,.02,0xffffff],[R+.30,.01,0x88aacc]].forEach(([r,op,col])=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,64,64),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:op,side:THREE.BackSide}));m.position.copy(ap);scene.add(m);});
-  scene.add(new THREE.AmbientLight(0x1a2233,2.5));const dl=new THREE.DirectionalLight(0xffffff,.55);dl.position.set(5,3,4);scene.add(dl);
-  (function tick(){requestAnimationFrame(tick);G.rotation.y+=.0016;renderer.render(scene,camera)})();
-  window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
-}catch(e){console.warn('Globe:',e)}
-</script>
-
 <script src="js/map.js"></script>
-<script src="js/analytics.js"></script>
+<script src="js/compare.js"></script>
 </body>
 </html>

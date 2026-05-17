@@ -1,0 +1,261 @@
+complaint_id,date,lat,lng,medicine_id,purchased_from_facility_id,description,reported_price,standard_price,estimated_loss,verified,district,city,state,postcode
+HMP-A2020A25,2021-02-14,1.488409,103.730061,MED-94DCD221,,Expiry date appears tampered — original date scratched off.,4.2,6.0,2.2,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-039CD863,2021-06-13,1.51421,103.776165,MED-FB58034C,,Packaging seal already broken upon purchase.,6.49,22.0,14.88,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-870B7F85,2021-04-28,1.491305,103.736443,MED-94DCD221,FAC-317EFB40,Expiry date appears tampered — original date scratched off.,2.84,6.0,2.96,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-B2CBA8BE,2021-01-21,1.521293,103.715471,MED-FB58034C,FAC-952F7C35,Expiry date appears tampered — original date scratched off.,15.31,22.0,7.66,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-8639E6E4,2021-02-28,1.518499,103.735018,MED-D0A5410E,FAC-E691F464,Medicine purchased from street vendor near the market.,2.73,4.0,1.11,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-AFBDFE7F,2021-04-13,1.457927,103.790071,MED-94DCD221,FAC-F9EE4390,No batch number printed on secondary packaging.,2.24,6.0,3.93,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-4B5FEEE7,2021-03-13,1.457299,103.722918,MED-D0A5410E,,Multiple neighbours bought same batch; all reported ineffectiveness.,1.49,4.0,2.66,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-16D141BB,2021-03-31,1.491341,103.770129,MED-94DCD221,FAC-317EFB40,Multiple neighbours bought same batch; all reported ineffectiveness.,3.05,6.0,2.61,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-ACEA5F0D,2021-03-18,1.528091,103.737327,MED-FB58034C,,Medicine purchased from street vendor near the market.,7.91,22.0,17.75,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-EC62F05F,2021-02-14,1.457182,103.740998,MED-FB58034C,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,12.55,22.0,8.51,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-9A9255F3,2021-04-18,1.467205,103.711175,MED-FB58034C,,Medicine purchased from street vendor near the market.,10.95,22.0,15.45,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-2E2E6AE2,2021-05-27,1.481631,103.742132,MED-94DCD221,FAC-317EFB40,Expiry date appears tampered — original date scratched off.,4.25,6.0,2.23,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-408DC057,2021-03-18,1.553998,103.761305,MED-FB58034C,,Expiry date appears tampered — original date scratched off.,18.35,22.0,4.63,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-3C775D90,2021-02-18,1.454781,103.717996,MED-FB58034C,,Blister pack labelling inconsistent with MOH-registered product.,10.85,22.0,10.47,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-432DA7A8,2021-03-29,1.518984,103.784556,MED-FB58034C,FAC-FFDD0B04,Expiry date appears tampered — original date scratched off.,9.16,22.0,12.62,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-A9059666,2021-05-11,1.492083,103.739134,MED-D0A5410E,,Tablets crumbled unusually — suspect substandard binding agents.,3.28,4.0,0.68,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-B270975F,2021-03-02,1.42724,103.744181,MED-FB58034C,FAC-317EFB40,Chemical smell inconsistent with known product.,15.1,22.0,7.38,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-1E48B6B5,2021-01-15,1.490191,103.77455,MED-FB58034C,FAC-E691F464,Blister pack labelling inconsistent with MOH-registered product.,13.54,22.0,8.26,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-2F4C2623,2021-04-04,1.499213,103.764153,MED-94DCD221,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,1.92,6.0,4.0,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-96A8DB15,2021-05-11,1.46351,103.746248,MED-D0A5410E,FAC-FFDD0B04,Colour of tablets differs noticeably from genuine product.,2.96,4.0,0.99,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-96123016,2021-06-26,1.426738,103.773298,MED-FB58034C,FAC-952F7C35,No batch number printed on secondary packaging.,18.5,22.0,3.16,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-83D32261,2021-02-14,1.507794,103.806288,MED-94DCD221,FAC-E691F464,Expiry date appears tampered — original date scratched off.,3.12,6.0,2.89,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-B38967C4,2021-05-28,1.537473,103.793547,MED-D0A5410E,FAC-E691F464,Online purchase via Telegram; seller account now deleted.,3.03,4.0,1.34,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-76D8229A,2021-02-21,1.546928,103.695141,MED-FB58034C,FAC-F9EE4390,Chemical smell inconsistent with known product.,10.91,22.0,15.44,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-4C9E950E,2021-05-14,1.540935,103.758535,MED-D0A5410E,FAC-EF8B79A0,Tablets crumbled unusually — suspect substandard binding agents.,1.47,4.0,2.56,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-B5DBA0D5,2021-05-12,1.485008,103.771819,MED-FB58034C,FAC-2D52E3F2,Blister pack labelling inconsistent with MOH-registered product.,12.47,22.0,12.57,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-5B3C0763,2021-03-11,1.511104,103.80947,MED-FB58034C,FAC-E691F464,Tablets crumbled unusually — suspect substandard binding agents.,11.22,22.0,14.75,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-502B76A4,2021-03-31,1.461621,103.716872,MED-F1BD0EC9,FAC-317EFB40,Multiple neighbours bought same batch; all reported ineffectiveness.,6.91,8.5,1.53,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-D49C040F,2021-01-28,1.463007,103.724974,MED-FB58034C,FAC-FFDD0B04,Expiry date appears tampered — original date scratched off.,6.28,22.0,18.73,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-701572F3,2021-01-27,1.514951,103.787406,MED-FB58034C,FAC-2D52E3F2,Chemical smell inconsistent with known product.,17.19,22.0,5.07,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-94CBA46E,2021-05-25,1.562193,103.752651,MED-D0A5410E,FAC-F9EE4390,Colour of tablets differs noticeably from genuine product.,1.14,4.0,3.72,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-58ACA755,2021-05-31,1.504243,103.772625,MED-F1BD0EC9,FAC-E691F464,No batch number printed on secondary packaging.,3.13,8.5,5.4,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-7B7643D5,2021-01-23,1.459598,103.758966,MED-F1BD0EC9,FAC-F9EE4390,Blister pack labelling inconsistent with MOH-registered product.,2.83,8.5,6.14,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-ADF1C40E,2021-05-03,1.513557,103.756994,MED-D0A5410E,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,2.38,4.0,1.76,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-39ED646D,2021-06-08,1.417211,103.73856,MED-59EB08A3,FAC-EF8B79A0,Medicine purchased from street vendor near the market.,7.14,12.0,5.28,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-30EC573B,2021-03-14,1.526469,103.769338,MED-B71DF9FF,,Packaging seal already broken upon purchase.,4.29,6.5,2.31,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-E6FFEF6B,2021-02-24,1.562127,103.677779,MED-94DCD221,FAC-317EFB40,Packaging seal already broken upon purchase.,4.69,6.0,1.13,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-18389DEF,2021-02-06,1.482581,103.829995,MED-94DCD221,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,2.99,6.0,2.62,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-F1885B85,2021-03-09,1.465784,103.827009,MED-D0A5410E,FAC-952F7C35,Price was 60% below standard — suspect adulterated product.,1.63,4.0,2.87,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-D5B6F816,2021-05-20,1.495433,103.723195,MED-FB58034C,,Price was 60% below standard — suspect adulterated product.,11.17,22.0,15.05,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-C9551168,2021-03-18,1.514656,103.755361,MED-FB58034C,FAC-317EFB40,No batch number printed on secondary packaging.,6.64,22.0,18.1,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-9F026083,2021-06-06,1.509734,103.758039,MED-FB58034C,FAC-952F7C35,Blister pack labelling inconsistent with MOH-registered product.,8.54,22.0,11.77,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-37FFE885,2021-03-01,1.477432,103.695372,MED-D0A5410E,FAC-317EFB40,Tablets crumbled unusually — suspect substandard binding agents.,1.95,4.0,1.82,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-BEAC62C5,2021-04-24,1.528502,103.732044,MED-D0A5410E,,Online purchase via Telegram; seller account now deleted.,1.86,4.0,2.64,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-D18208BD,2021-06-16,1.451915,103.682483,MED-F1BD0EC9,FAC-EF8B79A0,Medicine purchased from street vendor near the market.,5.14,8.5,3.61,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-C1E0DD2D,2021-05-09,1.43888,103.731903,MED-FB58034C,,Chemical smell inconsistent with known product.,11.7,22.0,12.58,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-CC1D0FE4,2021-05-21,1.498141,103.77474,MED-99B74A7E,FAC-FFDD0B04,Multiple neighbours bought same batch; all reported ineffectiveness.,16.46,25.0,10.17,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-E0CEDA7E,2021-03-13,1.492795,103.768445,MED-FB58034C,FAC-FFDD0B04,Chemical smell inconsistent with known product.,18.5,22.0,4.15,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-2F6CA0E0,2021-04-22,1.48222,103.721402,MED-94DCD221,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,2.51,6.0,4.23,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-44FB1533,2021-05-08,1.510582,103.701813,MED-FB58034C,FAC-FFDD0B04,Chemical smell inconsistent with known product.,6.79,22.0,15.01,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-98BF6897,2021-04-01,1.439797,103.750053,MED-FB58034C,,Packaging seal already broken upon purchase.,18.07,22.0,5.27,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-603F1AC9,2021-05-11,1.542706,103.720276,MED-FB58034C,FAC-F9EE4390,Holographic seal missing from packaging.,11.8,22.0,12.89,True,Johor Bahru,Johor Bahru,Johor,80000
+HMP-846D689E,2021-03-11,1.43121,103.783331,MED-FB58034C,,Expiry date appears tampered — original date scratched off.,9.57,22.0,12.75,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-C7F3A775,2021-01-26,1.468398,103.701218,MED-FB58034C,FAC-DCD759AF,Packaging seal already broken upon purchase.,11.36,22.0,10.98,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-93322696,2021-01-15,1.533791,103.730174,MED-F1BD0EC9,FAC-952F7C35,Chemical smell inconsistent with known product.,6.53,8.5,2.5,False,Johor Bahru,Johor Bahru,Johor,80000
+HMP-4E1A5614,2021-06-20,5.419284,100.269221,MED-1711A01F,FAC-E691F464,Chemical smell inconsistent with known product.,1.47,2.5,1.29,False,Timur Laut,Georgetown,Penang,10050
+HMP-81DD18F5,2021-06-16,5.444705,100.332925,MED-1711A01F,FAC-2D52E3F2,Tablets crumbled unusually — suspect substandard binding agents.,1.73,2.5,1.01,True,Timur Laut,Georgetown,Penang,10050
+HMP-737ECA34,2021-08-16,5.411535,100.325232,MED-C029044A,FAC-2D52E3F2,Blister pack labelling inconsistent with MOH-registered product.,4.72,9.0,5.68,False,Timur Laut,Georgetown,Penang,10050
+HMP-9D156A5D,2021-06-10,5.391872,100.335645,MED-1711A01F,FAC-952F7C35,Medicine purchased from street vendor near the market.,1.1,2.5,1.92,True,Timur Laut,Georgetown,Penang,10050
+HMP-A49F576D,2021-06-02,5.41794,100.318188,MED-1711A01F,FAC-EF8B79A0,Blister pack labelling inconsistent with MOH-registered product.,1.02,2.5,1.31,True,Timur Laut,Georgetown,Penang,10050
+HMP-B5AF67DF,2021-04-06,5.435109,100.330203,MED-1711A01F,FAC-E691F464,Chemical smell inconsistent with known product.,1.37,2.5,1.03,True,Timur Laut,Georgetown,Penang,10050
+HMP-25A0C7D6,2021-04-03,5.357213,100.2803,MED-D0A5410E,FAC-F9EE4390,Expiry date appears tampered — original date scratched off.,2.89,4.0,1.04,True,Timur Laut,Georgetown,Penang,10050
+HMP-B3358364,2021-06-14,5.384681,100.260152,MED-C029044A,FAC-E691F464,Expiry date appears tampered — original date scratched off.,7.35,9.0,1.58,True,Timur Laut,Georgetown,Penang,10050
+HMP-3E5A8310,2021-07-27,5.396207,100.278276,MED-1711A01F,FAC-952F7C35,Colour of tablets differs noticeably from genuine product.,1.82,2.5,0.71,False,Timur Laut,Georgetown,Penang,10050
+HMP-0CF4295F,2021-07-08,5.386331,100.377059,MED-1711A01F,FAC-DCD759AF,No batch number printed on secondary packaging.,0.85,2.5,2.27,False,Timur Laut,Georgetown,Penang,10050
+HMP-8F0CEDC2,2021-08-09,5.374908,100.322075,MED-1711A01F,FAC-DCD759AF,Chemical smell inconsistent with known product.,1.85,2.5,0.74,True,Timur Laut,Georgetown,Penang,10050
+HMP-7DA74D17,2021-03-27,5.408118,100.348234,MED-B71DF9FF,FAC-DCD759AF,Tablets crumbled unusually — suspect substandard binding agents.,2.85,6.5,4.01,True,Timur Laut,Georgetown,Penang,10050
+HMP-2A64F050,2021-04-20,5.475585,100.338498,MED-1711A01F,FAC-F9EE4390,Price was 60% below standard — suspect adulterated product.,1.39,2.5,1.16,False,Timur Laut,Georgetown,Penang,10050
+HMP-A95FC10D,2021-04-22,5.384026,100.315578,MED-B71DF9FF,FAC-DCD759AF,Holographic seal missing from packaging.,2.14,6.5,5.43,True,Timur Laut,Georgetown,Penang,10050
+HMP-2F620580,2021-03-09,5.410232,100.296223,MED-94DCD221,FAC-E691F464,Medicine purchased from street vendor near the market.,2.0,6.0,3.89,True,Timur Laut,Georgetown,Penang,10050
+HMP-97B0C426,2021-07-23,5.392004,100.318922,MED-1711A01F,FAC-F9EE4390,Medicine purchased from street vendor near the market.,1.17,2.5,1.64,False,Timur Laut,Georgetown,Penang,10050
+HMP-05055C90,2021-07-20,5.423344,100.342165,MED-1711A01F,FAC-E691F464,Multiple neighbours bought same batch; all reported ineffectiveness.,2.06,2.5,0.54,True,Timur Laut,Georgetown,Penang,10050
+HMP-48B57F49,2021-08-04,5.375123,100.300945,MED-1711A01F,FAC-E691F464,Medicine purchased from street vendor near the market.,1.1,2.5,1.27,False,Timur Laut,Georgetown,Penang,10050
+HMP-89A0AF3C,2021-05-14,5.454934,100.331292,MED-1711A01F,FAC-F9EE4390,No batch number printed on secondary packaging.,0.76,2.5,1.53,True,Timur Laut,Georgetown,Penang,10050
+HMP-AD0119D9,2021-05-16,5.421768,100.330832,MED-B71DF9FF,FAC-2D52E3F2,Blister pack labelling inconsistent with MOH-registered product.,3.56,6.5,3.21,False,Timur Laut,Georgetown,Penang,10050
+HMP-59D20206,2021-03-23,5.43129,100.300705,MED-D0A5410E,FAC-2D52E3F2,Online purchase via Telegram; seller account now deleted.,2.44,4.0,1.91,True,Timur Laut,Georgetown,Penang,10050
+HMP-194AE9D4,2021-06-19,5.433053,100.327424,MED-80150E17,FAC-E691F464,Holographic seal missing from packaging.,11.26,18.0,8.66,False,Timur Laut,Georgetown,Penang,10050
+HMP-20572E46,2021-05-22,5.476128,100.257885,MED-1711A01F,FAC-FFDD0B04,Multiple neighbours bought same batch; all reported ineffectiveness.,1.51,2.5,0.87,True,Timur Laut,Georgetown,Penang,10050
+HMP-DB29678F,2021-07-24,5.43739,100.338849,MED-1711A01F,FAC-DCD759AF,No batch number printed on secondary packaging.,0.81,2.5,1.44,True,Timur Laut,Georgetown,Penang,10050
+HMP-FDF90633,2021-06-29,5.423458,100.374686,MED-1711A01F,FAC-F9EE4390,Colour of tablets differs noticeably from genuine product.,0.8,2.5,1.66,True,Timur Laut,Georgetown,Penang,10050
+HMP-8B4FC45C,2021-08-17,5.38446,100.345052,MED-D0A5410E,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,1.46,4.0,2.53,False,Timur Laut,Georgetown,Penang,10050
+HMP-875837B1,2021-05-17,5.417745,100.289067,MED-94DCD221,FAC-F9EE4390,No batch number printed on secondary packaging.,3.18,6.0,3.12,False,Timur Laut,Georgetown,Penang,10050
+HMP-8660769A,2021-08-05,5.386816,100.319997,MED-1711A01F,FAC-317EFB40,Tablets crumbled unusually — suspect substandard binding agents.,0.76,2.5,1.89,False,Timur Laut,Georgetown,Penang,10050
+HMP-1E31ABF3,2021-07-30,5.473416,100.314479,MED-1711A01F,FAC-F9EE4390,Tablets crumbled unusually — suspect substandard binding agents.,1.54,2.5,0.83,False,Timur Laut,Georgetown,Penang,10050
+HMP-3D69E300,2021-05-15,5.385813,100.324147,MED-B71DF9FF,FAC-DCD759AF,Expiry date appears tampered — original date scratched off.,2.49,6.5,4.7,True,Timur Laut,Georgetown,Penang,10050
+HMP-438EE64E,2021-04-15,5.411911,100.34072,MED-1711A01F,FAC-F9EE4390,Colour of tablets differs noticeably from genuine product.,1.17,2.5,1.64,True,Timur Laut,Georgetown,Penang,10050
+HMP-D8BA0E6F,2021-05-08,5.43054,100.330944,MED-94DCD221,FAC-952F7C35,Holographic seal missing from packaging.,2.79,6.0,4.44,True,Timur Laut,Georgetown,Penang,10050
+HMP-880A623F,2021-03-18,5.440769,100.30356,MED-1711A01F,FAC-DCD759AF,Colour of tablets differs noticeably from genuine product.,0.97,2.5,1.6,True,Timur Laut,Georgetown,Penang,10050
+HMP-FB9232D6,2021-05-17,5.416299,100.343808,MED-1711A01F,FAC-FFDD0B04,Blister pack labelling inconsistent with MOH-registered product.,1.32,2.5,1.46,True,Timur Laut,Georgetown,Penang,10050
+HMP-005D1A1F,2021-03-08,5.411529,100.30294,MED-D0A5410E,FAC-FFDD0B04,Chemical smell inconsistent with known product.,2.38,4.0,1.46,True,Timur Laut,Georgetown,Penang,10050
+HMP-68FA3091,2021-07-13,5.370362,100.328486,MED-D0A5410E,FAC-DCD759AF,Chemical smell inconsistent with known product.,2.73,4.0,1.37,False,Timur Laut,Georgetown,Penang,10050
+HMP-DE6D7B7A,2021-07-13,5.367587,100.373248,MED-1711A01F,FAC-FFDD0B04,Medicine purchased from street vendor near the market.,1.76,2.5,0.68,True,Timur Laut,Georgetown,Penang,10050
+HMP-881D998B,2021-03-05,5.450713,100.31366,MED-B71DF9FF,FAC-DCD759AF,Online purchase via Telegram; seller account now deleted.,2.87,6.5,3.68,True,Timur Laut,Georgetown,Penang,10050
+HMP-5654CF4A,2021-06-09,5.392799,100.37222,MED-1711A01F,FAC-E691F464,No batch number printed on secondary packaging.,1.35,2.5,1.18,False,Timur Laut,Georgetown,Penang,10050
+HMP-CC66C6CE,2021-05-25,5.437067,100.30374,MED-1711A01F,FAC-952F7C35,Packaging seal already broken upon purchase.,1.76,2.5,0.92,True,Timur Laut,Georgetown,Penang,10050
+HMP-2AE07D95,2021-03-14,5.45283,100.323782,MED-94DCD221,FAC-317EFB40,Expiry date appears tampered — original date scratched off.,2.11,6.0,5.37,True,Timur Laut,Georgetown,Penang,10050
+HMP-896A86BC,2021-04-10,5.38529,100.322619,MED-1711A01F,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,1.28,2.5,1.48,True,Timur Laut,Georgetown,Penang,10050
+HMP-A46699BE,2021-03-25,5.396414,100.306881,MED-D0A5410E,,Packaging seal already broken upon purchase.,3.06,4.0,1.24,True,Timur Laut,Georgetown,Penang,10050
+HMP-B8D0131A,2021-03-22,5.423641,100.32217,MED-B71DF9FF,FAC-F9EE4390,Multiple neighbours bought same batch; all reported ineffectiveness.,2.69,6.5,4.67,True,Timur Laut,Georgetown,Penang,10050
+HMP-D6D53A7B,2021-03-30,5.452643,100.352655,MED-1711A01F,FAC-EF8B79A0,Blister pack labelling inconsistent with MOH-registered product.,1.33,2.5,1.44,False,Timur Laut,Georgetown,Penang,10050
+HMP-BB2A6C53,2022-03-18,3.145284,101.718609,MED-B85A6ED2,FAC-2D52E3F2,Online purchase via Telegram; seller account now deleted.,3.21,5.5,2.66,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-C22EBD73,2022-06-13,3.148448,101.685321,MED-99B74A7E,FAC-F9EE4390,Chemical smell inconsistent with known product.,9.04,25.0,17.61,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-A3107130,2022-06-03,3.180104,101.647347,MED-B85A6ED2,FAC-317EFB40,Tablets crumbled unusually — suspect substandard binding agents.,2.04,5.5,3.78,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-55C991DA,2022-03-06,3.16197,101.7463,MED-99B74A7E,FAC-FFDD0B04,Multiple neighbours bought same batch; all reported ineffectiveness.,21.24,25.0,4.96,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-51BA11B7,2022-01-20,3.150984,101.735157,MED-B85A6ED2,FAC-F9EE4390,Blister pack labelling inconsistent with MOH-registered product.,4.61,5.5,1.08,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-ED6473AC,2022-05-22,3.216187,101.688929,MED-87F56986,FAC-E691F464,Tablets crumbled unusually — suspect substandard binding agents.,6.04,8.0,2.64,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-A6FF9012,2022-02-19,3.168976,101.715663,MED-B85A6ED2,FAC-EF8B79A0,Medicine purchased from street vendor near the market.,3.51,5.5,2.68,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-1881D416,2022-03-31,3.153233,101.707962,MED-B85A6ED2,FAC-E691F464,Online purchase via Telegram; seller account now deleted.,2.56,5.5,3.17,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-709295F8,2022-02-26,3.107725,101.687345,MED-99B74A7E,FAC-DCD759AF,Medicine purchased from street vendor near the market.,10.66,25.0,18.69,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-DA738D2F,2022-02-20,3.210087,101.740486,MED-B85A6ED2,FAC-952F7C35,Holographic seal missing from packaging.,3.9,5.5,1.56,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-31405D9C,2022-04-19,3.160835,101.710788,MED-C029044A,FAC-952F7C35,Colour of tablets differs noticeably from genuine product.,5.97,9.0,3.7,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-5C352CF3,2022-06-07,3.162571,101.703599,MED-B85A6ED2,FAC-FFDD0B04,Colour of tablets differs noticeably from genuine product.,2.57,5.5,3.47,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-D058E644,2022-01-26,3.154632,101.68796,MED-1711A01F,FAC-DCD759AF,Expiry date appears tampered — original date scratched off.,2.05,2.5,0.46,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-BD484B00,2022-06-02,3.143582,101.713503,MED-59EB08A3,FAC-2D52E3F2,Packaging seal already broken upon purchase.,6.23,12.0,7.26,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-C5F916F9,2022-01-23,3.11046,101.73157,MED-87F56986,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,5.39,8.0,2.53,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-9E824488,2022-06-29,3.149672,101.669175,MED-B85A6ED2,FAC-E691F464,Expiry date appears tampered — original date scratched off.,2.66,5.5,3.04,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-6AE61D81,2022-06-16,3.143336,101.667428,MED-C029044A,FAC-317EFB40,Multiple neighbours bought same batch; all reported ineffectiveness.,7.5,9.0,1.32,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-61FF47C6,2022-03-09,3.200663,101.715783,MED-C029044A,FAC-E691F464,Price was 60% below standard — suspect adulterated product.,5.53,9.0,4.5,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-CF8F6FD1,2022-02-21,3.211424,101.698881,MED-87F56986,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,6.74,8.0,1.45,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-EDF83C4B,2022-03-16,3.205975,101.702118,MED-B85A6ED2,FAC-F9EE4390,Blister pack labelling inconsistent with MOH-registered product.,3.39,5.5,1.81,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-49CC2C2D,2022-05-09,3.168847,101.703934,MED-B85A6ED2,FAC-FFDD0B04,Chemical smell inconsistent with known product.,3.98,5.5,1.72,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-8D258D3F,2022-05-28,3.154204,101.643853,MED-F1BD0EC9,FAC-EF8B79A0,Blister pack labelling inconsistent with MOH-registered product.,3.84,8.5,5.61,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-4610CE05,2022-05-08,3.150657,101.671285,MED-99B74A7E,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,8.05,25.0,15.16,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-0D8ACC33,2022-06-16,3.140842,101.691366,MED-87F56986,FAC-952F7C35,Expiry date appears tampered — original date scratched off.,4.66,8.0,3.67,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-51ECD0C2,2022-06-05,3.133116,101.655663,MED-B85A6ED2,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,3.8,5.5,1.65,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-332079F6,2022-05-04,3.152346,101.703629,MED-99B74A7E,FAC-2D52E3F2,Colour of tablets differs noticeably from genuine product.,11.45,25.0,13.42,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-1FD27371,2022-02-08,3.167436,101.688368,MED-B85A6ED2,FAC-2D52E3F2,Holographic seal missing from packaging.,3.87,5.5,1.72,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-F1985625,2022-04-15,3.155875,101.7092,MED-0A195B42,FAC-952F7C35,No batch number printed on secondary packaging.,10.89,14.0,4.25,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-6297808F,2022-05-24,3.157529,101.708804,MED-B85A6ED2,FAC-E691F464,Expiry date appears tampered — original date scratched off.,2.21,5.5,3.98,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-4A482C69,2022-03-13,3.177164,101.711349,MED-B85A6ED2,,Blister pack labelling inconsistent with MOH-registered product.,4.07,5.5,1.88,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-9398BE87,2022-04-04,3.160275,101.713675,MED-87F56986,FAC-2D52E3F2,Online purchase via Telegram; seller account now deleted.,6.44,8.0,1.63,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-0216AFF6,2022-01-22,3.184246,101.725545,MED-B85A6ED2,FAC-952F7C35,Packaging seal already broken upon purchase.,1.83,5.5,4.19,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-385915A1,2022-06-09,3.153639,101.7185,MED-B85A6ED2,FAC-2D52E3F2,Online purchase via Telegram; seller account now deleted.,3.41,5.5,2.79,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-DE16A8BB,2022-05-03,3.185574,101.711267,MED-B85A6ED2,FAC-F9EE4390,Multiple neighbours bought same batch; all reported ineffectiveness.,3.06,5.5,2.67,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-E12C34CA,2022-06-15,3.143544,101.706697,MED-B85A6ED2,FAC-EF8B79A0,Multiple neighbours bought same batch; all reported ineffectiveness.,3.07,5.5,2.96,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-D3979DE1,2022-02-19,3.179026,101.755819,MED-C029044A,FAC-FFDD0B04,Blister pack labelling inconsistent with MOH-registered product.,6.44,9.0,2.58,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-5B909923,2022-03-14,3.183221,101.720368,MED-B85A6ED2,FAC-317EFB40,Expiry date appears tampered — original date scratched off.,3.11,5.5,3.13,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-55951588,2022-04-05,3.217961,101.70462,MED-99B74A7E,FAC-952F7C35,Medicine purchased from street vendor near the market.,15.2,25.0,11.42,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-0B058BFD,2022-06-22,3.141654,101.738076,MED-B85A6ED2,FAC-317EFB40,Expiry date appears tampered — original date scratched off.,2.98,5.5,3.1,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-2CBB23A3,2022-02-04,3.13875,101.707944,MED-B85A6ED2,FAC-317EFB40,Multiple neighbours bought same batch; all reported ineffectiveness.,2.78,5.5,2.78,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-2D7F2029,2022-05-25,3.149725,101.69719,MED-B85A6ED2,FAC-317EFB40,No batch number printed on secondary packaging.,2.15,5.5,4.28,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-31D62788,2022-03-06,3.163212,101.712016,MED-C029044A,FAC-FFDD0B04,Online purchase via Telegram; seller account now deleted.,3.41,9.0,5.22,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-86B4D51E,2022-05-09,3.163179,101.655788,MED-99B74A7E,FAC-317EFB40,Colour of tablets differs noticeably from genuine product.,16.71,25.0,11.07,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-CD0EBB6F,2022-03-26,3.127351,101.704853,MED-B85A6ED2,FAC-FFDD0B04,Medicine purchased from street vendor near the market.,3.39,5.5,2.2,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-FCC154DB,2022-06-29,3.148041,101.713103,MED-B85A6ED2,,Packaging seal already broken upon purchase.,4.25,5.5,1.65,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-E3604E04,2022-05-10,3.175812,101.646649,MED-B85A6ED2,FAC-E691F464,Price was 60% below standard — suspect adulterated product.,4.39,5.5,1.29,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-896B5EBB,2022-04-12,3.188399,101.690818,MED-B85A6ED2,FAC-2D52E3F2,Blister pack labelling inconsistent with MOH-registered product.,4.62,5.5,0.79,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-B0A614D3,2022-02-24,3.133768,101.709297,MED-B85A6ED2,FAC-952F7C35,Packaging seal already broken upon purchase.,2.68,5.5,3.82,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-846067E1,2022-01-31,3.170806,101.662998,MED-C029044A,FAC-952F7C35,Medicine purchased from street vendor near the market.,4.21,9.0,5.54,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-51DA11C4,2022-06-13,3.177747,101.681909,MED-87F56986,FAC-F9EE4390,Colour of tablets differs noticeably from genuine product.,5.27,8.0,3.7,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-E84F1570,2022-04-04,3.113247,101.664849,MED-B85A6ED2,FAC-317EFB40,Online purchase via Telegram; seller account now deleted.,3.29,5.5,2.66,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-5D11EF84,2022-02-07,3.217167,101.697017,MED-87F56986,FAC-317EFB40,Blister pack labelling inconsistent with MOH-registered product.,5.19,8.0,3.04,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-CE24B89C,2022-05-19,3.175547,101.757196,MED-B85A6ED2,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,2.14,5.5,4.7,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-BABA1AED,2022-05-29,3.168208,101.65094,MED-87F56986,FAC-2D52E3F2,Tablets crumbled unusually — suspect substandard binding agents.,2.41,8.0,5.79,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-387FC2C5,2022-02-26,3.182999,101.660555,MED-B85A6ED2,FAC-317EFB40,Colour of tablets differs noticeably from genuine product.,3.8,5.5,1.49,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-D8D0E16E,2022-05-09,3.152957,101.738544,MED-C029044A,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,3.72,9.0,5.18,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-ADF5C11E,2022-04-22,3.142247,101.70285,MED-B036DD9C,FAC-2D52E3F2,Multiple neighbours bought same batch; all reported ineffectiveness.,53.83,95.0,44.47,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-32FAF6F3,2022-04-20,3.161999,101.733793,MED-B85A6ED2,,Expiry date appears tampered — original date scratched off.,3.28,5.5,2.01,False,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-D50AA21A,2022-05-06,3.133504,101.707394,MED-99B74A7E,FAC-DCD759AF,Price was 60% below standard — suspect adulterated product.,8.31,25.0,22.54,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-E4AB7E39,2022-04-23,3.142747,101.712654,MED-B85A6ED2,FAC-EF8B79A0,Price was 60% below standard — suspect adulterated product.,4.66,5.5,0.89,True,Kuala Lumpur,Kuala Lumpur,Kuala Lumpur,50350
+HMP-A120195F,2022-07-10,3.063958,101.54791,MED-99B74A7E,FAC-2D52E3F2,No batch number printed on secondary packaging.,11.09,25.0,18.17,True,Petaling,Shah Alam,Selangor,40150
+HMP-CCE3B7D8,2022-08-08,3.098221,101.533906,MED-B85A6ED2,,Packaging seal already broken upon purchase.,3.26,5.5,2.8,False,Petaling,Shah Alam,Selangor,40150
+HMP-70D9E03E,2022-10-16,3.070541,101.541388,MED-C029044A,FAC-FFDD0B04,Expiry date appears tampered — original date scratched off.,5.8,9.0,3.82,True,Petaling,Shah Alam,Selangor,40150
+HMP-BDFB76D2,2022-11-25,3.025778,101.519885,MED-C029044A,FAC-952F7C35,Blister pack labelling inconsistent with MOH-registered product.,3.76,9.0,4.87,True,Petaling,Shah Alam,Selangor,40150
+HMP-64C83377,2022-07-22,3.029227,101.556887,MED-C029044A,,Holographic seal missing from packaging.,5.21,9.0,3.97,True,Petaling,Shah Alam,Selangor,40150
+HMP-538072EB,2022-07-12,3.144569,101.540066,MED-0A195B42,FAC-F9EE4390,No batch number printed on secondary packaging.,8.99,14.0,6.96,False,Petaling,Shah Alam,Selangor,40150
+HMP-87750679,2022-07-27,3.076854,101.582129,MED-87F56986,FAC-317EFB40,Online purchase via Telegram; seller account now deleted.,5.76,8.0,2.81,False,Petaling,Shah Alam,Selangor,40150
+HMP-56E9CE33,2022-10-27,3.082437,101.51099,MED-C029044A,FAC-2D52E3F2,Online purchase via Telegram; seller account now deleted.,7.55,9.0,1.61,False,Petaling,Shah Alam,Selangor,40150
+HMP-55694032,2022-08-21,3.096854,101.536409,MED-87F56986,FAC-F9EE4390,Holographic seal missing from packaging.,6.28,8.0,1.76,False,Petaling,Shah Alam,Selangor,40150
+HMP-1C5C1647,2022-08-18,3.072781,101.589544,MED-87F56986,FAC-EF8B79A0,Colour of tablets differs noticeably from genuine product.,3.54,8.0,5.91,False,Petaling,Shah Alam,Selangor,40150
+HMP-55C5D6C5,2022-10-21,3.024383,101.585172,MED-C029044A,FAC-2D52E3F2,Chemical smell inconsistent with known product.,7.11,9.0,2.01,True,Petaling,Shah Alam,Selangor,40150
+HMP-4595E562,2022-07-22,3.082072,101.504639,MED-C029044A,FAC-2D52E3F2,Holographic seal missing from packaging.,6.25,9.0,2.46,False,Petaling,Shah Alam,Selangor,40150
+HMP-13E261C3,2022-10-23,3.06022,101.55686,MED-C029044A,FAC-DCD759AF,Price was 60% below standard — suspect adulterated product.,5.61,9.0,3.68,True,Petaling,Shah Alam,Selangor,40150
+HMP-5D1B736D,2022-12-11,3.045925,101.506295,MED-87F56986,FAC-FFDD0B04,Colour of tablets differs noticeably from genuine product.,6.71,8.0,1.77,True,Petaling,Shah Alam,Selangor,40150
+HMP-74B1D1BA,2022-07-08,3.090659,101.480904,MED-C029044A,FAC-DCD759AF,Blister pack labelling inconsistent with MOH-registered product.,3.25,9.0,6.81,False,Petaling,Shah Alam,Selangor,40150
+HMP-FEF5308F,2022-11-23,3.053684,101.504753,MED-C029044A,FAC-DCD759AF,Price was 60% below standard — suspect adulterated product.,2.69,9.0,5.9,False,Petaling,Shah Alam,Selangor,40150
+HMP-F6760D75,2022-09-19,3.095705,101.556476,MED-99B74A7E,FAC-FFDD0B04,Blister pack labelling inconsistent with MOH-registered product.,16.26,25.0,8.63,True,Petaling,Shah Alam,Selangor,40150
+HMP-22C9E83A,2022-09-06,3.039912,101.560304,MED-C029044A,FAC-E691F464,Tablets crumbled unusually — suspect substandard binding agents.,6.5,9.0,3.09,False,Petaling,Shah Alam,Selangor,40150
+HMP-7884097A,2022-07-19,3.079822,101.548986,MED-B036DD9C,FAC-DCD759AF,Expiry date appears tampered — original date scratched off.,51.08,95.0,59.04,True,Petaling,Shah Alam,Selangor,40150
+HMP-E2457D1E,2022-11-18,3.046834,101.483136,MED-D0A5410E,FAC-2D52E3F2,No batch number printed on secondary packaging.,2.36,4.0,2.2,True,Petaling,Shah Alam,Selangor,40150
+HMP-82CA6C37,2022-08-01,3.085314,101.490832,MED-B85A6ED2,FAC-E691F464,Chemical smell inconsistent with known product.,4.63,5.5,1.12,False,Petaling,Shah Alam,Selangor,40150
+HMP-506B16CE,2022-11-19,3.031084,101.577332,MED-C029044A,FAC-FFDD0B04,Medicine purchased from street vendor near the market.,3.19,9.0,7.76,False,Petaling,Shah Alam,Selangor,40150
+HMP-4A7EC574,2022-11-25,3.014848,101.521366,MED-87F56986,FAC-FFDD0B04,Chemical smell inconsistent with known product.,2.58,8.0,7.51,True,Petaling,Shah Alam,Selangor,40150
+HMP-D9AD44C0,2022-11-19,3.119532,101.578482,MED-C029044A,FAC-2D52E3F2,Packaging seal already broken upon purchase.,5.8,9.0,3.04,True,Petaling,Shah Alam,Selangor,40150
+HMP-5B010C1C,2022-08-11,3.044388,101.527617,MED-B85A6ED2,FAC-317EFB40,Holographic seal missing from packaging.,2.55,5.5,3.66,True,Petaling,Shah Alam,Selangor,40150
+HMP-5C79E7F9,2022-09-09,3.102996,101.613654,MED-87F56986,,Expiry date appears tampered — original date scratched off.,2.81,8.0,5.28,True,Petaling,Shah Alam,Selangor,40150
+HMP-314FCD5B,2022-12-07,3.092908,101.523734,MED-C029044A,FAC-EF8B79A0,Blister pack labelling inconsistent with MOH-registered product.,6.22,9.0,3.29,False,Petaling,Shah Alam,Selangor,40150
+HMP-A3F80483,2022-11-24,3.029002,101.507438,MED-87F56986,FAC-DCD759AF,Colour of tablets differs noticeably from genuine product.,4.14,8.0,4.64,True,Petaling,Shah Alam,Selangor,40150
+HMP-9AA09904,2022-10-12,3.011108,101.537766,MED-87F56986,FAC-EF8B79A0,Online purchase via Telegram; seller account now deleted.,3.6,8.0,3.92,True,Petaling,Shah Alam,Selangor,40150
+HMP-B3345BF3,2022-09-19,3.087621,101.576831,MED-C029044A,FAC-317EFB40,Packaging seal already broken upon purchase.,6.94,9.0,2.11,False,Petaling,Shah Alam,Selangor,40150
+HMP-8DCE1D99,2022-10-28,3.045587,101.519408,MED-C029044A,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,3.15,9.0,6.42,False,Petaling,Shah Alam,Selangor,40150
+HMP-67EC2830,2022-08-10,3.054207,101.513467,MED-B71DF9FF,FAC-317EFB40,Multiple neighbours bought same batch; all reported ineffectiveness.,4.83,6.5,2.28,True,Petaling,Shah Alam,Selangor,40150
+HMP-C0FD5AED,2022-09-17,3.03304,101.5272,MED-C029044A,FAC-952F7C35,Holographic seal missing from packaging.,5.07,9.0,3.54,True,Petaling,Shah Alam,Selangor,40150
+HMP-C97C6FE1,2022-09-11,3.064427,101.525472,MED-C029044A,FAC-DCD759AF,Medicine purchased from street vendor near the market.,5.06,9.0,5.26,True,Petaling,Shah Alam,Selangor,40150
+HMP-A66B7788,2022-10-02,3.092279,101.551456,MED-87F56986,FAC-952F7C35,Blister pack labelling inconsistent with MOH-registered product.,5.72,8.0,2.4,True,Petaling,Shah Alam,Selangor,40150
+HMP-DAC072B8,2022-11-07,3.061079,101.52651,MED-C029044A,FAC-FFDD0B04,Online purchase via Telegram; seller account now deleted.,4.83,9.0,4.81,True,Petaling,Shah Alam,Selangor,40150
+HMP-CB630337,2022-10-02,3.082867,101.500406,MED-C029044A,,Packaging seal already broken upon purchase.,6.39,9.0,2.5,True,Petaling,Shah Alam,Selangor,40150
+HMP-F2BA0417,2022-10-30,3.094528,101.554894,MED-C029044A,,Online purchase via Telegram; seller account now deleted.,5.18,9.0,3.56,False,Petaling,Shah Alam,Selangor,40150
+HMP-899FCABD,2022-09-15,3.036096,101.56119,MED-B85A6ED2,,Holographic seal missing from packaging.,3.4,5.5,2.37,True,Petaling,Shah Alam,Selangor,40150
+HMP-52C11CF5,2022-09-23,3.067668,101.532007,MED-C029044A,FAC-F9EE4390,No batch number printed on secondary packaging.,5.98,9.0,4.19,True,Petaling,Shah Alam,Selangor,40150
+HMP-90F3E04F,2022-11-26,2.983715,101.545538,MED-99B74A7E,FAC-DCD759AF,Online purchase via Telegram; seller account now deleted.,15.23,25.0,12.18,True,Petaling,Shah Alam,Selangor,40150
+HMP-FE1CC8CE,2022-07-09,3.105682,101.573349,MED-87F56986,FAC-E691F464,Blister pack labelling inconsistent with MOH-registered product.,4.85,8.0,3.89,True,Petaling,Shah Alam,Selangor,40150
+HMP-2BDA5A07,2022-11-06,3.053812,101.543291,MED-C029044A,FAC-EF8B79A0,No batch number printed on secondary packaging.,6.5,9.0,3.39,False,Petaling,Shah Alam,Selangor,40150
+HMP-B2A0F673,2022-11-12,3.050575,101.576939,MED-C029044A,FAC-DCD759AF,Holographic seal missing from packaging.,4.45,9.0,6.26,False,Petaling,Shah Alam,Selangor,40150
+HMP-6B2C6249,2022-12-12,3.081701,101.475614,MED-C029044A,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,6.64,9.0,2.35,True,Petaling,Shah Alam,Selangor,40150
+HMP-99076E90,2023-03-25,4.570554,101.156186,MED-F1BD0EC9,FAC-DCD759AF,Price was 60% below standard — suspect adulterated product.,6.12,8.5,2.95,True,Kinta,Ipoh,Perak,30000
+HMP-92E891BC,2023-03-22,4.635972,101.068803,MED-F1BD0EC9,FAC-952F7C35,Packaging seal already broken upon purchase.,2.97,8.5,6.76,True,Kinta,Ipoh,Perak,30000
+HMP-6E264E8E,2023-01-28,4.597326,101.094999,MED-87F56986,FAC-F9EE4390,No batch number printed on secondary packaging.,3.82,8.0,4.57,True,Kinta,Ipoh,Perak,30000
+HMP-67CA201C,2023-03-18,4.524281,101.071256,MED-F1BD0EC9,FAC-E691F464,Multiple neighbours bought same batch; all reported ineffectiveness.,3.05,8.5,6.48,False,Kinta,Ipoh,Perak,30000
+HMP-9E74E19A,2023-04-23,4.585623,101.080491,MED-94DCD221,FAC-2D52E3F2,Blister pack labelling inconsistent with MOH-registered product.,2.81,6.0,3.54,True,Kinta,Ipoh,Perak,30000
+HMP-5C547F6C,2023-05-09,4.533512,101.126732,MED-59EB08A3,FAC-F9EE4390,Price was 60% below standard — suspect adulterated product.,6.63,12.0,5.15,False,Kinta,Ipoh,Perak,30000
+HMP-41A9D006,2023-03-08,4.597119,101.044695,MED-F1BD0EC9,FAC-EF8B79A0,Online purchase via Telegram; seller account now deleted.,4.97,8.5,4.4,False,Kinta,Ipoh,Perak,30000
+HMP-ED00C30A,2023-05-14,4.62217,101.087464,MED-80150E17,FAC-F9EE4390,Blister pack labelling inconsistent with MOH-registered product.,6.95,18.0,13.94,False,Kinta,Ipoh,Perak,30000
+HMP-08A6138F,2023-03-21,4.6589,101.14146,MED-F1BD0EC9,,Chemical smell inconsistent with known product.,4.58,8.5,4.71,True,Kinta,Ipoh,Perak,30000
+HMP-56B7AA48,2023-02-05,4.568061,101.087366,MED-F1BD0EC9,FAC-F9EE4390,No batch number printed on secondary packaging.,3.98,8.5,5.66,False,Kinta,Ipoh,Perak,30000
+HMP-29EB8428,2023-02-21,4.546026,101.067144,MED-59EB08A3,FAC-952F7C35,Packaging seal already broken upon purchase.,7.54,12.0,5.36,True,Kinta,Ipoh,Perak,30000
+HMP-3BE432F1,2023-02-12,4.582683,101.071239,MED-F1BD0EC9,FAC-EF8B79A0,Medicine purchased from street vendor near the market.,4.69,8.5,5.2,False,Kinta,Ipoh,Perak,30000
+HMP-BFE78C86,2023-06-06,4.589141,101.114677,MED-F1BD0EC9,FAC-317EFB40,No batch number printed on secondary packaging.,5.88,8.5,2.24,False,Kinta,Ipoh,Perak,30000
+HMP-34D06ECD,2023-05-16,4.581312,101.116663,MED-59EB08A3,FAC-F9EE4390,No batch number printed on secondary packaging.,9.67,12.0,3.12,False,Kinta,Ipoh,Perak,30000
+HMP-1382AF1A,2023-02-11,4.577732,101.103672,MED-1711A01F,FAC-317EFB40,Packaging seal already broken upon purchase.,1.38,2.5,1.23,True,Kinta,Ipoh,Perak,30000
+HMP-7107335B,2023-03-04,4.548912,101.07765,MED-87F56986,FAC-FFDD0B04,Holographic seal missing from packaging.,5.71,8.0,2.8,True,Kinta,Ipoh,Perak,30000
+HMP-2BEAC077,2023-05-28,4.604702,101.080728,MED-80150E17,,Online purchase via Telegram; seller account now deleted.,14.3,18.0,3.56,False,Kinta,Ipoh,Perak,30000
+HMP-F739C938,2023-06-06,4.607155,101.101572,MED-59EB08A3,FAC-DCD759AF,Blister pack labelling inconsistent with MOH-registered product.,6.7,12.0,7.13,True,Kinta,Ipoh,Perak,30000
+HMP-877D156C,2023-05-06,4.582032,101.090774,MED-F1BD0EC9,FAC-EF8B79A0,Packaging seal already broken upon purchase.,5.64,8.5,2.92,False,Kinta,Ipoh,Perak,30000
+HMP-2CCBFD33,2023-04-26,4.59434,101.099447,MED-F1BD0EC9,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,4.05,8.5,3.94,True,Kinta,Ipoh,Perak,30000
+HMP-A91E96CA,2023-02-11,4.587635,101.106388,MED-F1BD0EC9,FAC-952F7C35,Price was 60% below standard — suspect adulterated product.,6.09,8.5,3.35,True,Kinta,Ipoh,Perak,30000
+HMP-17F856A6,2023-04-14,4.636622,101.040254,MED-F1BD0EC9,,Online purchase via Telegram; seller account now deleted.,2.77,8.5,7.91,True,Kinta,Ipoh,Perak,30000
+HMP-DB52CF40,2023-05-23,4.60818,101.121545,MED-F1BD0EC9,FAC-EF8B79A0,Blister pack labelling inconsistent with MOH-registered product.,3.0,8.5,7.64,True,Kinta,Ipoh,Perak,30000
+HMP-84F1B545,2023-04-15,4.585918,101.057075,MED-F1BD0EC9,FAC-317EFB40,Online purchase via Telegram; seller account now deleted.,6.37,8.5,2.1,False,Kinta,Ipoh,Perak,30000
+HMP-542A501F,2023-04-25,4.592746,101.080359,MED-99B74A7E,FAC-EF8B79A0,Multiple neighbours bought same batch; all reported ineffectiveness.,15.76,25.0,12.61,False,Kinta,Ipoh,Perak,30000
+HMP-697D0FF0,2023-01-20,4.631592,101.096479,MED-F1BD0EC9,FAC-DCD759AF,Multiple neighbours bought same batch; all reported ineffectiveness.,3.57,8.5,4.31,True,Kinta,Ipoh,Perak,30000
+HMP-55102E0D,2023-03-08,4.652611,101.161393,MED-80150E17,FAC-317EFB40,Tablets crumbled unusually — suspect substandard binding agents.,13.41,18.0,5.75,True,Kinta,Ipoh,Perak,30000
+HMP-EB1DECF7,2023-05-21,4.597041,101.149121,MED-59EB08A3,FAC-EF8B79A0,Holographic seal missing from packaging.,4.87,12.0,7.24,True,Kinta,Ipoh,Perak,30000
+HMP-9E39C8CE,2023-05-14,4.569746,101.065467,MED-80150E17,FAC-952F7C35,Holographic seal missing from packaging.,5.52,18.0,12.97,False,Kinta,Ipoh,Perak,30000
+HMP-40053889,2023-05-25,4.609255,101.111505,MED-F1BD0EC9,FAC-F9EE4390,No batch number printed on secondary packaging.,4.67,8.5,5.04,False,Kinta,Ipoh,Perak,30000
+HMP-5642853A,2023-04-24,4.620944,101.098963,MED-F1BD0EC9,FAC-E691F464,Medicine purchased from street vendor near the market.,5.08,8.5,3.16,False,Kinta,Ipoh,Perak,30000
+HMP-7A2AA70A,2023-02-25,4.599574,101.077171,MED-59EB08A3,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,3.71,12.0,8.77,False,Kinta,Ipoh,Perak,30000
+HMP-9E303D68,2023-03-02,4.582059,101.06952,MED-94DCD221,FAC-EF8B79A0,Multiple neighbours bought same batch; all reported ineffectiveness.,4.65,6.0,1.39,True,Kinta,Ipoh,Perak,30000
+HMP-8C3A16B0,2023-03-11,4.591014,101.037743,MED-80150E17,FAC-952F7C35,Multiple neighbours bought same batch; all reported ineffectiveness.,12.18,18.0,7.2,True,Kinta,Ipoh,Perak,30000
+HMP-9E90B49F,2023-03-27,4.549577,101.097133,MED-59EB08A3,FAC-DCD759AF,Chemical smell inconsistent with known product.,5.15,12.0,7.75,False,Kinta,Ipoh,Perak,30000
+HMP-E5B26CC2,2022-04-26,3.860768,103.37572,MED-87F56986,FAC-E691F464,No batch number printed on secondary packaging.,3.93,8.0,4.39,False,Kuantan,Kuantan,Pahang,25000
+HMP-10DB1CE9,2022-07-21,3.131497,101.646109,MED-C029044A,FAC-952F7C35,Tablets crumbled unusually — suspect substandard binding agents.,3.3,9.0,5.88,True,Damansara,Petaling Jaya,Selangor,47810
+HMP-0021663C,2022-07-18,2.205216,102.232508,MED-B85A6ED2,FAC-DCD759AF,Chemical smell inconsistent with known product.,3.93,5.5,1.76,False,Melaka Tengah,Melaka,Melaka,75000
+HMP-A3895E8B,2021-06-23,3.148438,101.654598,MED-59EB08A3,FAC-EF8B79A0,Holographic seal missing from packaging.,9.63,12.0,2.72,False,Damansara,Petaling Jaya,Selangor,47810
+HMP-D0397BF9,2023-04-18,2.675822,101.880766,MED-B85A6ED2,FAC-FFDD0B04,No batch number printed on secondary packaging.,1.97,5.5,4.23,False,Seremban,Seremban,Negeri Sembilan,70000
+HMP-BE269198,2022-06-02,3.027784,101.45914,MED-B036DD9C,FAC-DCD759AF,Colour of tablets differs noticeably from genuine product.,62.7,95.0,38.41,True,Nilai,Nilai,Negeri Sembilan,71800
+HMP-496CC7A4,2022-06-29,2.719361,101.882007,MED-0A195B42,FAC-F9EE4390,Blister pack labelling inconsistent with MOH-registered product.,9.68,14.0,4.94,True,Seremban,Seremban,Negeri Sembilan,70000
+HMP-DD7F5E53,2022-11-22,3.85674,103.375173,MED-FB58034C,FAC-2D52E3F2,Multiple neighbours bought same batch; all reported ineffectiveness.,7.5,22.0,13.09,False,Kuantan,Kuantan,Pahang,25000
+HMP-AD0CEA46,2021-09-16,6.102533,100.403392,MED-B71DF9FF,FAC-DCD759AF,Tablets crumbled unusually — suspect substandard binding agents.,2.11,6.5,6.05,False,Kota Setar,Alor Setar,Kedah,05000
+HMP-1424FCD2,2021-08-20,3.842085,103.367744,MED-1711A01F,FAC-EF8B79A0,Expiry date appears tampered — original date scratched off.,1.63,2.5,1.15,False,Kuantan,Kuantan,Pahang,25000
+HMP-27A661D5,2022-07-20,2.098734,102.193134,MED-B036DD9C,FAC-952F7C35,Colour of tablets differs noticeably from genuine product.,35.88,95.0,66.51,True,Melaka Tengah,Melaka,Melaka,75000
+HMP-E287F163,2023-05-29,6.167375,100.418298,MED-80150E17,FAC-DCD759AF,Medicine purchased from street vendor near the market.,7.4,18.0,14.26,False,Kota Setar,Alor Setar,Kedah,05000
+HMP-2C8B2357,2022-12-02,2.777917,101.947621,MED-1711A01F,FAC-317EFB40,Blister pack labelling inconsistent with MOH-registered product.,0.75,2.5,2.38,True,Seremban,Seremban,Negeri Sembilan,70000
+HMP-EDB9D887,2021-05-28,6.158483,100.406508,MED-87F56986,FAC-E691F464,Tablets crumbled unusually — suspect substandard binding agents.,6.48,8.0,1.54,True,Kota Setar,Alor Setar,Kedah,05000
+HMP-6626E8F9,2022-11-25,2.131808,102.282673,MED-0A195B42,FAC-FFDD0B04,Holographic seal missing from packaging.,5.04,14.0,12.49,True,Melaka Tengah,Melaka,Melaka,75000
+HMP-27122400,2021-02-24,3.114451,101.696641,MED-80150E17,FAC-952F7C35,Price was 60% below standard — suspect adulterated product.,8.53,18.0,12.05,False,Damansara,Petaling Jaya,Selangor,47810
+HMP-D3F4A5FB,2023-03-14,3.120872,101.638697,MED-B036DD9C,FAC-952F7C35,Expiry date appears tampered — original date scratched off.,77.56,95.0,18.97,True,Damansara,Petaling Jaya,Selangor,47810
+HMP-E7DDC0ED,2023-03-29,3.147573,101.605845,MED-94DCD221,FAC-2D52E3F2,No batch number printed on secondary packaging.,2.21,6.0,4.7,False,Damansara,Petaling Jaya,Selangor,47810
+HMP-FAF627CD,2021-04-20,3.062623,101.632992,MED-80150E17,FAC-2D52E3F2,Expiry date appears tampered — original date scratched off.,8.73,18.0,9.25,False,Damansara,Petaling Jaya,Selangor,47810
+HMP-FEAEB904,2022-07-25,2.153493,102.204395,MED-0A195B42,FAC-317EFB40,Packaging seal already broken upon purchase.,4.64,14.0,10.81,False,Melaka Tengah,Melaka,Melaka,75000

@@ -29,15 +29,19 @@ class DataStore:
     def __init__(self):
         src = f"s3://{S3_BUCKET}/{S3_PREFIX}" if USE_S3 else DATA_DIR
         print(f"\nLoading DataStore from {'S3' if USE_S3 else 'local'}: {src}")
-        self.medicines          = self._load("medicines.csv")
-        self.suppliers          = self._load("suppliers.csv")
-        self.facilities         = self._load("facilities.csv")
-        self.facility_medicines = self._load("facility_medicines.csv")
-        self.complaints         = self._load("complaints.csv")
+        self.medicines               = self._load("medicines.csv")
+        self.suppliers               = self._load("suppliers.csv")
+        self.facilities              = self._load("facilities.csv")
+        self.facility_medicines      = self._load("facility_medicines.csv")
+        self.complaints              = self._load("complaints.csv")
+        self.historical_complaints   = self._load_optional("historical_complaints.csv")
+        self.officers                = self._load_optional("officers.csv")
         self._enrich()
         print(f"  {len(self.facilities)} facilities")
         print(f"  {len(self.complaints)} complaints")
         print(f"  {len(self.suppliers)} suppliers")
+        print(f"  {len(self.historical_complaints)} historical complaints")
+        print(f"  {len(self.officers)} officers")
         print("DataStore ready.\n")
 
     # ── Private ────────────────────────────────────────────────────────────
@@ -49,23 +53,37 @@ class DataStore:
             df = pd.read_csv(os.path.join(DATA_DIR, filename))
         return df.where(pd.notnull(df), None)
 
+    def _load_optional(self, filename: str) -> pd.DataFrame:
+        """Load a CSV that may not exist; returns empty DataFrame on miss."""
+        try:
+            return self._load(filename)
+        except Exception:
+            return pd.DataFrame()
+
     def _enrich(self):
         med_meta = self.medicines[[
             "medicine_id", "name", "generic_name", "category", "pres_restrictions"
         ]].rename(columns={"name": "medicine_name"})
-        self.complaints = self.complaints.merge(med_meta, on="medicine_id", how="left")
 
         fac_meta = self.facilities[["facility_id", "name", "type"]].rename(
             columns={"name": "facility_name", "type": "facility_type"}
         )
-        self.complaints = self.complaints.merge(
-            fac_meta,
-            left_on="purchased_from_facility_id",
-            right_on="facility_id",
-            how="left",
-        )
-        self.complaints.drop(columns=["facility_id"], errors="ignore", inplace=True)
-        self.complaints = self.complaints.replace([np.nan, np.inf, -np.inf], None)
+
+        def _enrich_df(df: pd.DataFrame) -> pd.DataFrame:
+            if df.empty:
+                return df
+            df = df.merge(med_meta, on="medicine_id", how="left")
+            df = df.merge(
+                fac_meta,
+                left_on="purchased_from_facility_id",
+                right_on="facility_id",
+                how="left",
+            )
+            df.drop(columns=["facility_id"], errors="ignore", inplace=True)
+            return df.replace([np.nan, np.inf, -np.inf], None)
+
+        self.complaints            = _enrich_df(self.complaints)
+        self.historical_complaints = _enrich_df(self.historical_complaints)
 
     # ── Facilities ─────────────────────────────────────────────────────────
 
@@ -82,6 +100,17 @@ class DataStore:
         return self.suppliers[self.suppliers["supplier_id"].isin(sup_ids)]
 
     # ── Complaints ─────────────────────────────────────────────────────────
+
+    def get_historical_complaints(self, date_from=None, date_to=None,
+                                   state=None, district=None):
+        df = self.historical_complaints
+        if df.empty:
+            return df
+        if date_from: df = df[df["date"] >= date_from]
+        if date_to:   df = df[df["date"] <= date_to]
+        if state:     df = df[df["state"] == state]
+        if district:  df = df[df["district"] == district]
+        return df
 
     def get_complaints(self, state=None, district=None,
                        date_from=None, date_to=None,
